@@ -56,7 +56,7 @@ print(my_logical_vector)
 
     ## [1]  TRUE FALSE  TRUE FALSE  TRUE
 
-Indexing vectors in R
+## Indexing vectors in R
 
 We can access individual elements of a vector using square brackets
 \[\]. The index of the element we want to access goes inside the square
@@ -90,11 +90,12 @@ print(my_logical_vector[length(my_logical_vector)])
 
     ## [1] TRUE
 
-Access multiple elements of a vector We can use a vector of indices
-inside the square brackets to access multiple elements at once. For
-example, to access the first, third, and fifth elements of a vector, we
-can use the following syntax: Note: We use the c() function to create a
-vector of indices.
+## Access multiple elements of a vector
+
+We can use a vector of indices inside the square brackets to access
+multiple elements at once. For example, to access the first, third, and
+fifth elements of a vector, we can use the following syntax: Note: We
+use the c() function to create a vector of indices.
 
 ``` r
 print(my_numeric_vector[c(1, 3, 5)])
@@ -102,9 +103,11 @@ print(my_numeric_vector[c(1, 3, 5)])
 
     ## [1] 1 3 5
 
-Exclude elements from a vector We can use negative indices to exclude
-elements from a vector. For example, to exclude the second element of a
-vector, we can use the following syntax:
+## Exclude elements from a vector
+
+We can use negative indices to exclude elements from a vector. For
+example, to exclude the second element of a vector, we can use the
+following syntax:
 
 ``` r
 print(my_character_vector[-2])
