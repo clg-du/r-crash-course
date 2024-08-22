@@ -6,7 +6,7 @@ Here we will learn the basics of R programming language.
 
 Comments in R…
 
-- are preceded by the “\#” symbol.
+- are preceded by the `#` hashtag symbol.
 - are used to explain the code and make it more readable.
 - are ignored by the R interpreter.
 - can be on a line by themselves or at the end of a line of code.
@@ -14,12 +14,12 @@ Comments in R…
 - can be used to document the code.
 - can be used to make the code more readable.
 
-This example is a simple R script that prints “Hello, World!” to the
-console. print() is a built-in function in R that prints the specified
-value to the console. R is case-sensitive, so “print” is not the same as
-“Print”.
+This example is a simple R script that prints `"Hello, World!"` to the
+console. `print()` is a built-in function in R that prints the specified
+value to the console. R is case-sensitive, so `print` is not the same as
+`Print`.
 
-Print “Hello, World!” to the console
+Print `"Hello, World!"` to the console
 
 ``` r
 print("Hello, World!")
@@ -28,20 +28,20 @@ print("Hello, World!")
     ## [1] "Hello, World!"
 
 In R indentation is not required, but it is recommended for readability.
-In RStudio you can use “Ctrl + Shift + A” to clean up the code and
+In RStudio you can use `Ctrl + Shift + A` to clean up the code and
 automatically indent it.
 
 Packages in R are collections of functions and data sets developed by
 the community. We can install and load packages in R using the
-install.packages() and library() functions.
+`install.packages()` and `library()` functions.
 
-Install the “car” package
+Install the `car` package
 
 ``` r
 install.packages("car")
 ```
 
-Load the “car” package
+Load the `car` package
 
 ``` r
 library(car)
@@ -49,16 +49,16 @@ library(car)
 
     ## Loading required package: carData
 
-The “car” package contains a dataset called “mtcars”. We can access this
-dataset using the data() function.
+The `car` package contains a dataset called `mtcars`. We can access this
+dataset using the `data()` function.
 
-Load the “mtcars” dataset
+Load the `mtcars` dataset
 
 ``` r
 data(mtcars)
 ```
 
-Display the first few rows of the “mtcars” dataset
+Display the first few rows of the `mtcars` dataset
 
 ``` r
 head(mtcars)
@@ -72,9 +72,10 @@ head(mtcars)
     ## Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2
     ## Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1
 
-We can also use the summary() function to get a summary of the dataset.
+We can also use the `summary()` function to get a summary of the
+dataset.
 
-Get a summary of the “mtcars” dataset
+Get a summary of the `mtcars` dataset
 
 ``` r
 summary(mtcars)
