@@ -54,7 +54,7 @@ data(mtcars)
 
 Display the first few rows of the "mtcars" dataset
 
-```r{echo = TRUE}
+```{r echo = TRUE}
 head(mtcars)
 ```
 
@@ -62,7 +62,7 @@ We can also use the summary() function to get a summary of the dataset.
 
 Get a summary of the "mtcars" dataset
 
-```r{echo = TRUE}
+```{r echo = TRUE}
 summary(mtcars)
 ```
 
