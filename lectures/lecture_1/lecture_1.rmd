@@ -17,7 +17,7 @@ R is case-sensitive, so "print" is not the same as "Print".
 
 Print "Hello, World!" to the console
 
-```r
+```{r echo = TRUE}
 print("Hello, World!")
 ```
 
