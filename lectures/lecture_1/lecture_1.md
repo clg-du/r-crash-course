@@ -4,11 +4,15 @@ Lecture 1: Introduction to R
 
 Here we will learn the basics of R programming language.
 
-Comments in R… - are preceded by the “\#” symbol. - are used to explain
-the code and make it more readable. - are ignored by the R
-interpreter. - can be on a line by themselves or at the end of a line of
-code. - can be used to temporarily disable a line of code. - can be used
-to document the code. - can be used to make the code more readable.
+Comments in R…
+
+- are preceded by the “\#” symbol.
+- are used to explain the code and make it more readable.
+- are ignored by the R interpreter.
+- can be on a line by themselves or at the end of a line of code.
+- can be used to temporarily disable a line of code.
+- can be used to document the code.
+- can be used to make the code more readable.
 
 This example is a simple R script that prints “Hello, World!” to the
 console. print() is a built-in function in R that prints the specified
@@ -42,6 +46,8 @@ Load the “car” package
 ``` r
 library(car)
 ```
+
+    ## Loading required package: carData
 
 The “car” package contains a dataset called “mtcars”. We can access this
 dataset using the data() function.
