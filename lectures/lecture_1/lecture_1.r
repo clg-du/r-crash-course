@@ -45,5 +45,5 @@ head(mtcars)
 # Get a summary of the "mtcars" dataset
 summary(mtcars)
 
-# That's it for this example! In the next lecture, we will learn more about data types and data structures in R.
+# That's it for this example! In the next lecture, we will learn more about objects, data types, and variables in R.
 
