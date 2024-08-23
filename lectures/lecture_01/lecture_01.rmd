@@ -11,13 +11,13 @@ Here we will learn the basics of the R programming language.
 
 Comments in R...
 
-...are preceded by the "#" symbol.
-...are used to explain the code and make it more readable.
-...are ignored by the R interpreter.
-...can be on a line by themselves or at the end of a line of code.
-...can be used to temporarily disable a line of code.
-...can be used to document the code.
-...can be used to make the code more readable.
+- are preceded by the "#" symbol.
+- are used to explain the code and make it more readable.
+- are ignored by the R interpreter.
+- can be on a line by themselves or at the end of a line of code.
+- can be used to temporarily disable a line of code.
+- can be used to document the code.
+- can be used to make the code more readable.
 
 Adding an apostrophe after the "#" symbol creates a Roxygen comment.
 Roxygen comments are used to generate documentation for functions and packages.
