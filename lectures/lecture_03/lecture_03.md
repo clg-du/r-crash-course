@@ -1,4 +1,4 @@
-Lecture 3: Arithmetic Operations in R
+# Lecture 3: Arithmetic Operations in R
 2024-08-23
 
 In this lecture, we will learn about arithmetic operations in R.
@@ -91,7 +91,7 @@ print(result_modulo)
 ## [1] 2
 ```
 
-** Order of operations
+## Order of operations
 
 R follows the standard order of operations in mathematics:
 

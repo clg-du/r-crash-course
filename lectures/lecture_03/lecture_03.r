@@ -1,5 +1,5 @@
 
-#' Lecture 3: Arithmetic Operations in R
+#' # Lecture 3: Arithmetic Operations in R
 #' `r Sys.Date()`
 #'
 #' In this lecture, we will learn about arithmetic operations in R.
@@ -44,7 +44,7 @@ print(result_exponentiation)
 result_modulo <- 5 %% 3
 print(result_modulo)
 
-#' ** Order of operations
+#' ## Order of operations
 #' 
 #' R follows the standard order of operations in mathematics:
 #' 
