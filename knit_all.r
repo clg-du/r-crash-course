@@ -11,7 +11,6 @@ for (i in seq_along(r_files[1:3])) {
   rmd_file <- sub("\\.r$", ".Rmd", r_file)
   md_file <- sub("\\.r$", ".md", r_file)
   knitr::spin(r_file, knit = FALSE)
-  #rmarkdown::render(rmd_file)
   knitr::knit(rmd_file, output = md_file)
 }
 
