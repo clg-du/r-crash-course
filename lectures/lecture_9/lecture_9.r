@@ -169,6 +169,6 @@ print(result_circle$circumference)
 # Functions are an essential part of programming in R, and understanding how to define and use functions is key 
 # to writing efficient and reusable code.
 
-# In the next lecture, we will learn about 
+# In the next lecture, we will learn about indexing using logical vectors in R.
 
 
