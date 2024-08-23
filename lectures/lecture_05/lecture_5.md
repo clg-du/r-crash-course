@@ -1,14 +1,19 @@
-Lecture 3: Vectors in R
+Lecture 5: Vectors in R
 ================
 2024-08-22
 
-In this lecture, we will learn about vectors in R. These are essential
-data structures in R that allow us to store and manipulate data
-efficiently.
+In this lecture, we will learn about vectors in R.
+
+These are essential data structures in R that allow us to store and
+manipulate data efficiently.
 
 Later in this course, we will also cover list, matrices and data frames,
-which are more complex data structures in R. It is important, however,
-to understand vectors before moving on to these more advanced topics.
+which are more complex data structures in R.
+
+It is important, however, to understand vectors before moving on to
+these more advanced topics.
+
+## Vectors in R
 
 Vectors in R…
 
@@ -86,7 +91,8 @@ print(my_character_vector[2])
 
     ## [1] "banana"
 
-Access the last element of the logical vector
+Access the last element of the logical vector, where `length()` function
+returns the length of the vector.
 
 ``` r
 print(my_logical_vector[length(my_logical_vector)])
@@ -98,8 +104,7 @@ print(my_logical_vector[length(my_logical_vector)])
 
 We can use a vector of indices inside the square brackets to access
 multiple elements at once. For example, to access the first, third, and
-fifth elements of a vector, we can use the following syntax: Note: We
-use the `c()` function to create a vector of indices.
+fifth elements of a vector, we can use the following syntax:
 
 ``` r
 print(my_numeric_vector[c(1, 3, 5)])
@@ -107,10 +112,13 @@ print(my_numeric_vector[c(1, 3, 5)])
 
     ## [1] 1 3 5
 
+Note: We use the `c()` function to create a vector of indices.
+
 ## Exclude elements from a vector
 
-We can use negative indices to exclude elements from a vector. For
-example, to exclude the second element of a vector, we can use the
+We can use negative indices to exclude elements from a vector.
+
+For example, to exclude the second element of a vector, we can use the
 following syntax:
 
 ``` r

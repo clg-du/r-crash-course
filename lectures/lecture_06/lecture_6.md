@@ -1,13 +1,16 @@
-Lecture 4: List in R
+Lecture 6: List in R
 ================
 2024-08-22
 
 In this lecture, we will learn about lists in R.
 
 Lists are another essential data structure in R that can store multiple
-objects of different types. Unlike vectors, lists can store objects of
-different lengths and types in a single container. This makes lists a
-versatile and powerful data structure in R.
+objects of different types.
+
+Unlike vectors, lists can store objects of different lengths and types
+in a single container.
+
+This makes lists a versatile and powerful data structure in R.
 
 Lists are created using the `list()` function, which takes an arbitrary
 number of arguments. Each argument passed to the `list()` function
@@ -22,10 +25,12 @@ my_list <- list(42, "Hello, World!", TRUE, 42L, 3 + 4i)
 ```
 
 Note that the elements of the list can be of different types and
-lengths! The list `my_list` contains a numeric value, a character
-string, a logical value, an integer value, and a complex number. This is
-something that vectors cannot do, as they require all elements to be of
-the same type.
+lengths!
+
+The list `my_list` contains a numeric value, a character string, a
+logical value, an integer value, and a complex number. This is something
+that vectors cannot do, as they require all elements to be of the same
+type.
 
 Display the list
 

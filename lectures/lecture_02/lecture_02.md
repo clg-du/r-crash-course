@@ -38,18 +38,22 @@ Create a logical variable
 my_logical <- TRUE
 ```
 
-Create an integer variable Note: In R, integers are specified by adding
-an `L` to the end of the number (`L` stands for “long integer”). This
-tells R to treat the number as an integer rather than a numeric value.
+Create an integer variable
+
+Note: In R, integers are specified by adding an `L` to the end of the
+number (`L` stands for “long integer”). This tells R to treat the number
+as an integer rather than a numeric value.
 
 ``` r
 my_int <- 42L
 ```
 
-Create a complex variable Note: In R, complex numbers are specified
-using the `i` suffix. The real part is separated from the imaginary part
-by a `+` sign. We won’t be using complex numbers at all in this course,
-but it’s good to know they exist!
+Create a complex variable
+
+Note: In R, complex numbers are specified using the `i` suffix. The real
+part is separated from the imaginary part by a `+` sign. We won’t be
+using complex numbers at all in this course, but it’s good to know they
+exist!
 
 ``` r
 my_complex <- 3 + 4i
@@ -88,4 +92,4 @@ print(my_complex)
     ## [1] 3+4i
 
 That’s it for this example! In the next lecture, we will learn about
-vectors in R.
+arithmetic operations in R.

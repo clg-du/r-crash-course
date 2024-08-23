@@ -2,7 +2,9 @@ Lecture 1: Introduction to R
 ================
 2024-08-22
 
-Here we will learn the basics of R programming language.
+Here we will learn the basics of the R programming language.
+
+## Comments in R
 
 Comments in R…
 
@@ -13,6 +15,8 @@ Comments in R…
 - can be used to temporarily disable a line of code.
 - can be used to document the code.
 - can be used to make the code more readable.
+
+## Our first “Hello World!” program in R
 
 This example is a simple R script that prints `"Hello, World!"` to the
 console. `print()` is a built-in function in R that prints the specified
@@ -28,8 +32,10 @@ print("Hello, World!")
     ## [1] "Hello, World!"
 
 In R indentation is not required, but it is recommended for readability.
-In RStudio you can use `Ctrl + Shift + A` to clean up the code and
-automatically indent it.
+In RStudio you can highlight code and use `Ctrl + Shift + A` to clean up
+the code and automatically indent it.
+
+## Packages
 
 Packages in R are collections of functions and data sets developed by
 the community. We can install and load packages in R using the

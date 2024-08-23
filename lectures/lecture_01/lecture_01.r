@@ -1,16 +1,20 @@
 
 # Lecture 1: Introduction to R
 
-# Here we will learn the basics of R programming language.
+# Here we will learn the basics of the R programming language.
 
-# Comments in R... 
-# ...are preceded by the "#" symbol. 
+# Comments in R
+
+# Comments in R...
+# ...are preceded by the "#" symbol.
 # ...are used to explain the code and make it more readable.
-# ...are ignored by the R interpreter. 
+# ...are ignored by the R interpreter.
 # ...can be on a line by themselves or at the end of a line of code.
 # ...can be used to temporarily disable a line of code.
 # ...can be used to document the code.
 # ...can be used to make the code more readable.
+
+# Our first "Hello World!" program in R
 
 # This example is a simple R script that prints "Hello, World!" to the console.
 # print() is a built-in function in R that prints the specified value to the console.
@@ -20,7 +24,9 @@
 print("Hello, World!")
 
 # In R indentation is not required, but it is recommended for readability.
-# In RStudio you can use "Ctrl + Shift + A" to clean up the code and automatically indent it.
+# In RStudio you can highlight code and use "Ctrl + Shift + A" to clean up the code and automatically indent it.
+
+# Packages
 
 # Packages in R are collections of functions and data sets developed by the community.
 # We can install and load packages in R using the install.packages() and library() functions.
@@ -46,4 +52,3 @@ head(mtcars)
 summary(mtcars)
 
 # That's it for this example! In the next lecture, we will learn more about objects, data types, and variables in R.
-

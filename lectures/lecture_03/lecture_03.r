@@ -25,20 +25,18 @@ print(result_subtraction)
 
 # Multiplication
 result_multiplication <- 5 * 3
+print(result_multiplication)
 
 # Division
 result_division <- 5 / 3
+print(result_division)
 
 # Exponentiation
 result_exponentiation <- 5 ^ 3
+print(result_exponentiation)
 
 # Modulo
 result_modulo <- 5 %% 3
-
-# Display the results
-print(result_multiplication)
-print(result_division)
-print(result_exponentiation)
 print(result_modulo)
 
 # Order of operations

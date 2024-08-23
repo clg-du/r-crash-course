@@ -41,7 +41,5 @@ print(my_logical)
 print(my_int)
 print(my_complex)
 
-# That's it for this example! In the next lecture, we will learn about vectors, lists, and matrices in R.
-
-
+# That's it for this example! In the next lecture, we will learn about arithmetic operations in R.
 
