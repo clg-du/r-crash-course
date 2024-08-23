@@ -5,16 +5,18 @@
 #'
 #' ## Functions in R
 #'
-#' We have encountered functions in previous lectures, such as the print() function, which is used to display output in R.
-#' Functions are blocks of code that perform a specific task when called or invoked.
-#' They are essential for organizing and reusing code in R.
+#' We have encountered functions in previous lectures, such as the `print()`
+#' function, which is used to display output in R. Functions are blocks of code
+#' that perform a specific task when called or invoked. They are essential for
+#' organizing and reusing code in R.
 #'
 #' Functions in R...
 #'
-#' - are defined using the function() keyword.
+#' - are defined using the `function()` keyword.
 #' - can take zero or more arguments as input.
 #' - can return zero or more values as output.
-#' - can be built-in functions provided by R or user-defined functions created by the programmer.
+#' - can be built-in functions provided by R or user-defined functions created
+#'   by the programmer.
 #' - can have default argument values.
 #' - can have named arguments.
 #' - can be called with or without parentheses.
@@ -27,7 +29,8 @@ add_numbers <- function(a, b) {
   return(result)
 }
 
-#' The function add_numbers() takes two arguments, a and b, and returns their sum.
+#' The function add_numbers() takes two arguments, a and b, and returns their
+#' sum.
 #'
 #' Call the function with arguments 5 and 3
 result_addition <- add_numbers(5, 3)
@@ -35,11 +38,12 @@ result_addition <- add_numbers(5, 3)
 #' Display the result
 print(result_addition)
 
-#' The return() statement is used to return the result of the addition.
-#' This is a simple example of a user-defined function in R.
+#' The return() statement is used to return the result of the addition. This is
+#' a simple example of a user-defined function in R.
 #'
-#' Beyond user-defined functions, R provides a wide range of built-in functions that perform various tasks.
-#' For example, the sum() function calculates the sum of a vector of numbers.
+#' Beyond user-defined functions, R provides a wide range of built-in functions
+#' that perform various tasks. For example, the sum() function calculates the
+#' sum of a vector of numbers.
 #'
 #' Calculate the sum of a vector of numbers
 numbers <- c(1, 2, 3, 4, 5)
@@ -48,31 +52,37 @@ result_sum <- sum(numbers)
 #' Display the result
 print(result_sum)
 
-#' The sum() function is a built-in function in R that calculates the sum of a vector of numbers.
-#' We create a vector of numbers using the c() function and store it in the variable numbers.
-#' We call the sum() function with the vector of numbers as an argument and store the result in the variable result_sum.
-#' This demonstrates how built-in functions can be used to perform common tasks in R.
+#' The sum() function is a built-in function in R that calculates the sum of a
+#' vector of numbers. We create a vector of numbers using the c() function and
+#' store it in the variable numbers. We call the sum() function with the vector
+#' of numbers as an argument and store the result in the variable result_sum.
+#' This demonstrates how built-in functions can be used to perform common tasks
+#' in R.
 #'
-#' But it is impossible to know what every function does just by looking at its name, right?
-#' That's where the help() function comes in handy!
+#' But it is impossible to know what every function does just by looking at its
+#' name, right? That's where the help() function comes in handy!
 #+ eval=FALSE
 help(sum)
 
 #' It can also be called with a question mark
 #+ eval=FALSE
-?sum
+? sum
 
-#' The help() function provides information about a specific function in R.
-#' We call the help() function with the sum() function as an argument to get information about the sum() function.
-#' The help page for the sum() function provides a description of the function, its usage, arguments, and examples.
-#' This is a useful way to learn more about built-in functions and how to use them in R.
-#' You can also use the question mark ? before the function name to get the same information.
+#' The help() function provides information about a specific function in R. We
+#' call the help() function with the sum() function as an argument to get
+#' information about the sum() function. The help page for the sum() function
+#' provides a description of the function, its usage, arguments, and examples.
+#' This is a useful way to learn more about built-in functions and how to use
+#' them in R. You can also use the question mark ? before the function name to
+#' get the same information.
 #'
-#' Pro tip is to scroll down to the examples section of the help page for practical examples of how to use the function.
-#' That is a "quick and dirty" way to learn how to use a function without reading the entire documentation.
+#' Pro tip is to scroll down to the examples section of the help page for
+#' practical examples of how to use the function. That is a "quick and dirty"
+#' way to learn how to use a function without reading the entire documentation.
 #'
-#' Functions in R can have default argument values, which are used when an argument is not provided by the user.
-#' This allows functions to be more flexible and easier to use.
+#' Functions in R can have default argument values, which are used when an
+#' argument is not provided by the user. This allows functions to be more
+#' flexible and easier to use.
 #'
 #' Define a function with default argument values
 greet_person <- function(name = "friend") {
@@ -80,8 +90,8 @@ greet_person <- function(name = "friend") {
   return(message)
 }
 
-#' Note here that paste() is a function that concatenates strings together.
-#' So we have nested functions here, which is a common practice in R.
+#' Note here that paste() is a function that concatenates strings together. So
+#' we have nested functions here, which is a common practice in R.
 #'
 #' Call the function without an argument
 result_greeting <- greet_person()
@@ -95,15 +105,18 @@ result_greeting <- greet_person("Alice")
 #' Display the result
 print(result_greeting)
 
-#' The greet_person() function is defined with a default argument value of "friend".
-#' If no argument is provided, the function greets the user as "friend".
-#' We call the greet_person() function without an argument and store the result in the variable result_greeting.
-#' The function greets the user as "friend" and returns the greeting message.
-#' We call the greet_person() function with the argument "Alice" and store the result in the variable result_greeting.
-#' The function greets the user as "Alice" and returns the greeting message.
-#' This demonstrates how default argument values can be used to make functions more flexible and user-friendly.
+#' The greet_person() function is defined with a default argument value of
+#' "friend". If no argument is provided, the function greets the user as
+#' "friend". We call the greet_person() function without an argument and store
+#' the result in the variable result_greeting. The function greets the user as
+#' "friend" and returns the greeting message. We call the greet_person()
+#' function with the argument "Alice" and store the result in the variable
+#' result_greeting. The function greets the user as "Alice" and returns the
+#' greeting message. This demonstrates how default argument values can be used
+#' to make functions more flexible and user-friendly.
 #'
-#' Functions in R can also have named arguments, which allow arguments to be passed in any order by specifying the argument name.
+#' Functions in R can also have named arguments, which allow arguments to be
+#' passed in any order by specifying the argument name.
 #'
 #' Define a function with named arguments
 calculate_area <- function(length = 1, width = 1) {
@@ -117,11 +130,13 @@ result_area <- calculate_area(width = 5, length = 3)
 #' Display the result
 print(result_area)
 
-#' The calculate_area() function is defined with named arguments length and width.
-#' This allows the arguments to be passed in any order by specifying the argument name.
-#' We reversed the order of the arguments when calling the function, and it still works as expected.
+#' The calculate_area() function is defined with named arguments length and
+#' width. This allows the arguments to be passed in any order by specifying the
+#' argument name. We reversed the order of the arguments when calling the
+#' function, and it still works as expected.
 #'
-#' If we already know the order of the arguments, we can still call the function without specifying the argument names.
+#' If we already know the order of the arguments, we can still call the function
+#' without specifying the argument names.
 #'
 #' Call the function without specifying argument names
 result_area <- calculate_area(3, 5)
@@ -129,18 +144,20 @@ result_area <- calculate_area(3, 5)
 #' Display the result
 print(result_area)
 
-#' It is then important to know the order of the arguments when calling the function without specifying the argument names.
-#' Otherwise the function may not work as expected.
+#' It is then important to know the order of the arguments when calling the
+#' function without specifying the argument names. Otherwise the function may
+#' not work as expected.
 #'
-#' Many programmers can get by with only returning a single value from a function.
-#' But eventually one may want to return multiple values from a function.
-#' This can be done by returning a list, which can store multiple objects of different types!
-#' The list in of itself is a single object that can store multiple objects,
-#' which is a neat trick to return multiple values from a function.
+#' Many programmers can get by with only returning a single value from a
+#' function. But eventually one may want to return multiple values from a
+#' function. This can be done by returning a list, which can store multiple
+#' objects of different types! The list in of itself is a single object that can
+#' store multiple objects, which is a neat trick to return multiple values from
+#' a function.
 #'
 #' Define a function that returns multiple values
 calculate_circle <- function(radius) {
-  area <- pi * radius^2
+  area <- pi * radius ^ 2
   circumference <- 2 * pi * radius
   return(list(area = area, circumference = circumference))
 }
@@ -151,12 +168,15 @@ result_circle <- calculate_circle(5)
 #' Display the result
 print(result_circle)
 
-#' The calculate_circle() function calculates the area and circumference of a circle given its radius.
-#' The function returns a list containing the area and circumference as named elements.
-#' We call the calculate_circle() function with a radius of 5 and store the result in the variable result_circle.
-#' The result is a list containing the area and circumference of the circle, which can be accessed by their names.
+#' The calculate_circle() function calculates the area and circumference of a
+#' circle given its radius. The function returns a list containing the area and
+#' circumference as named elements. We call the calculate_circle() function with
+#' a radius of 5 and store the result in the variable result_circle. The result
+#' is a list containing the area and circumference of the circle, which can be
+#' accessed by their names.
 #'
-#' It is therefore possible to access individual list elements using the double square brackets "[[]]" or the dollar sign "$".
+#' It is therefore possible to access individual list elements using the double
+#' square brackets "[[]]" or the dollar sign "$".
 
 #' Access the area of the circle
 print(result_circle$area)
@@ -164,10 +184,12 @@ print(result_circle$area)
 #' Access the circumference of the circle
 print(result_circle$circumference)
 
-#' This is a powerful feature of R that allows functions to return multiple values in a structured way.
+#' This is a powerful feature of R that allows functions to return multiple
+#' values in a structured way.
 #'
-#' That's it for this lecture on functions in R! A bit longer than the previous ones, but functions are a fundamental concept in programming.
-#' Functions are an essential part of programming in R, and understanding how to define and use functions is key
-#' to writing efficient and reusable code.
+#' That's it for this lecture on functions in R! A bit longer than the previous
+#' ones, but functions are a fundamental concept in programming. Functions are
+#' an essential part of programming in R, and understanding how to define and
+#' use functions is key to writing efficient and reusable code.
 #'
 #' In the next lecture, we will learn about indexing using logical vectors in R.

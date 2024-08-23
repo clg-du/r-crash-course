@@ -36,7 +36,7 @@ result_division <- 5 / 3
 print(result_division)
 
 #' Exponentiation
-result_exponentiation <- 5^3
+result_exponentiation <- 5 ^ 3
 print(result_exponentiation)
 
 #' Modulo
@@ -52,9 +52,9 @@ print(result_modulo)
 #' 1. Multiplication `*` and Division `/`
 #' 1. Addition `+` and Subtraction `-`
 #'
-#' We can use parentheses to change the order of operations.
-#' For example, to calculate `5 + 3 * 2`, we can use parentheses to ensure that
-#' the multiplication is performed first:
+#' We can use parentheses to change the order of operations. For example, to
+#' calculate `5 + 3 * 2`, we can use parentheses to ensure that the
+#' multiplication is performed first:
 result_order_of_operations <- 5 + 3 * 2
 print(result_order_of_operations)
 
@@ -67,17 +67,17 @@ print(result_order_of_operations_parentheses)
 #' operators are used to perform an arithmetic operation and update a variable
 #' in a single step.
 #'
-#' Instead we need to use the following syntax in R to iterate a variable
-#' and update it:
+#' Instead we need to use the following syntax in R to iterate a variable and
+#' update it:
 x <- 5
 x <- x + 1
 print(x)
 
-#' In this lecture, we learned about arithmetic operations in R,
-#' including addition, subtraction, multiplication, division, exponentiation,
-#' and modulo.
+#' In this lecture, we learned about arithmetic operations in R, including
+#' addition, subtraction, multiplication, division, exponentiation, and modulo.
 #'
 #' We also learned about the order of operations in R and how to use parentheses
 #' to change the order of operations.
 #'
-#' In the next lecture, we will learn about comparison and logical operators in R.
+#' In the next lecture, we will learn about comparison and logical operators in
+#' R.
