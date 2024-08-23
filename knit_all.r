@@ -1,4 +1,3 @@
-
 #' A simple script to create .Rmd files from .r files and knit them to .md files
 #' The script loops through all relevant .r files in the lectures directory
 #' 
