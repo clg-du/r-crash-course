@@ -7,7 +7,7 @@
 #'
 #' ** Load the data set
 #'
-#' The data set we will be using is the "mtcars" data set, which is a built-in
+#' The data set we will be using is the `mtcars` data set, which is a built-in
 #' data set in R. The data set contains information about various car models,
 #' including the number of cylinders, horsepower, and miles per gallon (mpg).
 #'
@@ -32,7 +32,7 @@ summary(mtcars)
 #' can use this information to perform further analysis and visualization of the
 #' dataset.
 #'
-#' The data set contains the following columns:'
+#' The data set contains the following columns:
 #'
 #' - mpg: Miles/(US) gallon
 #' - cyl: Number of cylinders
@@ -43,7 +43,7 @@ summary(mtcars)
 #' - qsec: 1/4 mile time
 #' - vs: V/S
 #'
-#' It is also possible to use the help function to get more information about
+#' It is also possible to use the `help` function to get more information about
 #' the data set (since it is a built-in data set in R).
 #'
 #' Help on the mtcars data set
@@ -74,10 +74,10 @@ plot(mtcars$hp,
 #' labels and titles. It also informs us what the arguments are and how they can
 #' be used.
 #+ eval=FALSE
-? plot
+?plot
 
-#' We see that x and y are the variables to be plotted, xlab and ylab are the
-#' labels for the x and y axes, and main is the title of the plot. Again, the
+#' We see that `x` and `y` are the variables to be plotted, `xlab` and `ylab` are the
+#' labels for the `x` and `y` axes, and `main` is the title of the plot. Again, the
 #' help function is a valuable resource for learning more about functions and
 #' how to use them in R.
 #'
@@ -108,11 +108,10 @@ heatmap(
   margins = c(10, 10)
 )
 
-#' Note that we can organize the code in a more
-#' readable way by breaking it into multiple lines. This makes it easier to
-#' understand and modify the code. The linebreaks can occur after commas or
-#' operators.
-
+#' Note that we can organize the code in a more readable way by breaking it into
+#' multiple lines. This makes it easier to understand and modify the code. The
+#' linebreaks can occur after commas or operators.
+#'
 #' The heatmap provides a visual representation of the correlation matrix, with
 #' warmer colors indicating stronger positive correlations and cooler colors
 #' indicating stronger negative correlations. This visualization can help us
@@ -143,7 +142,7 @@ legend(
 #' between the variables in the dataset.
 #'
 #' In this lecture, we worked on a real-world example of using R for data
-#' analysis. We loaded the "mtcars" data set, explored the data, created
+#' analysis. We loaded the `mtcars` data set, explored the data, created
 #' visualizations, and calculated the correlation between variables. These steps
 #' demonstrate how R can be used to analyze and visualize data, gain insights,
 #' and make data-driven decisions.
