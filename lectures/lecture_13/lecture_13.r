@@ -119,7 +119,16 @@ heatmap(
 #'
 #' Let's add a legend to the heatmap to better understand the color scale.
 #'
-#' Add a legend to the heatmap
+#' Add a legend to the heatmap. Added the heatmap code again since the legend
+#' needs to be added after the heatmap is created, which is not possible in
+#' RMarkdown unless evaluated in the same code chunk. This is a workaround,
+#' and not necessary for regular R scripts since the plot already exists.
+heatmap(
+  correlation_matrix,
+  col = heat.colors(10),
+  symm = TRUE,
+  margins = c(10, 10)
+)
 legend(
   "bottomright",
   legend = c(
