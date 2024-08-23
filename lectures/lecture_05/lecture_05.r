@@ -1,64 +1,66 @@
 
-# Lecture 5: Vectors in R
-
-# In this lecture, we will learn about vectors in R.
-# These are essential data structures in R that allow us to store and manipulate data efficiently.
-
-# Later in this course, we will also cover list, matrices and data frames, which are more complex data structures in R.
-# It is important, however, to understand vectors before moving on to these more advanced topics.
-
-# Vectors in R
-
-# Vectors...
-# ...are one-dimensional arrays in R that can store numeric, character, or logical values.
-# ...can be created using the c() function, which stands for "combine" or "concatenate".
-# ...can be indexed using square brackets [].
-# ...can be of different lengths and types.
-# ...can be used in mathematical operations and functions.
-
-# Let's create some vectors in R!
-
-# Create a numeric vector
+#' # Lecture 5: Vectors in R
+#' `r Sys.Date()`
+#' 
+#' In this lecture, we will learn about vectors in R.
+#' These are essential data structures in R that allow us to store and manipulate data efficiently.
+#' 
+#' Later in this course, we will also cover list, matrices and data frames, which are more complex data structures in R.
+#' It is important, however, to understand vectors before moving on to these more advanced topics.
+#' 
+#' # Vectors in R
+#' 
+#' Vectors...
+#' 
+#' - are one-dimensional arrays in R that can store numeric, character, or logical values.
+#' - can be created using the `c()` function, which stands for "combine" or "concatenate".
+#' - can be indexed using square brackets `[]`.
+#' - can be of different lengths and types.
+#' - can be used in mathematical operations and functions.
+#' 
+#' Let's create some vectors in R!
+#' 
+#' Create a numeric vector
 my_numeric_vector <- c(1, 2, 3, 4, 5)
 
-# Create a character vector
+#' Create a character vector
 my_character_vector <- c("apple", "banana", "cherry", "date", "elderberry")
 
-# Create a logical vector
+#' Create a logical vector
 my_logical_vector <- c(TRUE, FALSE, TRUE, FALSE, TRUE)
 
-# Display the values of the vectors
+#' Display the values of the vectors
 print(my_numeric_vector)
 print(my_character_vector)
 print(my_logical_vector)
 
-# Indexing vectors in R
-
-# We can access individual elements of a vector using square brackets [].
-# The index of the element we want to access goes inside the square brackets.
-
-# Indexing in R starts at 1, not 0 like in some other programming languages (e.g., Python).
-# We can also use negative indices to exclude elements from the vector.
-
-# Access the first element of the numeric vector
+#' Indexing vectors in R
+#' 
+#' We can access individual elements of a vector using square brackets `[]`.
+#' The index of the element we want to access goes inside the square brackets.
+#' 
+#' Indexing in R starts at 1, not 0 like in some other programming languages (e.g., Python).
+#' We can also use negative indices to exclude elements from the vector.
+#' 
+#' Access the first element of the numeric vector
 print(my_numeric_vector[1])
 
-# Access the second element of the character vector
+#' Access the second element of the character vector
 print(my_character_vector[2])
 
-# Access the last element of the logical vector
+#' Access the last element of the logical vector
 print(my_logical_vector[length(my_logical_vector)])
 
-# Access multiple elements of a vector
-# We can use a vector of indices inside the square brackets to access multiple elements at once.
-# For example, to access the first, third, and fifth elements of a vector, we can use the following syntax:
+#' Access multiple elements of a vector
+#' We can use a vector of indices inside the square brackets to access multiple elements at once.
+#' For example, to access the first, third, and fifth elements of a vector, we can use the following syntax:
 print(my_numeric_vector[c(1, 3, 5)])
 
-# Note: We use the c() function to create a vector of indices.
-
-# Exclude elements from a vector
-# We can use negative indices to exclude elements from a vector.
-# For example, to exclude the second element of a vector, we can use the following syntax:
+#' Note: We use the `c()` function to create a vector of indices.
+#' 
+#' Exclude elements from a vector
+#' We can use negative indices to exclude elements from a vector.
+#' For example, to exclude the second element of a vector, we can use the following syntax:
 print(my_character_vector[-2])
 
-# That's it for vectors! Next, we will learn about lists in R.
+#' That's it for vectors! Next, we will learn about lists in R.

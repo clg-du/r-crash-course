@@ -56,7 +56,11 @@ plot(mtcars$hp, mtcars$mpg, xlab = "Horsepower", ylab = "Miles per Gallon", main
 # We can see that there is a negative relationship between the two variables, with higher horsepower values corresponding to lower miles per gallon values.
 # The help page for the plot() function provides more information about customizing plots and adding labels and titles.
 # It also informs us what the arguments are and how they can be used.
-?plot
+
+
+#?plot
+
+
 
 # We see that x and y are the variables to be plotted, xlab and ylab are the labels for the x and y axes, and main is the title of the plot.
 # Again, the help function is a valuable resource for learning more about functions and how to use them in R.
