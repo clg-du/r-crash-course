@@ -4,7 +4,6 @@
 #' date: "2024-08-23"
 #' ---
 #'
-#'
 #' Here we will learn the basics of the R programming language.
 #'
 #' ## Comments in R
