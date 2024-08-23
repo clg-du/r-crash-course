@@ -1,6 +1,6 @@
 ---
 title: "Lecture 1: Introduction to R"
-output: github_document
+output: rmarkdown::github_document
 date: "2024-08-23"
 ---
 
