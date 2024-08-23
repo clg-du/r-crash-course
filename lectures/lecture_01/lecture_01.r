@@ -19,30 +19,30 @@
 #' Adding an apostrophe after the `#` symbol creates a Roxygen comment.
 #' Roxygen comments are used to generate documentation for functions and packages.
 #' Roxygen comments are used to create documentation for R packages.
-#' It is also useful to write comments that can be used to generate markdown 
+#' It is also useful to write comments that can be used to generate markdown
 #' documentation, such as the one you are reading now.
 #'
 #' ## Our first `"Hello World!"` program in R
 #'
 #' This example is a simple R script that prints `"Hello, World!"` to the console.
-#' `print()` is a built-in function in R that prints the specified value to 
+#' `print()` is a built-in function in R that prints the specified value to
 #' the console.
-#' 
+#'
 #' R is case-sensitive, so `print` is not the same as `Print`.
 #'
 #' Print `"Hello, World!"` to the console
 print("Hello, World!")
 
 #' In R indentation is not required, but it is recommended for readability.
-#' In RStudio you can highlight code and use `Ctrl + Shift + A` to clean up the 
+#' In RStudio you can highlight code and use `Ctrl + Shift + A` to clean up the
 #' code and automatically indent it.
 
 #' ## Packages
 
-#' Packages in R are collections of functions and data sets developed 
-#' by the community. We can install and load packages in R using the 
+#' Packages in R are collections of functions and data sets developed
+#' by the community. We can install and load packages in R using the
 #' `install.packages()` and `library()` functions.
-#' 
+#'
 #' Install the "car" package
 #+ eval = FALSE
 install.packages("car")
@@ -52,7 +52,7 @@ library(car)
 
 #' The `car` package contains a dataset called `mtcars`.
 #' We can access this dataset using the `data()` function.
-#' 
+#'
 #' Load the `mtcars` dataset
 data(mtcars)
 
@@ -60,9 +60,9 @@ data(mtcars)
 head(mtcars)
 
 #' We can also use the `summary()` function to get a summary of the dataset.
-#' 
+#'
 #' Get a summary of the `mtcars` dataset
 summary(mtcars)
 
-#' That's it for this example! In the next lecture, we will learn more about objects, 
+#' That's it for this example! In the next lecture, we will learn more about objects,
 #' data types, and variables in R.

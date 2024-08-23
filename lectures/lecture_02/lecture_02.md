@@ -4,8 +4,8 @@
 
 In this lecture, we will learn about objects, data types, and variables in R.
 
-Objects are the basic building blocks of R, and they can store data, 
-functions, or other objects. R has several built-in data types, 
+Objects are the basic building blocks of R, and they can store data,
+functions, or other objects. R has several built-in data types,
 including numeric, character, logical, integer, and complex.
 
 Variables...

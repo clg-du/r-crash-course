@@ -3,7 +3,7 @@
 
 In this lecture, we will learn about arithmetic operations in R.
 
-R provides a wide range of operators for performing mathematical calculations 
+R provides a wide range of operators for performing mathematical calculations
 on numeric data.
 
 ## Arithmetic operators in R
@@ -71,7 +71,7 @@ Exponentiation
 
 
 ``` r
-result_exponentiation <- 5 ^ 3
+result_exponentiation <- 5^3
 print(result_exponentiation)
 ```
 
@@ -101,7 +101,7 @@ R follows the standard order of operations in mathematics:
 1. Addition `+` and Subtraction `-`
 
 We can use parentheses to change the order of operations.
-For example, to calculate `5 + 3 * 2`, we can use parentheses to ensure that 
+For example, to calculate `5 + 3 * 2`, we can use parentheses to ensure that
 the multiplication is performed first:
 
 
@@ -126,12 +126,12 @@ print(result_order_of_operations_parentheses)
 ## [1] 16
 ```
 
-R DOES NOT provides shorthand operators for performing arithmetic operations 
-and updating variables. In Python and other programming languages, shorthand 
-operators are used to perform an arithmetic operation and update a variable 
+R DOES NOT provides shorthand operators for performing arithmetic operations
+and updating variables. In Python and other programming languages, shorthand
+operators are used to perform an arithmetic operation and update a variable
 in a single step.
 
-Instead we need to use the following syntax in R to iterate a variable 
+Instead we need to use the following syntax in R to iterate a variable
 and update it:
 
 
@@ -145,11 +145,11 @@ print(x)
 ## [1] 6
 ```
 
-In this lecture, we learned about arithmetic operations in R, 
-including addition, subtraction, multiplication, division, exponentiation, 
+In this lecture, we learned about arithmetic operations in R,
+including addition, subtraction, multiplication, division, exponentiation,
 and modulo.
 
-We also learned about the order of operations in R and how to use parentheses 
+We also learned about the order of operations in R and how to use parentheses
 to change the order of operations.
 
 In the next lecture, we will learn about comparison and logical operators in R.

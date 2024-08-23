@@ -1,24 +1,23 @@
-
 #' # Lecture 4: Comparison and Logical Operators in R
 #'
 #' In this lecture, we will learn about comparison and logical operators in R.
-#' 
+#'
 #' Comparison operators are used to compare values and return logical values (`TRUE` or `FALSE`) based on the comparison.
 #' Logical operators are used to combine multiple logical values and return a single logical value.
-#' 
+#'
 #' ## Comparison Operators
-#' 
+#'
 #' Comparison operators are used to compare values and return logical values (`TRUE` or `FALSE`) based on the comparison.
-#' 
+#'
 #' The following comparison operators are commonly used in R:
-#' 
+#'
 #' - Equal to: `==`
 #' - Not equal to: `!=`
 #' - Greater than: `>`
 #' - Greater than or equal to: `>=`
 #' - Less than: `<`
 #' - Less than or equal to: `<=`
-#' 
+#'
 #' `TRUE` and `FALSE` are special values in R that represent logical values.
 #' `TRUE` is used to represent a logical value of `TRUE`, and `FALSE` is used to represent a logical value of `FALSE`.
 #' In R, `TRUE` and `FALSE` are predefined constants that are used to represent logical values.

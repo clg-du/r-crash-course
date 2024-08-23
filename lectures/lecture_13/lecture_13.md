@@ -99,7 +99,12 @@ summary(mtcars)
 # It is also possible to use the help function to get more information about the dataset (since it is a built-in dataset in R).
 
 # Help on the mtcars dataset
-help(mtcars)
+
+
+
+#help(mtcars)
+
+
 
 # This provides additional information about the dataset, including the source and description of the dataset.
 
