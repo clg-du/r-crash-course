@@ -1,6 +1,6 @@
 ---
 title: "Lecture 8: Data Frames in R"
-output: github_document
+output: rmarkdown::github_document
 date: "2024-08-23"
 ---
 
