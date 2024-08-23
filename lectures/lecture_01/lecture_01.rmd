@@ -1,13 +1,16 @@
 ---
-title: "Lecture 8: Data Frames in R"
-output: rmarkdown::github_document
+title: "Lecture 1: Introduction to R"
+output: github_document
 date: "2024-08-23"
 ---
 
-# Lecture 1: Introduction to R
+
 Here we will learn the basics of the R programming language.
-Comments in R
+
+## Comments in R
+
 Comments in R...
+
 ...are preceded by the "#" symbol.
 ...are used to explain the code and make it more readable.
 ...are ignored by the R interpreter.
@@ -15,7 +18,15 @@ Comments in R...
 ...can be used to temporarily disable a line of code.
 ...can be used to document the code.
 ...can be used to make the code more readable.
-Our first "Hello World!" program in R
+
+Adding an apostrophe after the "#" symbol creates a Roxygen comment.
+Roxygen comments are used to generate documentation for functions and packages.
+Roxygen comments are used to create documentation for R packages.
+It is also useful to write comments that can be used to generate markdown documentation,
+such as the one you are reading now.
+
+## Our first "Hello World!" program in R
+
 This example is a simple R script that prints "Hello, World!" to the console.
 print() is a built-in function in R that prints the specified value to the console.
 R is case-sensitive, so "print" is not the same as "Print".
@@ -27,12 +38,12 @@ print("Hello, World!")
 
 In R indentation is not required, but it is recommended for readability.
 In RStudio you can highlight code and use "Ctrl + Shift + A" to clean up the code and automatically indent it.
-Packages
+## Packages
 Packages in R are collections of functions and data sets developed by the community.
 We can install and load packages in R using the install.packages() and library() functions.
 Install the "car" package
 
-```{r}
+```{r eval = FALSE}
 install.packages("car")
 ```
 
