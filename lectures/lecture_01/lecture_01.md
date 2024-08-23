@@ -15,17 +15,17 @@ Comments in R...
 - can be used to document the code.
 - can be used to make the code more readable.
 
-Adding an apostrophe after the `#` symbol creates a Roxygen comment.
-Roxygen comments are used to generate documentation for functions and packages.
-Roxygen comments are used to create documentation for R packages.
-It is also useful to write comments that can be used to generate markdown
-documentation, such as the one you are reading now.
+Adding an apostrophe after the `#` symbol creates a Roxygen comment. Roxygen
+comments are used to generate documentation for functions and packages.
+Roxygen comments are used to create documentation for R packages. It is also
+useful to write comments that can be used to generate markdown documentation,
+such as the one you are reading now.
 
 ## Our first `"Hello World!"` program in R
 
-This example is a simple R script that prints `"Hello, World!"` to the console.
-`print()` is a built-in function in R that prints the specified value to
-the console.
+This example is a simple R script that prints `"Hello, World!"` to the
+console. `print()` is a built-in function in R that prints the specified
+value to the console.
 
 R is case-sensitive, so `print` is not the same as `Print`.
 
@@ -40,12 +40,12 @@ print("Hello, World!")
 ## [1] "Hello, World!"
 ```
 
-In R indentation is not required, but it is recommended for readability.
-In RStudio you can highlight code and use `Ctrl + Shift + A` to clean up the
+In R indentation is not required, but it is recommended for readability. In
+RStudio you can highlight code and use `Ctrl + Shift + A` to clean up the
 code and automatically indent it.
 ## Packages
-Packages in R are collections of functions and data sets developed
-by the community. We can install and load packages in R using the
+Packages in R are collections of functions and data sets developed by the
+community. We can install and load packages in R using the
 `install.packages()` and `library()` functions.
 
 Install the "car" package
@@ -62,8 +62,8 @@ Load the `car` package
 library(car)
 ```
 
-The `car` package contains a dataset called `mtcars`.
-We can access this dataset using the `data()` function.
+The `car` package contains a dataset called `mtcars`. We can access this
+dataset using the `data()` function.
 
 Load the `mtcars` dataset
 
@@ -122,5 +122,5 @@ summary(mtcars)
 ##  Max.   :1.0000   Max.   :5.000   Max.   :8.000
 ```
 
-That's it for this example! In the next lecture, we will learn more about objects,
-data types, and variables in R.
+That's it for this example! In the next lecture, we will learn more about
+objects, data types, and variables in R.
