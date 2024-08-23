@@ -1,4 +1,4 @@
-#' Lecture 7: Matrices in R
+#' # Lecture 7: Matrices in R
 #'
 #' In this lecture, we will learn about matrices in R.
 #'
