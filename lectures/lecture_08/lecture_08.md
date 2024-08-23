@@ -1,4 +1,4 @@
-Lecture 8: Data Frames in R
+# Lecture 8: Data Frames in R
 2024-08-23
 
 In this lecture, we will learn about data frames in R.
