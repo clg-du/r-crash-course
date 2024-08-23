@@ -5,20 +5,21 @@
 #'
 #' Factors are used to represent categorical data in R. They are an essential
 #' data structure for working with categorical variables. Factors are created
-#' using the "factor()" function in R.
+#' using the `factor()` function in R.
 #'
 #' Let's create a factor in R!
 #'
-#' Create a vector of categorical data We can use the c() function to create a
-#' vector of categorical data. For example, let's create a vector of fruit
-#' names.
+#' ## Creating a vector of categorical data
+#'
+#' We can use the `c()` function to create a vector of categorical data. For
+#' example, let's create a vector of fruit names.
 fruit_vector <- c("apple", "banana", "cherry", "apple", "banana", "cherry")
 
 #' Display the vector
 print(fruit_vector)
 
-#' Create a factor from the vector We can use the factor() function to convert a
-#' vector of categorical data into a factor. The factor() function takes the
+#' Create a factor from the vector We can use the `factor()` function to convert
+#' a vector of categorical data into a factor. The `factor()` function takes the
 #' vector of data as an argument.
 fruit_factor <- factor(fruit_vector)
 
@@ -34,9 +35,9 @@ print(fruit_factor)
 #' Let's explore factors further!
 #'
 #' Create a factor with specified levels We can specify the levels of a factor
-#' using the levels argument of the factor() function. This allows us to define
-#' the categories and order of the levels. Let's showcase this with a factor
-#' representing the size of T-shirts.
+#' using the levels argument of the `factor()` function. This allows us to
+#' define the categories and order of the levels. Let's showcase this with a
+#' factor representing the size of T-shirts.
 size_vector <- c("S", "M", "L", "M", "S", "XL", "L", "S", "M")
 
 #' Note that the levels, by default, are given by the order of appearance in the
@@ -50,11 +51,11 @@ print(size_factor)
 
 #' The levels of the factor are automatically determined based on the unique
 #' values in the data. In this case, the levels are "L", "M", "S", and "XL".
-#' This is the default behavior of the factor() function. However, we can
+#' This is the default behavior of the `factor()` function. However, we can
 #' specify the levels explicitly using the levels argument.
 #'
 #' Specify the levels of the factor We can specify the levels of a factor using
-#' the levels argument of the factor() function. This allows us to define the
+#' the levels argument of the `factor()` function. This allows us to define the
 #' categories and order of the levels. Let's create a factor with specified
 #' levels for the size of T-shirts.
 size_factor_specified <- factor(size_vector, levels = c("S", "M", "L", "XL"))
@@ -71,9 +72,9 @@ print(size_factor_specified)
 #' also useful for statistical modeling and visualization.
 #'
 #' Create an ordered factor We can create an ordered factor by setting the
-#' ordered argument to TRUE in the factor() function. This specifies that the
-#' levels have a natural order.
-
+#' ordered argument to `TRUE` in the `factor()` function. This specifies that
+#' the levels have a natural order.
+#'
 #' Let's create an ordered factor for the size of T-shirts.
 size_factor_ordered <- factor(size_vector,
                               levels = c("S", "M", "L", "XL"),
@@ -121,8 +122,8 @@ print(subset_size_factor)
 #' And failing to specify the order can lead to misleading visualizations. Let's
 #' create a bar plot of the T-shirt sizes to illustrate this point.
 #'
-#' Create a bar plot of the ordered factor We can use the barplot() function to
-#' create a bar plot of the ordered factor.
+#' Create a bar plot of the ordered factor We can use the `barplot()` function
+#' to create a bar plot of the ordered factor.
 barplot(
   table(size_factor_ordered),
   main = "T-Shirt Sizes",
