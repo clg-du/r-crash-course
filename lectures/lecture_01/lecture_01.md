@@ -1,6 +1,6 @@
 
 # Lecture 1: Introduction to R
-date: 2024-08-23
+2024-08-23
 
 Here we will learn the basics of the R programming language.
 
@@ -8,7 +8,7 @@ Here we will learn the basics of the R programming language.
 
 Comments in R...
 
-- are preceded by the "#" symbol.
+- are preceded by the `#` symbol.
 - are used to explain the code and make it more readable.
 - are ignored by the R interpreter.
 - can be on a line by themselves or at the end of a line of code.
@@ -16,18 +16,20 @@ Comments in R...
 - can be used to document the code.
 - can be used to make the code more readable.
 
-Adding an apostrophe after the "#" symbol creates a Roxygen comment.
+Adding an apostrophe after the `#` symbol creates a Roxygen comment.
 Roxygen comments are used to generate documentation for functions and packages.
 Roxygen comments are used to create documentation for R packages.
-It is also useful to write comments that can be used to generate markdown documentation,
-such as the one you are reading now.
+It is also useful to write comments that can be used to generate markdown 
+documentation, such as the one you are reading now.
 
-## Our first "Hello World!" program in R
+## Our first `"Hello World!"` program in R
 
-This example is a simple R script that prints "Hello, World!" to the console.
-print() is a built-in function in R that prints the specified value to the console.
-R is case-sensitive, so "print" is not the same as "Print".
-Print "Hello, World!" to the console
+This example is a simple R script that prints `"Hello, World!"` to the console.
+`print()` is a built-in function in R that prints the specified value to 
+the console.
+
+R is case-sensitive, so `print` is not the same as `Print`.
+Print `"Hello, World!"` to the console
 
 
 ``` r
@@ -39,30 +41,36 @@ print("Hello, World!")
 ```
 
 In R indentation is not required, but it is recommended for readability.
-In RStudio you can highlight code and use "Ctrl + Shift + A" to clean up the code and automatically indent it.
+In RStudio you can highlight code and use `Ctrl + Shift + A` to clean up the 
+code and automatically indent it.
 ## Packages
-Packages in R are collections of functions and data sets developed by the community.
-We can install and load packages in R using the install.packages() and library() functions.
+Packages in R are collections of functions and data sets developed 
+by the community. We can install and load packages in R using the 
+`install.packages()` and `library()` functions.
 Install the "car" package
-eval = FALSE
+
+
+``` r
 install.packages("car")
-Load the "car" package
+```
+
+Load the `car` package
 
 
 ``` r
 library(car)
 ```
 
-The "car" package contains a dataset called "mtcars".
-We can access this dataset using the data() function.
-Load the "mtcars" dataset
+The `car` package contains a dataset called `mtcars`.
+We can access this dataset using the `data()` function.
+Load the `mtcars` dataset
 
 
 ``` r
 data(mtcars)
 ```
 
-Display the first few rows of the "mtcars" dataset
+Display the first few rows of the `mtcars` dataset
 
 
 ``` r
@@ -79,8 +87,8 @@ head(mtcars)
 ## Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1
 ```
 
-We can also use the summary() function to get a summary of the dataset.
-Get a summary of the "mtcars" dataset
+We can also use the `summary()` function to get a summary of the dataset.
+Get a summary of the `mtcars` dataset
 
 
 ``` r
@@ -111,4 +119,5 @@ summary(mtcars)
 ##  Max.   :1.0000   Max.   :5.000   Max.   :8.000
 ```
 
-That's it for this example! In the next lecture, we will learn more about objects, data types, and variables in R.
+That's it for this example! In the next lecture, we will learn more about objects, 
+data types, and variables in R.
