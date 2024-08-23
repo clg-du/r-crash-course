@@ -1,6 +1,6 @@
 ---
 title: "Lecture 4: Comparison and Logical Operators in R"
-output: html_document
+output: github_document
 date: "2024-08-23"
 ---
 
