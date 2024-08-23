@@ -1,6 +1,7 @@
 #' ---
 #' title: "Lecture 1: Introduction to R"
-#' output: github_document
+#' output: 
+#'   github_document
 #' ---
 #'
 #' Here we will learn the basics of the R programming language.
