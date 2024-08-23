@@ -29,7 +29,7 @@
 #' the console.
 #' 
 #' R is case-sensitive, so `print` is not the same as `Print`.
-
+#'
 #' Print `"Hello, World!"` to the console
 print("Hello, World!")
 
@@ -42,7 +42,7 @@ print("Hello, World!")
 #' Packages in R are collections of functions and data sets developed 
 #' by the community. We can install and load packages in R using the 
 #' `install.packages()` and `library()` functions.
-
+#' 
 #' Install the "car" package
 #+ eval = FALSE
 install.packages("car")
@@ -52,7 +52,7 @@ library(car)
 
 #' The `car` package contains a dataset called `mtcars`.
 #' We can access this dataset using the `data()` function.
-
+#' 
 #' Load the `mtcars` dataset
 data(mtcars)
 
@@ -60,7 +60,7 @@ data(mtcars)
 head(mtcars)
 
 #' We can also use the `summary()` function to get a summary of the dataset.
-
+#' 
 #' Get a summary of the `mtcars` dataset
 summary(mtcars)
 

@@ -6,7 +6,7 @@
 r_files <- list.files("lectures", pattern = "\\.r$", full.names = TRUE, recursive = TRUE)
 
 # Create .Rmd files from .r files
-for (i in seq_along(r_files[1:3])) {
+for (i in seq_along(r_files)) {
   r_file <- r_files[i]
   rmd_file <- sub("\\.r$", ".Rmd", r_file)
   md_file <- sub("\\.r$", ".md", r_file)

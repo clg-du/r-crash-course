@@ -14,9 +14,9 @@
 #' - in R are case-sensitive, so `myVar` is not the same as `myvar`.
 #' - have names in R which can contain letters, numbers, underscores, and dots, but they cannot start with a number.
 #' - can be assigned to objects, data, functions, or other variables.
-
+#'
 #' Let's create some variables in R!
-
+#' 
 #' Create a numeric variable
 my_num <- 42
 
