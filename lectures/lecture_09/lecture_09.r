@@ -33,10 +33,7 @@ result_addition <- add_numbers(5, 3)
 # Display the result
 print(result_addition)
 
-# The function add_numbers() is defined using the function() keyword.
-# It takes two arguments, a and b, and returns their sum.
 # The return() statement is used to return the result of the addition.
-# We call the function with arguments 5 and 3, and store the result in the variable result_addition.
 # This is a simple example of a user-defined function in R.
 
 # Beyond user-defined functions, R provides a wide range of built-in functions that perform various tasks.
@@ -118,7 +115,7 @@ print(result_area)
 
 # The calculate_area() function is defined with named arguments length and width.
 # This allows the arguments to be passed in any order by specifying the argument name.
-# We resversed the order of the arguments when calling the function, and it still works as expected.
+# We reversed the order of the arguments when calling the function, and it still works as expected.
 
 # If we already know the order of the arguments, we can still call the function without specifying the argument names.
 
