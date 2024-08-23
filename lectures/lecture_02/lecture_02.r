@@ -1,4 +1,3 @@
-#'
 #' # Lecture 2: Objects, Data Types, and Variables in R
 #' `r Sys.Date()`
 #'
