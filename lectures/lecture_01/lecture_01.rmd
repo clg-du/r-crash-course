@@ -3,7 +3,8 @@ title: "Lecture 8: Data Frames in R"
 output: rmarkdown::github_document
 date: "2024-08-23"
 ---
-Lecture 1: Introduction to R
+
+# Lecture 1: Introduction to R
 Here we will learn the basics of the R programming language.
 Comments in R
 Comments in R...
