@@ -54,10 +54,23 @@ print(result_sum)
 
 # But it is impossible to know what every function does just by looking at its name, right?
 # That's where the help() function comes in handy!
-help(sum)
+
+
+
+#help(sum)
+
+
+
 
 # It can also be called with a question mark
-?sum
+
+
+
+
+#?sum
+
+
+
 
 # The help() function provides information about a specific function in R.
 # We call the help() function with the sum() function as an argument to get information about the sum() function.
