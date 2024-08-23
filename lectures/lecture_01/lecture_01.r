@@ -1,6 +1,6 @@
 #'
 #' # Lecture 1: Introduction to R
-#' # date: `r Sys.Date()`
+#' date: `r Sys.Date()`
 #'
 #' Here we will learn the basics of the R programming language.
 #'
