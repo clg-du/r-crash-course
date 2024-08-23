@@ -1,4 +1,5 @@
 # Lecture 7: Matrices in R
+2024-08-23
 
 In this lecture, we will learn about matrices in R.
 

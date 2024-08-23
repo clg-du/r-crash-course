@@ -1,4 +1,5 @@
 # Lecture 7: Matrices in R
+`r Sys.Date()`
 
 In this lecture, we will learn about matrices in R.
 

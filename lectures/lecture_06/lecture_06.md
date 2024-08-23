@@ -1,4 +1,5 @@
 # Lecture 6: List in R
+2024-08-23
 
 In this lecture, we will learn about lists in R.
 

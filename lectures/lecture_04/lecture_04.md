@@ -1,4 +1,5 @@
 # Lecture 4: Comparison and Logical Operators in R
+2024-08-23
 
 In this lecture, we will learn about comparison and logical operators in R.
 

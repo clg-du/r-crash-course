@@ -1,4 +1,3 @@
-
 # Lecture 2: Objects, Data Types, and Variables in R
 2024-08-23
 
