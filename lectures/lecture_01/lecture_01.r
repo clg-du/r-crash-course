@@ -3,7 +3,7 @@
 #' output: rmarkdown::github_document
 #' date: "2024-08-23"
 #' ---
-#'
+
 #' Here we will learn the basics of the R programming language.
 #'
 #' ## Comments in R
@@ -42,8 +42,8 @@ print("Hello, World!")
 #' We can install and load packages in R using the install.packages() and library() functions.
 
 #' Install the "car" package
-#+ eval = FALSE
-install.packages("car")
+#' eval = FALSE
+#' install.packages("car")
 
 #' Load the "car" package
 library(car)
