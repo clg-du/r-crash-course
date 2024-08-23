@@ -1,5 +1,5 @@
 ---
-title: "Lecture 3: Vectors in R"
+title: "Lecture 5: Vectors in R"
 output: github_document
 date: "2024-08-22"
 ---

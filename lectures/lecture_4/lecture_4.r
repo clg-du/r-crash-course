@@ -1,64 +1,84 @@
 
-# Lecture 4: List in R
+# Lecture 4: Comparison and Logical Operators in R
 
-# In this lecture, we will learn about lists in R.
+# In this lecture, we will learn about comparison and logical operators in R.
+# Comparison operators are used to compare values and return logical values (TRUE or FALSE) based on the comparison.
+# Logical operators are used to combine multiple logical values and return a single logical value.
 
-# Lists are another essential data structure in R that can store multiple objects of different types.
-# Unlike vectors, lists can store objects of different lengths and types in a single container.
-# This makes lists a versatile and powerful data structure in R.
+# Comparison Operators
 
-# Lists are created using the "list()" function, which takes an arbitrary number of arguments.
-# Each argument passed to the "list()" function becomes an element of the list.
+# Comparison operators are used to compare values and return logical values (TRUE or FALSE) based on the comparison.
+# The following comparison operators are commonly used in R:
+# - Equal to: ==
+# - Not equal to: !=
+# - Greater than: >
+# - Greater than or equal to: >=
+# - Less than: <
+# - Less than or equal to: <=
 
-# Let's create a list in R!
+# TRUE and FALSE are special values in R that represent logical values.
+# TRUE is used to represent a logical value of TRUE, and FALSE is used to represent a logical value of FALSE.
+# In R, TRUE and FALSE are predefined constants that are used to represent logical values.
+# We can also use T and F as shorthand for TRUE and FALSE.
+print(TRUE)
+print(FALSE)
+print(T)
+print(F)
 
-# Create a list with multiple elements of different types
-my_list <- list(42, "Hello, World!", TRUE, 42L, 3 + 4i)
+# Extra: If one sets T <- FALSE, or vice versa, the logical values will be updated for the these variables!
+#        Do not do this in practice, as it can lead to confusion...
+#        And do not be mean to other programmers! ;)
 
-# Note that the elements of the list can be of different types and lengths!
-# The list "my_list" contains a numeric value, a character string, a logical value, an integer value, and a complex number.
-# This is something that vectors cannot do, as they require all elements to be of the same type.
+# Let's perform some comparison operations in R!
 
-# Display the list
-print(my_list)
+# Equal to (==)
+result_equal_to <- 5 == 3
+print(result_equal_to)
 
-# Notice how the list is displayed with each element on a separate line.
-# The elements are labeled with their index in the list (starting from 1).
-# The type of each element is also displayed.
-# This makes it easy to see the contents of the list and the types of the elements.
+# Not equal to (!=)
+result_not_equal_to <- 5 != 3
+print(result_not_equal_to)
 
-# Accessing elements of a list
+# Greater than (>)
+result_greater_than <- 5 > 3
+print(result_greater_than)
 
-# Elements of a list can be accessed using double square brackets "[[]]" or the dollar sign "$".
-# The double square brackets "[[]]" are used to extract a single element by its index.
-# The dollar sign "$" is used to extract an element by its name.
+# Greater than or equal to (>=)
+result_greater_than_or_equal_to <- 5 >= 3
+print(result_greater_than_or_equal_to)
 
-# Access the first element of the list using double square brackets "[[]]"
-print(my_list[[1]])
+# Less than (<)
+result_less_than <- 5 < 3
+print(result_less_than)
 
-# Access the second element of the list using the dollar sign "$"
-# Note: The dollar sign "$" can only be used with named elements.
-# If the elements are not named, you must use double square brackets "[[]]" to access them.
-# Let's name the elements of the list to demonstrate this.
-names(my_list) <- c("element_1", "element_2", "element_3", "element_4", "element_5")
-print(my_list$element_2)
+# Less than or equal to (<=)
+result_less_than_or_equal_to <- 5 <= 3
+print(result_less_than_or_equal_to)
 
-# Adding elements to a list
+# Logical Operators
 
-# Elements can be added to a list using the double square brackets "[[]]" or the dollar sign "$".
-# To add an element to a list, you need to assign a value to a new index or name.
+# Logical operators are used to combine multiple logical values and return a single logical value.
+# The following logical operators are commonly used in R:
+# - AND: & (both conditions must be TRUE)
+# - OR: | (at least one condition must be TRUE)
+# - NOT: ! (negates the logical value)
 
-# Add a new element to the list using double square brackets "[[]]"
-my_list[[6]] <- "New Element"
-print(my_list)
+# Let's perform some logical operations in R!
 
-# Add a new element to the list using the dollar sign "$"
-my_list$new_element <- "Another New Element"
-print(my_list)
+# AND (&)
+result_and <- TRUE & FALSE
+print(result_and)
 
-# Notice now how we mixed the use of double square brackets "[[]]" and the dollar sign "$" to add elements to the list.
-# Both methods work, but the dollar sign "$" is more convenient when working with named elements.
-# However, the double square brackets "[[]]" are more flexible and can be used with both named and unnamed elements.
-# When working with data.frames, the dollar sign "$" is the preferred method for accessing columns.
+# OR (|)
+result_or <- TRUE | FALSE
+print(result_or)
 
-# That's it for this example! In the next lecture, we will learn about matrices in R.
+# NOT (!)
+result_not <- !TRUE
+print(result_not)
+
+# In this lecture, we learned about comparison and logical operators in R,
+# including equal to, not equal to, greater than, greater than or equal to, less than, less than or equal to,
+# AND, OR, and NOT.
+
+# In the next lecture, we will learn about vectors in R.

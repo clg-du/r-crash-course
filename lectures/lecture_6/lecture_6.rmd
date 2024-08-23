@@ -1,5 +1,5 @@
 ---
-title: "Lecture 4: List in R"
+title: "Lecture 6: List in R"
 output: github_document
 date: "2024-08-22"
 ---

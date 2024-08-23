@@ -1,61 +1,72 @@
 
-# Lecture 3: Vectors in R
+# Lecture 3: Arithmetic Operations in R
 
-# In this lecture, we will learn about vectors in R.
-# These are essential data structures in R that allow us to store and manipulate data efficiently.
+# In this lecture, we will learn about arithmetic operations in R.
+# R provides a wide range of operators for performing mathematical calculations on numeric data.
 
-# Later in this course, we will also cover list, matrices and data frames, which are more complex data structures in R.
-# It is important, however, to understand vectors before moving on to these more advanced topics.
+# Arithmetic operators in R
+# R supports the following arithmetic operators:
+# - Addition: +
+# - Subtraction: -
+# - Multiplication: *
+# - Division: /
+# - Exponentiation: ^
+# - Modulo: %% (returns the remainder of a division)
 
-# Vectors...
-# ...are one-dimensional arrays in R that can store numeric, character, or logical values.
-# ...can be created using the c() function, which stands for "combine" or "concatenate".
-# ...can be indexed using square brackets [].
-# ...can be of different lengths and types.
-# ...can be used in mathematical operations and functions.
+# Let's perform some arithmetic operations in R!
 
-# Let's create some vectors in R!
+# Addition
+result_addition <- 5 + 3
+print(result_addition)
 
-# Create a numeric vector
-my_numeric_vector <- c(1, 2, 3, 4, 5)
+# Subtraction
+result_subtraction <- 5 - 3
+print(result_subtraction)
 
-# Create a character vector
-my_character_vector <- c("apple", "banana", "cherry", "date", "elderberry")
+# Multiplication
+result_multiplication <- 5 * 3
 
-# Create a logical vector
-my_logical_vector <- c(TRUE, FALSE, TRUE, FALSE, TRUE)
+# Division
+result_division <- 5 / 3
 
-# Display the values of the vectors
-print(my_numeric_vector)
-print(my_character_vector)
-print(my_logical_vector)
+# Exponentiation
+result_exponentiation <- 5 ^ 3
 
-# Indexing vectors in R
+# Modulo
+result_modulo <- 5 %% 3
 
-# We can access individual elements of a vector using square brackets [].
-# The index of the element we want to access goes inside the square brackets.
+# Display the results
+print(result_multiplication)
+print(result_division)
+print(result_exponentiation)
+print(result_modulo)
 
-# Indexing in R starts at 1, not 0 like in some other programming languages (e.g., Python).
-# We can also use negative indices to exclude elements from the vector.
+# Order of operations
+# R follows the standard order of operations in mathematics:
+# - Parentheses ()
+# - Exponentiation ^
+# - Multiplication * and Division /
+# - Addition + and Subtraction -
 
-# Access the first element of the numeric vector
-print(my_numeric_vector[1])
+# We can use parentheses to change the order of operations.
+# For example, to calculate 5 + 3 * 2, we can use parentheses to ensure that the multiplication is performed first:
+result_order_of_operations <- 5 + 3 * 2
+print(result_order_of_operations)
 
-# Access the second element of the character vector
-print(my_character_vector[2])
+# Using parentheses to change the order of operations
+result_order_of_operations_parentheses <- (5 + 3) * 2
+print(result_order_of_operations_parentheses)
 
-# Access the last element of the logical vector
-print(my_logical_vector[length(my_logical_vector)])
+# R DOES NOT provides shorthand operators for performing arithmetic operations and updating variables.
+# In Python and other programming languages, shorthand operators are used to perform an arithmetic operation 
+# and update a variable in a single step.
+# Instead we need to use the following syntax in R to iterate a variable and update it:
+x <- 5
+x <- x + 1
+print(x)
 
-# Access multiple elements of a vector
-# We can use a vector of indices inside the square brackets to access multiple elements at once.
-# For example, to access the first, third, and fifth elements of a vector, we can use the following syntax:
-# Note: We use the c() function to create a vector of indices.
-print(my_numeric_vector[c(1, 3, 5)])
+# In this lecture, we learned about arithmetic operations in R, 
+# including addition, subtraction, multiplication, division, exponentiation, and modulo.
+# We also learned about the order of operations in R and how to use parentheses to change the order of operations.
 
-# Exclude elements from a vector
-# We can use negative indices to exclude elements from a vector.
-# For example, to exclude the second element of a vector, we can use the following syntax:
-print(my_character_vector[-2])
-
-# That's it for vectors! Next, we will learn about lists in R.
+# In the next lecture, we will learn about comparison and logical operators in R.
