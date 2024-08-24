@@ -151,9 +151,8 @@ print(result)
 ```
 
 ```
-## [1] "less than or equal to 3" "less than or equal to 3"
-## [3] "less than or equal to 3" "greater than 3"         
-## [5] "greater than 3"
+## [1] "less than or equal to 3" "less than or equal to 3" "less than or equal to 3"
+## [4] "greater than 3"          "greater than 3"
 ```
 
 Finally, there is a shorthand version of the if-else statement called the
@@ -200,9 +199,8 @@ print(result)
 ```
 
 ```
-## [1] "less than or equal to 3" "less than or equal to 3"
-## [3] "less than or equal to 3" "greater than 3"         
-## [5] "greater than 3"
+## [1] "less than or equal to 3" "less than or equal to 3" "less than or equal to 3"
+## [4] "greater than 3"          "greater than 3"
 ```
 
 In this example, we define a variable `z` with the value `7`. We use the
