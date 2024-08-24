@@ -1,6 +1,5 @@
 # Exercise 1 Solutions: Introduction to R
 2024-08-24
-
 ## Task 1: Print Your Name
 
 
