@@ -26,7 +26,7 @@ your preferred IDE or text editor.
 The following topics are covered in this crash course:
 
 1. [Introduction to R](/lectures/lecture_01/lecture_01.md)
-2. Objects, Data Types, and Variables in R
+2. [Objects, Data Types, and Variables in R](/lectures/lecture_02/lecture_02.md)
 
 ## Contributing
 
