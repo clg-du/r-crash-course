@@ -37,4 +37,5 @@ Your code here:
 Print the values of all the variables created above.
 
 Your code here:
+
 That's it for Exercise 2! Well done!

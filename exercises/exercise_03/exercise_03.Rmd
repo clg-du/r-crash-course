@@ -43,4 +43,5 @@ assign the results to variables:
    `order_of_operations_parentheses_result`.
 
 Your code here:
+
 That's it for Exercise 3! Great job!

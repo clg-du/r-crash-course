@@ -32,4 +32,5 @@ Your code here:
 Summarize the `mpg` dataset.
 
 Your code here:
+
 That's it for Exercise 1! Great job!
