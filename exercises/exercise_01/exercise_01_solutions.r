@@ -12,14 +12,18 @@ install.packages("tidyverse")
 #+ eval=FALSE
 library(tidyverse)
 
-#' ## Task 4: Load a Dataset
+#' ## Task 4: Learn More About a Package
+#+ eval=FALSE
+help(tidyverse)
+
+#' ## Task 5: Load a Dataset
 #+ eval=FALSE
 data(mpg, package = "ggplot2")
 
-#' ## Task 5: View the Dataset
+#' ## Task 6: View the Dataset
 #+ eval=FALSE
 View(mpg)
 
-#' ## Task 6: Summarize the Dataset
+#' ## Task 7: Summarize the Dataset
 #+ eval=FALSE
 summary(mpg)

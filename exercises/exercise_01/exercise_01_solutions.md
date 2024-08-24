@@ -8,6 +8,10 @@
 print("Your Name")
 ```
 
+```
+## [1] "Your Name"
+```
+
 ## Task 2: Install a Package
 
 
@@ -22,21 +26,28 @@ install.packages("tidyverse")
 library(tidyverse)
 ```
 
-## Task 4: Load a Dataset
+## Task 4: Learn More About a Package
+
+
+``` r
+help(tidyverse)
+```
+
+## Task 5: Load a Dataset
 
 
 ``` r
 data(mpg, package = "ggplot2")
 ```
 
-## Task 5: View the Dataset
+## Task 6: View the Dataset
 
 
 ``` r
 View(mpg)
 ```
 
-## Task 6: Summarize the Dataset
+## Task 7: Summarize the Dataset
 
 
 ``` r

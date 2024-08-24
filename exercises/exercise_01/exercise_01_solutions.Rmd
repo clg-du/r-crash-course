@@ -3,7 +3,7 @@
 
 ## Task 1: Print Your Name
 
-```{r eval=FALSE}
+```{r}
 print("Your Name")
 ```
 
@@ -19,19 +19,25 @@ install.packages("tidyverse")
 library(tidyverse)
 ```
 
-## Task 4: Load a Dataset
+## Task 4: Learn More About a Package
+
+```{r eval=FALSE}
+help(tidyverse)
+```
+
+## Task 5: Load a Dataset
 
 ```{r eval=FALSE}
 data(mpg, package = "ggplot2")
 ```
 
-## Task 5: View the Dataset
+## Task 6: View the Dataset
 
 ```{r eval=FALSE}
 View(mpg)
 ```
 
-## Task 6: Summarize the Dataset
+## Task 7: Summarize the Dataset
 
 ```{r eval=FALSE}
 summary(mpg)
