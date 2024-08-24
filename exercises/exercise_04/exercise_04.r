@@ -1,4 +1,4 @@
-#' # Exercise 3: Comparison and Logical Operators in R
+#' # Exercise 4: Comparison and Logical Operators in R
 #' `r Sys.Date()`
 #'
 #'
