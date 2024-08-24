@@ -1,5 +1,5 @@
 # Lecture 1: Introduction to R
-2024-08-23
+2024-08-24
 
 Here we will learn the basics of the R programming language.
 

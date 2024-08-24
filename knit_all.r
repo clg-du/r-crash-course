@@ -40,10 +40,10 @@ r_files <- list.files("lectures",
 #' Example usage: r_files <- c("script1.r", "script2.r", "script3.r")
 #' knit_all(r_files)
 for (i in seq_along(r_files)) {
-  knitr::opts_chunk$set(fig.path = "figures/")
   r_file <- r_files[i]
   rmd_file <- sub("\\.r$", ".Rmd", r_file)
   md_file <- sub("\\.r$", ".md", r_file)
   knitr::spin(r_file, knit = FALSE)
+  knitr::opts_chunk$set(fig.path = paste0(dirname(r_file),"/figures/"))
   knitr::knit(rmd_file, output = md_file)
 }

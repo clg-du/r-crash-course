@@ -1,5 +1,5 @@
 # Lecture 11: Factors in R
-2024-08-23
+2024-08-24
 
 In this lecture, we will learn about factors in R.
 
@@ -241,7 +241,7 @@ barplot(
 )
 ```
 
-![plot of chunk unnamed-chunk-18](figures/unnamed-chunk-18-1.png)
+![plot of chunk unnamed-chunk-18](lectures/lecture_11/figures/unnamed-chunk-18-1.png)
 
 Here is an example what the bar plot would look like if the factor was not
 ordered. Let's create a bar plot of the factor without specifying the order.
@@ -256,7 +256,7 @@ barplot(table(size_factor),
         ylab = "Frequency")
 ```
 
-![plot of chunk unnamed-chunk-19](figures/unnamed-chunk-19-1.png)
+![plot of chunk unnamed-chunk-19](lectures/lecture_11/figures/unnamed-chunk-19-1.png)
 
 The bar plot without the order specified does not reflect the natural order
 of the sizes. This can lead to misleading visualizations and
