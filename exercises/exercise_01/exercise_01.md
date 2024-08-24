@@ -1,5 +1,5 @@
 # Exercise 1: Introduction to R
-r Sys.Date()
+2024-08-24
 
 
 ## Task 1: Print Your Name

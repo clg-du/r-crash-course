@@ -62,10 +62,6 @@ Load the `car` package
 library(car)
 ```
 
-```
-## Loading required package: carData
-```
-
 The `car` package contains a dataset called `mtcars`. We can access this
 dataset using the `data()` function.
 
