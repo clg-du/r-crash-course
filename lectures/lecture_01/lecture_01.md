@@ -1,6 +1,20 @@
 # Lecture 1: Introduction to R
 2024-08-24
-source(index_lectures.r)
+
+
+``` r
+source("index_lectures.r")
+```
+
+```
+## Warning in file(filename, "r", encoding = encoding): cannot open file
+## 'index_lectures.r': No such file or directory
+```
+
+```
+## Error in file(filename, "r", encoding = encoding): cannot open the connection
+```
+
 
 
 [Introduction to R](/lectures/lecture_01/lecture_01.md) [Objects, Data Types,
