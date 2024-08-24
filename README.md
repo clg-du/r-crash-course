@@ -23,9 +23,10 @@ To get started with the crash course, simply clone this repository to your local
 machine and open the R scripts, R markdown, or regular markdown documents in
 your preferred IDE or text editor.
 
-The following topics are covered in this crash course:
+Check the following dropdown menus for content shortcuts:
 
-<details><summary>Does work</summary>
+<details>
+    <summary>Lectures</summary>
 
 1. [Introduction to R](/lectures/lecture_01/lecture_01.md)
 2. [Objects, Data Types, and Variables in R](/lectures/lecture_02/lecture_02.md)
