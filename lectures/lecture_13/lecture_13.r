@@ -130,7 +130,7 @@ heatmap(
   margins = c(10, 10)
 )
 legend(
-  "bottomright",
+  "right",
   legend = c(
     "Strong Negative Correlation",
     "Weak Negative Correlation",
