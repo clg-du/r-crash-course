@@ -1,6 +1,9 @@
 # Lecture 1: Introduction to R
 2024-08-24
 
+[Introduction to R](/lectures/lecture_01/lecture_01.md) [Objects, Data Types,
+and Variables in R](/lectures/lecture_02/lecture_02.md)
+
 Here we will learn the basics of the R programming language.
 
 ## Comments in R
