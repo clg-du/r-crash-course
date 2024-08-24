@@ -1,5 +1,7 @@
 #' # Lecture 1: Introduction to R
 #' `r Sys.Date()`
+#' source(index_lectures.r)
+#' 
 #'
 #' [Introduction to R](/lectures/lecture_01/lecture_01.md) [Objects, Data Types,
 #' and Variables in R](/lectures/lecture_02/lecture_02.md)

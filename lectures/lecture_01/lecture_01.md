@@ -1,5 +1,7 @@
 # Lecture 1: Introduction to R
 2024-08-24
+source(index_lectures.r)
+
 
 [Introduction to R](/lectures/lecture_01/lecture_01.md) [Objects, Data Types,
 and Variables in R](/lectures/lecture_02/lecture_02.md)
@@ -63,10 +65,6 @@ Load the `car` package
 
 ``` r
 library(car)
-```
-
-```
-## Loading required package: carData
 ```
 
 The `car` package contains a dataset called `mtcars`. We can access this
