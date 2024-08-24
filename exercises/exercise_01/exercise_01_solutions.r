@@ -2,7 +2,6 @@
 #' `r Sys.Date()`
 #'
 #' ## Task 1: Print Your Name
-#+ eval=FALSE
 print("Your Name")
 
 #' ## Task 2: Install a Package
