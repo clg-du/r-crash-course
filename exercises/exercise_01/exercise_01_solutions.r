@@ -1,6 +1,6 @@
 #' # Exercise 1 Solutions: Introduction to R
 #' `r Sys.Date()`
-#'
+
 #' ## Task 1: Print Your Name
 print("Your Name")
 
