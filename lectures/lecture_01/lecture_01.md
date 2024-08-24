@@ -3,12 +3,12 @@
 
 
 ``` r
-source("index_lectures.r")
+source("/index_lectures.r")
 ```
 
 ```
 ## Warning in file(filename, "r", encoding = encoding): cannot open file
-## 'index_lectures.r': No such file or directory
+## '/index_lectures.r': No such file or directory
 ```
 
 ```
