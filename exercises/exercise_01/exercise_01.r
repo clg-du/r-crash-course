@@ -1,5 +1,5 @@
 #' # Exercise 1: Introduction to R
-#' r Sys.Date()
+#' `r Sys.Date()`
 #'
 #'
 #' ## Task 1: Print Your Name
