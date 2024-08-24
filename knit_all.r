@@ -20,10 +20,19 @@
 #'
 #' Returns: A character vector containing the full file paths of the R files
 #' found in the specified directory and its subdirectories.
-r_files <- list.files("lectures",
-  pattern = "\\.r$",
-  full.names = TRUE,
-  recursive = TRUE
+r_files <-
+  list.files("lectures",
+    pattern = "\\.r$",
+    full.names = TRUE,
+    recursive = TRUE
+  )
+r_files <- c(
+  r_files,
+  list.files("exercises",
+    pattern = "\\.r$",
+    full.names = TRUE,
+    recursive = TRUE
+  )
 )
 
 #' Create .Rmd files from .r files
@@ -44,6 +53,6 @@ for (i in seq_along(r_files)) {
   rmd_file <- sub("\\.r$", ".Rmd", r_file)
   md_file <- sub("\\.r$", ".md", r_file)
   knitr::spin(r_file, knit = FALSE)
-  knitr::opts_chunk$set(fig.path = paste0("/", dirname(r_file),"/figures/"))
+  knitr::opts_chunk$set(fig.path = paste0("/", dirname(r_file), "/figures/"))
   knitr::knit(rmd_file, output = md_file)
 }
