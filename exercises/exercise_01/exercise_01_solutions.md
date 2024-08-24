@@ -36,7 +36,7 @@ data(mpg, package = "ggplot2")
 View(mpg)
 ```
 
-Task 6: Summarize the Dataset
+## Task 6: Summarize the Dataset
 
 
 ``` r

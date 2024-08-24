@@ -21,6 +21,6 @@ data(mpg, package = "ggplot2")
 #+ eval=FALSE
 View(mpg)
 
-#' Task 6: Summarize the Dataset
+#' ## Task 6: Summarize the Dataset
 #+ eval=FALSE
 summary(mpg)
