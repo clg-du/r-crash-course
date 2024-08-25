@@ -2,8 +2,7 @@
 `r Sys.Date()`
 
 ```{r}
-getwd()
-# source("/index_lectures.r")
+source("../../index_lectures.r")
 ```
 
 

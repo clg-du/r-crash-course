@@ -3,15 +3,7 @@
 
 
 ``` r
-getwd()
-```
-
-```
-## [1] "C:/Users/clg/Projects/r-crash-course/lectures/lecture_01"
-```
-
-``` r
-# source("/index_lectures.r")
+source("../../index_lectures.r")
 ```
 
 
