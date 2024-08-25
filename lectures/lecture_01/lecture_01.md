@@ -3,16 +3,15 @@
 
 
 ``` r
-source("/index_lectures.r")
+getwd()
 ```
 
 ```
-## Warning in file(filename, "r", encoding = encoding): cannot open file
-## '/index_lectures.r': No such file or directory
+## [1] "C:/Users/clg/Projects/r-crash-course/lectures/lecture_01"
 ```
 
-```
-## Error in file(filename, "r", encoding = encoding): cannot open the connection
+``` r
+# source("/index_lectures.r")
 ```
 
 
