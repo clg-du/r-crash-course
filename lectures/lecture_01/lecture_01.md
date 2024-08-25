@@ -3,7 +3,16 @@
 
 
 ``` r
-source("../../index_lectures.r")
+readLines("../../index_lectures.r")
+```
+
+```
+## Warning in file(con, "r"): cannot open file '../../index_lectures.r': No such
+## file or directory
+```
+
+```
+## Error in file(con, "r"): cannot open the connection
 ```
 
 

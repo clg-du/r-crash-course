@@ -1,6 +1,6 @@
 #' # Lecture 1: Introduction to R
 #' `r Sys.Date()`
-source("../../index_lectures.r")
+readLines("../../index_lectures.r")
 #'
 #'
 #' [Introduction to R](/lectures/lecture_01/lecture_01.md) [Objects, Data Types,
