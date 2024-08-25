@@ -51,5 +51,6 @@ print(my_complex)
 #' That's it for this example! In the next lecture, we will learn about
 #' arithmetic operations in R.
 #' 
+#+ echo = FALSE
 htmltools::includeHTML("../../index_lectures.html")
 htmltools::includeHTML("../../index_exercises.html")

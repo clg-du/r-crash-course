@@ -76,5 +76,6 @@ print(area_result)
 
 #' That's it for Exercise 9! Great job!
 #' 
+#+ echo = FALSE
 htmltools::includeHTML("../../index_lectures.html")
 htmltools::includeHTML("../../index_exercises.html")

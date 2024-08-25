@@ -291,11 +291,6 @@ if (y < 10) {
 That's it for Exercise 12! Well done!
 
 
-
-``` r
-htmltools::includeHTML("../../index_lectures.html")
-```
-
 <!--html_preserve--><details>
   <summary>Lecture index</summary>
 
@@ -313,13 +308,7 @@ htmltools::includeHTML("../../index_lectures.html")
 - [Lecture 12: Control Structures in R](/lectures/lecture_12/lecture_12.md)
 - [Lecture 13: A real-world example of using R for data analysis](/lectures/lecture_13/lecture_13.md)
 
-</details><!--/html_preserve-->
-
-``` r
-htmltools::includeHTML("../../index_exercises.html")
-```
-
-<!--html_preserve--><details>
+</details><!--/html_preserve--><!--html_preserve--><details>
   <summary>Exercise index</summary>
 
   - [Exercise 1: Introduction to R](/exercises/exercise_01/exercise_01.md)

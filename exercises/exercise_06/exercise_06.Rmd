@@ -46,7 +46,7 @@ Your code here:
 That's it for Exercise 6! Well done!
 
 
-```{r}
+```{r echo = FALSE}
 htmltools::includeHTML("../../index_lectures.html")
 htmltools::includeHTML("../../index_exercises.html")
 ```

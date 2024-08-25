@@ -79,5 +79,6 @@ print(cumulative_frequency)
 
 #' That's it for Exercise 11! Great job!
 #' 
+#+ echo = FALSE
 htmltools::includeHTML("../../index_lectures.html")
 htmltools::includeHTML("../../index_exercises.html")

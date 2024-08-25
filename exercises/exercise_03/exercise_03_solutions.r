@@ -68,5 +68,6 @@ order_of_operations_parentheses_result <- (5 + 3) * 2
 
 #' That's it for Exercise 3! Great job!
 #' 
+#+ echo = FALSE
 htmltools::includeHTML("../../index_lectures.html")
 htmltools::includeHTML("../../index_exercises.html")

@@ -92,5 +92,6 @@ print(result_not)
 #'
 #' In the next lecture, we will learn about vectors in R.
 #' 
+#+ echo = FALSE
 htmltools::includeHTML("../../index_lectures.html")
 htmltools::includeHTML("../../index_exercises.html")

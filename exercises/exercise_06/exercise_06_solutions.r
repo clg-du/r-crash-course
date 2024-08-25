@@ -64,5 +64,6 @@ print(modified_list)
 
 #' That's it for Exercise 6! Well done!
 #' 
+#+ echo = FALSE
 htmltools::includeHTML("../../index_lectures.html")
 htmltools::includeHTML("../../index_exercises.html")

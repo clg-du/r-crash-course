@@ -197,5 +197,6 @@ print(result_circle$circumference)
 #'
 #' In the next lecture, we will learn about indexing using logical vectors in R.
 #' 
+#+ echo = FALSE
 htmltools::includeHTML("../../index_lectures.html")
 htmltools::includeHTML("../../index_exercises.html")

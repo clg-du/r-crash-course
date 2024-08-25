@@ -72,5 +72,6 @@ print(my_character_vector[-2])
 
 #' That's it for vectors! Next, we will learn about lists in R.
 #' 
+#+ echo = FALSE
 htmltools::includeHTML("../../index_lectures.html")
 htmltools::includeHTML("../../index_exercises.html")

@@ -321,11 +321,6 @@ That's it for this lecture! In the next lecture, we will learn about control
 structures in R.
 
 
-
-``` r
-htmltools::includeHTML("../../index_lectures.html")
-```
-
 <!--html_preserve--><details>
   <summary>Lecture index</summary>
 
@@ -343,13 +338,7 @@ htmltools::includeHTML("../../index_lectures.html")
 - [Lecture 12: Control Structures in R](/lectures/lecture_12/lecture_12.md)
 - [Lecture 13: A real-world example of using R for data analysis](/lectures/lecture_13/lecture_13.md)
 
-</details><!--/html_preserve-->
-
-``` r
-htmltools::includeHTML("../../index_exercises.html")
-```
-
-<!--html_preserve--><details>
+</details><!--/html_preserve--><!--html_preserve--><details>
   <summary>Exercise index</summary>
 
   - [Exercise 1: Introduction to R](/exercises/exercise_01/exercise_01.md)

@@ -78,6 +78,7 @@ print(character_vector_concatenated)
 print(logical_vector_negated)
 
 #' That's it for Exercise 5! Great job!
-#' 
+#'
+#+ echo = FALSE
 htmltools::includeHTML("../../index_lectures.html")
 htmltools::includeHTML("../../index_exercises.html")

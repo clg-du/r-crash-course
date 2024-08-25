@@ -116,7 +116,7 @@ In the next lecture, we will learn about comparison and logical operators in
 R.
 
 
-```{r}
+```{r echo = FALSE}
 htmltools::includeHTML("../../index_lectures.html")
 htmltools::includeHTML("../../index_exercises.html")
 ```

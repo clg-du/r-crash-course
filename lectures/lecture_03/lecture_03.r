@@ -85,5 +85,6 @@ print(x)
 #' In the next lecture, we will learn about comparison and logical operators in
 #' R.
 #' 
+#+ echo = FALSE
 htmltools::includeHTML("../../index_lectures.html")
 htmltools::includeHTML("../../index_exercises.html")

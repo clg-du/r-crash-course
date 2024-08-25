@@ -68,5 +68,6 @@ my_vector <- c(1, 2, 3, 4, 5)
 
 #' That's it for Exercise 10! Well done!
 #' 
+#+ echo = FALSE
 htmltools::includeHTML("../../index_lectures.html")
 htmltools::includeHTML("../../index_exercises.html")
