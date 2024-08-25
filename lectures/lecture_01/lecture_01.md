@@ -3,16 +3,22 @@
 
 
 ``` r
-readLines("../../index_lectures.r")
+readLines("../../index_lectures.html")
 ```
 
 ```
-## Warning in file(con, "r"): cannot open file '../../index_lectures.r': No such
-## file or directory
+## Warning in readLines("../../index_lectures.html"): incomplete final line found
+## on '../../index_lectures.html'
 ```
 
 ```
-## Error in file(con, "r"): cannot open the connection
+## [1] "#' <details>"                                                                       
+## [2] "#'   <summary>Lectures</summary>"                                                   
+## [3] "#' "                                                                                
+## [4] "#' 1. [Introduction to R](/lectures/lecture_01/lecture_01.md)"                      
+## [5] "#' 2. [Objects, Data Types, and Variables in R](/lectures/lecture_02/lecture_02.md)"
+## [6] "#'"                                                                                 
+## [7] "#' </details>"
 ```
 
 
