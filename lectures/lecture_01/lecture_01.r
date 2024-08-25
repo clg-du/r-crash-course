@@ -1,8 +1,6 @@
 #' # Lecture 1: Introduction to R
 #' `r Sys.Date()`
-html_content <- readLines("../../index_lectures.html")
-browsable(html_content)
-#'
+htmltools::includeHTML("../../index_lectures.html")
 #'
 #' [Introduction to R](/lectures/lecture_01/lecture_01.md) [Objects, Data Types,
 #' and Variables in R](/lectures/lecture_02/lecture_02.md)

@@ -3,22 +3,16 @@
 
 
 ``` r
-html_content <- readLines("../../index_lectures.html")
+htmltools::includeHTML("../../index_lectures.html")
 ```
 
-```
-## Warning in readLines("../../index_lectures.html"): incomplete final line found
-## on '../../index_lectures.html'
-```
+<!--html_preserve--><details>
+  <summary>Lectures</summary>
 
-``` r
-browsable(html_content)
-```
+1. [Introduction to R](/lectures/lecture_01/lecture_01.md)
+2. [Objects, Data Types, and Variables in R](/lectures/lecture_02/lecture_02.md)
 
-```
-## Error in browsable(html_content): could not find function "browsable"
-```
-
+</details><!--/html_preserve-->
 
 
 [Introduction to R](/lectures/lecture_01/lecture_01.md) [Objects, Data Types,
