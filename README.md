@@ -25,8 +25,8 @@ your preferred IDE or text editor.
 
 Check the following dropdown menus for content shortcuts:
 
-![](/index_lectures.html)
-![](/index_exercises.html)
+![try1](/index_lectures.html)
+![try2](/index_exercises.html)
 
 ## Contributing
 
