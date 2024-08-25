@@ -43,3 +43,10 @@ Perform the following operations on the matrices:
 Your code here:
 
 That's it for Exercise 7! Well done!
+
+
+```{r}
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")
+```
+

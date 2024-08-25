@@ -277,3 +277,10 @@ powerful, allowing us to solve a wide range of problems in R.
 
 That's it for this lecture! In the next lecture, we will work with a
 real-world dataset and apply what we have learned so far in R.
+
+
+```{r}
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")
+```
+

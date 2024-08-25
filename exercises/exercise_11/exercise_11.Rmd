@@ -74,3 +74,10 @@ cumulative frequency `cumulative_frequency` using the `print` function.
 
 Your code here:
 That's it for Exercise 11! Great job!
+
+
+```{r}
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")
+```
+

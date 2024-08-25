@@ -98,3 +98,10 @@ named and unnamed elements. When working with data.frames, the dollar sign
 
 That's it for this example! In the next lecture, we will learn about matrices
 in R.
+
+
+```{r}
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")
+```
+

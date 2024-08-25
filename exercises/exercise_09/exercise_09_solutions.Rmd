@@ -86,3 +86,11 @@ print(sum_result)
 print(area_result)
 ```
 
+That's it for Exercise 9! Great job!
+
+
+```{r}
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")
+```
+

@@ -72,3 +72,11 @@ print(element1)
 print(element2)
 ```
 
+That's it for Exercise 7! Well done!
+
+
+```{r}
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")
+```
+

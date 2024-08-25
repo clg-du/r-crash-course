@@ -49,3 +49,10 @@ Perform the following operations on the data frames:
 Your code here:
 
 That's it for Exercise 8! Well done!
+
+
+```{r}
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")
+```
+

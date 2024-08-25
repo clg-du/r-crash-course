@@ -50,3 +50,10 @@ View(mpg)
 summary(mpg)
 ```
 
+
+
+```{r}
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")
+```
+
