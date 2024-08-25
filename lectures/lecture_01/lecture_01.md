@@ -2,12 +2,32 @@
 2024-08-25
 
 <!--html_preserve--><details>
-  <summary>Lectures</summary>
+  <summary>Lecture index</summary>
 
-1. [Introduction to R](/lectures/lecture_01/lecture_01.md)
-2. [Objects, Data Types, and Variables in R](/lectures/lecture_02/lecture_02.md)
+1. [Lecture 1: Introduction to R](/lectures/lecture_01/lecture_01.md)
+1. [Lecture 2: Objects, Data Types, and Variables in R](/lectures/lecture_02/lecture_02.md)
+1. [Lecture 3: Arithmetic Operations in R](/lectures/lecture_03/lecture_03.md)
+1. [Lecture 4: Comparison and Logical Operators in R](/lectures/lecture_04/lecture_04.md)
+1. [Lecture 5: Vectors in R](/lectures/lecture_05/lecture_05.md)
+1. [Lecture 6: List in R](/lectures/lecture_06/lecture_06.md)
+1. [Lecture 7: Matrices in R](/lectures/lecture_07/lecture_07.md)
+1. [Lecture 8: Data Frames in R](/lectures/lecture_08/lecture_08.md)
+1. [Lecture 9: Functions in R](/lectures/lecture_09/lecture_09.md)
+1. [Lecture 10: Indexing using Logical Vectors in R](/lectures/lecture_10/lecture_10.md)
+1. [Lecture 11: Factors in R](/lectures/lecture_11/lecture_11.md)
+1. [Lecture 12: Control Structures in R](/lectures/lecture_12/lecture_12.md)
+1. [Lecture 13: A real-world example of using R for data analysis](/lectures/lecture_13/lecture_13.md)
 
 </details><!--/html_preserve-->
+
+```
+## Warning in file(con, "r"): cannot open file '../../index_exercises.html': No
+## such file or directory
+```
+
+```
+## Error in file(con, "r"): cannot open the connection
+```
 
 
 [Introduction to R](/lectures/lecture_01/lecture_01.md) [Objects, Data Types,

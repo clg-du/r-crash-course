@@ -2,6 +2,7 @@
 #' `r Sys.Date()`
 #+ echo = FALSE
 htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")
 #'
 #' [Introduction to R](/lectures/lecture_01/lecture_01.md) [Objects, Data Types,
 #' and Variables in R](/lectures/lecture_02/lecture_02.md)

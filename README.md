@@ -25,13 +25,8 @@ your preferred IDE or text editor.
 
 Check the following dropdown menus for content shortcuts:
 
-<details>
-    <summary>Lectures</summary>
-
-1. [Introduction to R](/lectures/lecture_01/lecture_01.md)
-2. [Objects, Data Types, and Variables in R](/lectures/lecture_02/lecture_02.md)
-
-</details>
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")
 
 ## Contributing
 
