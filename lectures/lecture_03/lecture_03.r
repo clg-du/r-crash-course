@@ -1,5 +1,8 @@
 #' # Lecture 3: Arithmetic Operations in R
 #' `r Sys.Date()`
+#' #+ echo = FALSE
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")
 #'
 #' In this lecture, we will learn about arithmetic operations in R.
 #'

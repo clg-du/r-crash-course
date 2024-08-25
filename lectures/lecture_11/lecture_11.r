@@ -1,5 +1,8 @@
 #' # Lecture 11: Factors in R
 #' `r Sys.Date()`
+#' #+ echo = FALSE
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")
 #'
 #' In this lecture, we will learn about factors in R.
 #'
