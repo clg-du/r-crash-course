@@ -25,8 +25,8 @@ your preferred IDE or text editor.
 
 Check the following dropdown menus for content shortcuts:
 
-htmltools::includeHTML("../../index_lectures.html")
-htmltools::includeHTML("../../index_exercises.html")
+![](index_lectures.html)
+![](index_exercises.html)
 
 ## Contributing
 
