@@ -99,3 +99,6 @@ print(result_matrix_multiplication)
 #'
 #' That's it for this example! In the next lecture, we will learn about data
 #' frames in R.
+#' 
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")

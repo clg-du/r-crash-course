@@ -84,3 +84,6 @@ print(result_vector6)
 
 
 #' That's it for Exercise 10! Well done!
+#' 
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")

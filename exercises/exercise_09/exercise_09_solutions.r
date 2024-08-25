@@ -73,3 +73,8 @@ print(area)
 print(volume)
 print(sum_result)
 print(area_result)
+
+#' That's it for Exercise 9! Great job!
+#' 
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")

@@ -220,3 +220,6 @@ x += 1
 #'
 #' That's it for this lecture! In the next lecture, we will work with a
 #' real-world dataset and apply what we have learned so far in R.
+#' 
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")

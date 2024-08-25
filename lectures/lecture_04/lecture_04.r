@@ -91,3 +91,6 @@ print(result_not)
 #' less than, less than or equal to, AND, OR, and NOT.
 #'
 #' In the next lecture, we will learn about vectors in R.
+#' 
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")

@@ -139,3 +139,9 @@ htmltools::includeHTML("../../index_exercises.html")
 #' create a bar plot of the number of cylinders.
 #'
 #' Your code here:
+
+
+#' That's it for Exercise 13! Great job!
+#' 
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")

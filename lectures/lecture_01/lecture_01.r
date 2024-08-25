@@ -171,3 +171,6 @@ summary(mtcars)
 
 #' That's it for this example! In the next lecture, we will learn more about
 #' objects, data types, and variables in R.
+#' 
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")

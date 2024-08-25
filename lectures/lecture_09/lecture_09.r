@@ -196,3 +196,6 @@ print(result_circle$circumference)
 #' use functions is key to writing efficient and reusable code.
 #'
 #' In the next lecture, we will learn about indexing using logical vectors in R.
+#' 
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")

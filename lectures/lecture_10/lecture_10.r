@@ -76,3 +76,6 @@ print(result_vector)
 #'
 #' That's it for this lecture! In the next lecture, we will learn about factors
 #' in R.
+#' 
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")

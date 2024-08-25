@@ -77,3 +77,6 @@ size_vector <- c("S", "M", "L", "M", "S", "XL", "L", "S", "M")
 
 
 #' That's it for Exercise 11! Great job!
+#' 
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")

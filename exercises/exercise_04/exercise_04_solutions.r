@@ -91,3 +91,6 @@ print(combined_or_result)
 
 
 #' That's it for Exercise 4! Great job!
+#' 
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")

@@ -153,3 +153,6 @@ barplot(table(size_factor),
 #'
 #' That's it for this lecture! In the next lecture, we will learn about control
 #' structures in R.
+#' 
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")

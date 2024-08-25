@@ -54,3 +54,6 @@ htmltools::includeHTML("../../index_exercises.html")
 
 #'
 #' That's it for Exercise 5! Well done!
+#' 
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")

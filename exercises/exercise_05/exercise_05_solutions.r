@@ -76,3 +76,8 @@ print(logical_element)
 print(numeric_vector_plus_5)
 print(character_vector_concatenated)
 print(logical_vector_negated)
+
+#' That's it for Exercise 5! Great job!
+#' 
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")

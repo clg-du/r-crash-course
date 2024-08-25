@@ -92,3 +92,6 @@ summary(my_data_frame)
 
 #' That's it for this example! In the next lecture, we will learn about
 #' functions and arguments in R.
+#' 
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")

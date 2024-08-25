@@ -165,3 +165,6 @@ legend(
 #'
 #' That's it for this lecture! In the next lecture, we will cover more advanced
 #' topics in R and explore additional data analysis techniques.
+#' 
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")

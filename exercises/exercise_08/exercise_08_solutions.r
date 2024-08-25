@@ -74,3 +74,8 @@ print(df1)
 print(df2)
 print(element1)
 print(element2)
+
+#' That's it for Exercise 8! Well done!
+#' 
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")

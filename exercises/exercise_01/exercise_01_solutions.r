@@ -32,3 +32,6 @@ View(mpg)
 #' ## Task 7: Summarize the Dataset
 #+ eval=FALSE
 summary(mpg)
+#' 
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")

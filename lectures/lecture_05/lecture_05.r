@@ -71,3 +71,6 @@ print(my_numeric_vector[c(1, 3, 5)])
 print(my_character_vector[-2])
 
 #' That's it for vectors! Next, we will learn about lists in R.
+#' 
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")
