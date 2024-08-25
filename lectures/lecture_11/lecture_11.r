@@ -127,6 +127,7 @@ print(subset_size_factor)
 #'
 #' Create a bar plot of the ordered factor We can use the `barplot()` function
 #' to create a bar plot of the ordered factor.
+#+ barplot_with_order
 barplot(
   table(size_factor_ordered),
   main = "T-Shirt Sizes",
@@ -138,6 +139,7 @@ barplot(
 #' ordered. Let's create a bar plot of the factor without specifying the order.
 #'
 #' Create a bar plot of the factor without specifying the order
+#+ barplot_without_order
 barplot(table(size_factor),
         main = "T-Shirt Sizes",
         xlab = "Size",

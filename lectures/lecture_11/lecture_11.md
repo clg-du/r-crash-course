@@ -292,7 +292,7 @@ barplot(
 )
 ```
 
-![plot of chunk unnamed-chunk-19](/lectures/lecture_11/figures/unnamed-chunk-19-1.png)
+![plot of chunk barplot_with_order](/lectures/lecture_11/figures/barplot_with_order-1.png)
 
 Here is an example what the bar plot would look like if the factor was not
 ordered. Let's create a bar plot of the factor without specifying the order.
@@ -307,7 +307,7 @@ barplot(table(size_factor),
         ylab = "Frequency")
 ```
 
-![plot of chunk unnamed-chunk-20](/lectures/lecture_11/figures/unnamed-chunk-20-1.png)
+![plot of chunk barplot_without_order](/lectures/lecture_11/figures/barplot_without_order-1.png)
 
 The bar plot without the order specified does not reflect the natural order
 of the sizes. This can lead to misleading visualizations and
