@@ -1,5 +1,5 @@
 # Lecture 2: Objects, Data Types, and Variables in R
-2024-08-24
+2024-08-25
 
 In this lecture, we will learn about objects, data types, and variables in R.
 

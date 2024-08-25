@@ -1,5 +1,5 @@
 # Exercise 6: Lists in R
-2024-08-24
+2024-08-25
 
 
 ## Task 1: Creating Lists

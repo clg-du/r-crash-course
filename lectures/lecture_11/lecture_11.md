@@ -1,5 +1,5 @@
 # Lecture 11: Factors in R
-2024-08-24
+2024-08-25
 
 In this lecture, we will learn about factors in R.
 

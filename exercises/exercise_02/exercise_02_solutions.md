@@ -1,5 +1,5 @@
 # Exercise 2 Solutions: Objects, Data Types, and Variables in R
-2024-08-24
+2024-08-25
 
 
 ## Task 1: Create Numeric Variables

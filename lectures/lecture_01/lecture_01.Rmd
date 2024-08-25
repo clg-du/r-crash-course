@@ -2,7 +2,7 @@
 `r Sys.Date()`
 
 ```{r}
-source("${{ github.workspace }}/index_lectures.r")
+source("/index_lectures.r")
 ```
 
 

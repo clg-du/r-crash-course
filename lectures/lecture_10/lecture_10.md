@@ -1,5 +1,5 @@
 # Lecture 10: Indexing using Logical Vectors in R
-2024-08-24
+2024-08-25
 
 In this lecture, we will learn about indexing using logical vectors in R.
 

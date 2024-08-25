@@ -1,5 +1,5 @@
 # Lecture 5: Vectors in R
-2024-08-24
+2024-08-25
 
 In this lecture, we will learn about vectors in R. These are essential data
 structures in R that allow us to store and manipulate data efficiently.

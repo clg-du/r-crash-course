@@ -1,5 +1,5 @@
 # Lecture 13: A real-world example of using R for data analysis
-2024-08-24
+2024-08-25
 
 In this lecture, we will work on a real-world example of using R for data
 analysis. We will load a data set and perform some basic data exploration and
