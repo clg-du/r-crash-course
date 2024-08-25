@@ -30,8 +30,6 @@ htmltools::includeHTML("../../index_exercises.html")
 
 # This is a comment in R
 
-#' This is a Roxygen comment in R
-
 #'
 #' Comments are not executed by the R interpreter and are used to provide
 #' additional information about the code.
@@ -42,19 +40,36 @@ htmltools::includeHTML("../../index_exercises.html")
 #' You can run each line of code individually in the R console or run the entire
 #' script at once.
 #'
-#' To run the entire script, you can use the `source()` function in R. The
-#' `source()` function reads and executes an R script file.
-#'
-#' Here is an example of running an R script using the `source()` function:
-
-# source("path/to/your/script.R")
-
-#' In RStudio, you can run the entire script by clicking the "Source" button in
-#' the script editor or by using the keyboard shortcut `Ctrl + Shift + S`.
-#'
 #' Normally, you would run the entire script or certain sections of the script
 #' by highlighting the code and using the "Run" button or the keyboard shortcut
 #' `Ctrl + Enter`.
+#'
+#' To run the entire script, you can use the `source()` function in R. The
+#' `source()` function reads and executes an R script file.
+#' 
+#' Functions will be covered in more detail in a later lecture.
+#'
+#' Here is an example of running an R script using the `source()` function:
+#+ eval = FALSE
+source("path/to/your/script.R")
+
+#' The source function can be used to run other R scripts from within you
+#' current script. The path to the script should be specified in quotes.
+#'
+#' Paths can be relative or absolute. In this case, the path is relative to the
+#' current working directory. Absolute paths start from the root directory of
+#' the file system.
+#'
+#' Here is an example of running an R script using the `source()` function with
+#' a absolute path:
+#+ eval = FALSE
+source("C:Downloads/script.R")
+
+#' Please note that the path separator for Mac in R is `/` and not `\` as in
+#' Windows
+#'
+#' In RStudio, you can run the entire script by clicking the "Source" button in
+#' the script editor or by using the keyboard shortcut `Ctrl + Shift + S`.
 #'
 #' Note: Any recommended keyboard shortcut may vary depending on your operating
 #' system, RStudio version, or any other IDE you are using, such as VS Code or
@@ -71,9 +86,45 @@ htmltools::includeHTML("../../index_exercises.html")
 #' Print `"Hello, World!"` to the console
 print("Hello, World!")
 
+#' Note that the result of the `print()` function is displayed in the console.
+#' The console is where the output of R code is displayed.
+#' 
+#' In RStudio, the console is located in the bottom left pane of the IDE,
+#' although you can move it to a different location if you prefer.
+#' 
+#' The console is where you can interact with R directly, run code, and see the
+#' output of your commands.
+#' 
+#' You can also use the console to perform calculations, test functions, and
+#' debug your code.
+#' 
+#' Not everything in R needs to be printed to the console. For example, when
+#' you assign a value to a variable, it won't be printed to the console unless
+#' you explicitly print it.
+#' 
+#' You can also prompt the user for input using the `readline()` function.
+#' 
+#' Here is an example of prompting the user for input:
+#' 
+#' Prompt the user for their name
+#+ eval=FALSE
+name <- readline("Enter your name: ")
+print(name)
+
+#' 
 #' In R indentation is not required, but it is recommended for readability. In
 #' RStudio you can highlight code and use `Ctrl + Shift + A` to clean up the
 #' code and automatically indent it.
+#'
+#' Here is an example of R being used as a calculator:
+
+# Calculate the sum of two numbers
+2 + 3
+
+# Calculate the difference of two numbers
+5 - 2
+
+# We will cover more arithmetic operations in a later lecture.
 
 #' ## Packages
 
