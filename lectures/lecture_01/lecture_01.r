@@ -1,5 +1,6 @@
 #' # Lecture 1: Introduction to R
 #' `r Sys.Date()`
+#+ include = FALSE
 htmltools::includeHTML("../../index_lectures.html")
 #'
 #' [Introduction to R](/lectures/lecture_01/lecture_01.md) [Objects, Data Types,
