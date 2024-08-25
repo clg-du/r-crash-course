@@ -192,8 +192,7 @@ Prompt the user for their name
 
 
 ``` r
-name <- readline("Enter your name: ")
-print(name)
+print(readline("Enter your name: "))
 ```
 
 

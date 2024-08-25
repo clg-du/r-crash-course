@@ -138,8 +138,7 @@ Here is an example of prompting the user for input:
 Prompt the user for their name
 
 ```{r eval=FALSE}
-name <- readline("Enter your name: ")
-print(name)
+print(readline("Enter your name: "))
 ```
 
 

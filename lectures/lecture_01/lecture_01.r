@@ -125,8 +125,7 @@ print("Hello, World!")
 #'
 #' Prompt the user for their name
 #+ eval=FALSE
-name <- readline("Enter your name: ")
-print(name)
+print(readline("Enter your name: "))
 
 #'
 #' In R indentation is not required, but it is recommended for readability. In
