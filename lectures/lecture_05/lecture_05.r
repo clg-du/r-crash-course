@@ -1,6 +1,6 @@
 #' # Lecture 5: Vectors in R
 #' `r Sys.Date()`
-#' #+ echo = FALSE
+#+ echo = FALSE
 htmltools::includeHTML("../../index_lectures.html")
 htmltools::includeHTML("../../index_exercises.html")
 #'

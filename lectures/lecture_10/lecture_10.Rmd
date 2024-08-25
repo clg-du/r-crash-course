@@ -1,6 +1,12 @@
 # Lecture 10: Indexing using Logical Vectors in R
 `r Sys.Date()`
 
+```{r echo = FALSE}
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")
+```
+
+
 In this lecture, we will learn about indexing using logical vectors in R.
 
 Logical vectors are vectors that contain logical values (`TRUE` or `FALSE`).

@@ -1,6 +1,6 @@
 #' # Lecture 10: Indexing using Logical Vectors in R
 #' `r Sys.Date()`
-#' #+ echo = FALSE
+#+ echo = FALSE
 htmltools::includeHTML("../../index_lectures.html")
 htmltools::includeHTML("../../index_exercises.html")
 #'

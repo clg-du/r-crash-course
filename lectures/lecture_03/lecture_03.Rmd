@@ -1,6 +1,12 @@
 # Lecture 3: Arithmetic Operations in R
 `r Sys.Date()`
 
+```{r echo = FALSE}
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")
+```
+
+
 In this lecture, we will learn about arithmetic operations in R.
 
 R provides a wide range of operators for performing mathematical calculations

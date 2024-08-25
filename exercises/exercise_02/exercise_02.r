@@ -1,5 +1,8 @@
 #' # Exercise 2: Objects, Data Types, and Variables in R
 #' `r Sys.Date()`
+#+ echo = FALSE
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")
 #'
 #'
 #' ## Task 1: Create Numeric Variables

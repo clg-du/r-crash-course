@@ -1,5 +1,10 @@
 #' # Exercise 1 Solutions: Introduction to R
 #' `r Sys.Date()`
+#+ echo = FALSE
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")
+#'
+#'
 
 #' ## Task 1: Print Your Name
 print("Your Name")

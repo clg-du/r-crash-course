@@ -1,6 +1,12 @@
 # Lecture 13: A real-world example of using R for data analysis
 `r Sys.Date()`
 
+```{r echo = FALSE}
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")
+```
+
+
 In this lecture, we will work on a real-world example of using R for data
 analysis. We will load a data set and perform some basic data exploration and
 analysis.

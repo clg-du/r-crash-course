@@ -1,6 +1,6 @@
 #' # Lecture 12: Control Structures in R
 #' `r Sys.Date()`
-#' #+ echo = FALSE
+#+ echo = FALSE
 htmltools::includeHTML("../../index_lectures.html")
 htmltools::includeHTML("../../index_exercises.html")
 #'

@@ -1,5 +1,8 @@
 #' # Exercise 5 Solutions: Vectors in R
 #' `r Sys.Date()`
+#+ echo = FALSE
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")
 #'
 #'
 #' ## Task 1: Creating Vectors

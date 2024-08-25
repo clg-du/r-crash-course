@@ -1,6 +1,12 @@
 # Lecture 5: Vectors in R
 `r Sys.Date()`
 
+```{r echo = FALSE}
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")
+```
+
+
 In this lecture, we will learn about vectors in R. These are essential data
 structures in R that allow us to store and manipulate data efficiently.
 

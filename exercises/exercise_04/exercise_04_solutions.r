@@ -1,5 +1,8 @@
 #' # Exercise 4 Solutions: Comparison and Logical Operators in R
 #' `r Sys.Date()`
+#+ echo = FALSE
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")
 #'
 #'
 #' ## Task 1: Comparison Operators

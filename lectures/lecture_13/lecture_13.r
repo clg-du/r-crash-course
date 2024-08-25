@@ -1,6 +1,6 @@
 #' # Lecture 13: A real-world example of using R for data analysis
 #' `r Sys.Date()`
-#' #+ echo = FALSE
+#+ echo = FALSE
 htmltools::includeHTML("../../index_lectures.html")
 htmltools::includeHTML("../../index_exercises.html")
 #'

@@ -1,5 +1,8 @@
 #' # Exercise 10 Solutions: Indexing using Logical Vectors in R
 #' `r Sys.Date()`
+#+ echo = FALSE
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")
 #'
 #'
 #' ## Task 1: Creating Logical Vectors

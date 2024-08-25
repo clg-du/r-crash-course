@@ -1,5 +1,8 @@
 #' # Exercise 8: Data Frames in R
 #' `r Sys.Date()`
+#+ echo = FALSE
+htmltools::includeHTML("../../index_lectures.html")
+htmltools::includeHTML("../../index_exercises.html")
 #'
 #'
 #' ## Task 1: Creating Data Frames
