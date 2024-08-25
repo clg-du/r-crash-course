@@ -56,7 +56,7 @@ In this lecture, we will work on a real-world example of using R for data
 analysis. We will load a data set and perform some basic data exploration and
 analysis.
 
-** Load the data set
+## Load the data set
 
 The data set we will be using is the `mtcars` data set, which is a built-in
 data set in R. The data set contains information about various car models,
@@ -189,7 +189,7 @@ plot(mtcars$hp,
      main = "Scatter Plot of MPG vs. Horsepower")
 ```
 
-![plot of chunk unnamed-chunk-7](/lectures/lecture_13/figures/unnamed-chunk-7-1.png)
+![plot of chunk plot_mpg_hp](/lectures/lecture_13/figures/plot_mpg_hp-1.png)
 
 The scatter plot shows the relationship between miles per gallon (mpg) and
 horsepower for the car models in the dataset. We can see that there is a
@@ -275,7 +275,7 @@ heatmap(
 )
 ```
 
-![plot of chunk unnamed-chunk-11](/lectures/lecture_13/figures/unnamed-chunk-11-1.png)
+![plot of chunk heatmap](/lectures/lecture_13/figures/heatmap-1.png)
 
 Note that we can organize the code in a more readable way by breaking it into
 multiple lines. This makes it easier to understand and modify the code. The
@@ -318,7 +318,7 @@ legend(
 )
 ```
 
-![plot of chunk unnamed-chunk-12](/lectures/lecture_13/figures/unnamed-chunk-12-1.png)
+![plot of chunk heatmap_legend](/lectures/lecture_13/figures/heatmap_legend-1.png)
 
 The legend provides a key to the color scale used in the heatmap, indicating
 the strength of the correlation between variables. This additional

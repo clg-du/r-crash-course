@@ -8,7 +8,7 @@ htmltools::includeHTML("../../index_exercises.html")
 #' analysis. We will load a data set and perform some basic data exploration and
 #' analysis.
 #'
-#' ** Load the data set
+#' ## Load the data set
 #'
 #' The data set we will be using is the `mtcars` data set, which is a built-in
 #' data set in R. The data set contains information about various car models,
@@ -63,6 +63,7 @@ help(mtcars)
 #' horsepower to see if there is a relationship between the two variables.
 #'
 #' Create a scatter plot of mpg vs. hp
+#+ plot_mpg_hp
 plot(mtcars$hp,
      mtcars$mpg,
      xlab = "Horsepower",
@@ -104,6 +105,7 @@ print(correlation_matrix)
 #' understand the relationships between the variables.
 #'
 #' Create a heatmap of the correlation matrix
+#+ heatmap
 heatmap(
   correlation_matrix,
   col = heat.colors(10),
@@ -126,6 +128,7 @@ heatmap(
 #' needs to be added after the heatmap is created, which is not possible in
 #' RMarkdown unless evaluated in the same code chunk. This is a workaround,
 #' and not necessary for regular R scripts since the plot already exists.
+#+ heatmap_legend
 heatmap(
   correlation_matrix,
   col = heat.colors(10),
