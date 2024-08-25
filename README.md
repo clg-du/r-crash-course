@@ -25,8 +25,9 @@ your preferred IDE or text editor.
 
 Check the following dropdown menus for content shortcuts:
 
-<iframe src="index_lectures.html"></iframe>
-<iframe src="index_exercises.html"></iframe>
+<iframe src="/index_lectures.html"></iframe>
+
+<iframe src="/index_exercises.html"></iframe>
 
 ## Contributing
 
