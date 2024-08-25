@@ -12,13 +12,13 @@ readLines("../../index_lectures.html")
 ```
 
 ```
-## [1] "#' <details>"                                                                       
-## [2] "#'   <summary>Lectures</summary>"                                                   
-## [3] "#' "                                                                                
-## [4] "#' 1. [Introduction to R](/lectures/lecture_01/lecture_01.md)"                      
-## [5] "#' 2. [Objects, Data Types, and Variables in R](/lectures/lecture_02/lecture_02.md)"
-## [6] "#'"                                                                                 
-## [7] "#' </details>"
+## [1] "<details>"                                                                       
+## [2] "  <summary>Lectures</summary>"                                                   
+## [3] ""                                                                                
+## [4] "1. [Introduction to R](/lectures/lecture_01/lecture_01.md)"                      
+## [5] "2. [Objects, Data Types, and Variables in R](/lectures/lecture_02/lecture_02.md)"
+## [6] ""                                                                                
+## [7] "</details>"
 ```
 
 
