@@ -3,7 +3,7 @@
 
 
 ``` r
-readLines("../../index_lectures.html")
+html_content <- readLines("../../index_lectures.html")
 ```
 
 ```
@@ -11,14 +11,12 @@ readLines("../../index_lectures.html")
 ## on '../../index_lectures.html'
 ```
 
+``` r
+browsable(html_content)
 ```
-## [1] "<details>"                                                                       
-## [2] "  <summary>Lectures</summary>"                                                   
-## [3] ""                                                                                
-## [4] "1. [Introduction to R](/lectures/lecture_01/lecture_01.md)"                      
-## [5] "2. [Objects, Data Types, and Variables in R](/lectures/lecture_02/lecture_02.md)"
-## [6] ""                                                                                
-## [7] "</details>"
+
+```
+## Error in browsable(html_content): could not find function "browsable"
 ```
 
 

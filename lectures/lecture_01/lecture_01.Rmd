@@ -2,7 +2,8 @@
 `r Sys.Date()`
 
 ```{r}
-readLines("../../index_lectures.html")
+html_content <- readLines("../../index_lectures.html")
+browsable(html_content)
 ```
 
 
