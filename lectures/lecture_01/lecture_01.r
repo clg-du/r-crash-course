@@ -46,7 +46,7 @@ htmltools::includeHTML("../../index_exercises.html")
 #'
 #' To run the entire script, you can use the `source()` function in R. The
 #' `source()` function reads and executes an R script file.
-#' 
+#'
 #' Functions will be covered in more detail in a later lecture.
 #'
 #' Here is an example of running an R script using the `source()` function:
@@ -63,10 +63,27 @@ source("path/to/your/script.R")
 #' Here is an example of running an R script using the `source()` function with
 #' a absolute path:
 #+ eval = FALSE
-source("C:Downloads/script.R")
+source("C:/Downloads/script.R")
 
 #' Please note that the path separator for Mac in R is `/` and not `\` as in
 #' Windows
+#'
+#' A way to circumvent the issue of path dependencies is to use R projects. R
+#' projects allow you to set a working directory for your project, and all paths
+#' will be relative to that directory.
+#'
+#' To create an R project in RStudio, go to `File -> New Project...` and select
+#' `New Directory`. Then select `New Project` and choose the directory where you
+#' want to create the project.
+#'
+#' You can then save your script in the project directory and use relative paths
+#' to source other scripts by first setting the working directory to the project
+#' directory by opening the project in RStudio, either by double-clicking the
+#' `.Rproj` file or by using the `File -> Open Project...` option.
+#'
+#' In this course there is a `.Rproj` file in the root directory of the course
+#' repository called `r-crash-course.Rproj`. It will set the working directory
+#' to the root of the course repository.
 #'
 #' In RStudio, you can run the entire script by clicking the "Source" button in
 #' the script editor or by using the keyboard shortcut `Ctrl + Shift + S`.
@@ -88,30 +105,30 @@ print("Hello, World!")
 
 #' Note that the result of the `print()` function is displayed in the console.
 #' The console is where the output of R code is displayed.
-#' 
+#'
 #' In RStudio, the console is located in the bottom left pane of the IDE,
 #' although you can move it to a different location if you prefer.
-#' 
+#'
 #' The console is where you can interact with R directly, run code, and see the
 #' output of your commands.
-#' 
+#'
 #' You can also use the console to perform calculations, test functions, and
 #' debug your code.
-#' 
-#' Not everything in R needs to be printed to the console. For example, when
-#' you assign a value to a variable, it won't be printed to the console unless
-#' you explicitly print it.
-#' 
+#'
+#' Not everything in R needs to be printed to the console. For example, when you
+#' assign a value to a variable, it won't be printed to the console unless you
+#' explicitly print it.
+#'
 #' You can also prompt the user for input using the `readline()` function.
-#' 
+#'
 #' Here is an example of prompting the user for input:
-#' 
+#'
 #' Prompt the user for their name
 #+ eval=FALSE
 name <- readline("Enter your name: ")
 print(name)
 
-#' 
+#'
 #' In R indentation is not required, but it is recommended for readability. In
 #' RStudio you can highlight code and use `Ctrl + Shift + A` to clean up the
 #' code and automatically indent it.
