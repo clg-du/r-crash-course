@@ -67,11 +67,51 @@ Comments in R...
 - can be used to document the code.
 - can be used to make the code more readable.
 
-Adding an apostrophe after the `#` symbol creates a Roxygen comment. Roxygen
-comments are used to generate documentation for functions and packages.
-Roxygen comments are used to create documentation for R packages. It is also
-useful to write comments that can be used to generate markdown documentation,
-such as the one you are reading now.
+Adding an apostrophe after the `#` symbol, i.e., `#'`, creates a Roxygen
+comment. Roxygen comments are used to generate documentation for functions
+and packages. Roxygen comments are used to create documentation for R
+packages. It is also useful to write comments that can be used to generate
+markdown documentation, such as the one you are reading now.
+
+Here is a simple example of a comment in R:
+
+
+
+``` r
+# This is a comment in R
+```
+
+This is a Roxygen comment in R
+
+Comments are not executed by the R interpreter and are used to provide
+additional information about the code.
+
+## Running R code
+
+R is an interpreted language, which means that code is executed line by line.
+You can run each line of code individually in the R console or run the entire
+script at once.
+
+To run the entire script, you can use the `source()` function in R. The
+`source()` function reads and executes an R script file.
+
+Here is an example of running an R script using the `source()` function:
+
+
+``` r
+# source("path/to/your/script.R")
+```
+
+In RStudio, you can run the entire script by clicking the "Source" button in
+the script editor or by using the keyboard shortcut `Ctrl + Shift + S`.
+
+Normally, you would run the entire script or certain sections of the script
+by highlighting the code and using the "Run" button or the keyboard shortcut
+`Ctrl + Enter`.
+
+Note: Any recommended keyboard shortcut may vary depending on your operating
+system, RStudio version, or any other IDE you are using, such as VS Code or
+Jupyter Notebook, for example.
 
 ## Our first `"Hello World!"` program in R
 
