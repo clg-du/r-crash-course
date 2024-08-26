@@ -70,19 +70,6 @@ result_vector5 <- my_vector[my_vector == 3]
 #'
 result_vector6 <- my_vector[my_vector <= 3]
 
-
-#' ## Task 5: Displaying Results
-#'
-#' Display the result vectors using the `print` function.
-#'
-print(result_vector1)
-print(result_vector2)
-print(result_vector3)
-print(result_vector4)
-print(result_vector5)
-print(result_vector6)
-
-
 #' That's it for Exercise 10! Well done!
 #' 
 #+ echo = FALSE

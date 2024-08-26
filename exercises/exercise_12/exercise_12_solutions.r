@@ -116,32 +116,6 @@ if (y < 10) {
     print("y is unknown")
 }
 
-#' ## Task 6: Displaying Results
-#'
-#' Display the output of the conditional statement from Task 1, the numbers
-#' printed by the for loop from Task 2, the result of the "square" function from
-#' Task 3, the squares printed by the for loop from Task 4, and the message
-#' printed by the if-else-if ladder from Task 5.
-#'
-#' Your code here:
-print(if (x %% 2 == 0) "x is even" else "x is odd")
-for (i in 1:5) {
-    print(i)
-}
-print(square(5))
-for (i in 1:n) {
-    print(square(i))
-}
-if (y < 10) {
-    print("y is less than 10")
-} else if (y >= 10 && y <= 20) {
-    print("y is between 10 and 20")
-} else if (y > 20) {
-    print("y is greater than 20")
-} else {
-    print("y is unknown")
-}
-
 #' That's it for Exercise 12! Well done!
 #' 
 #+ echo = FALSE

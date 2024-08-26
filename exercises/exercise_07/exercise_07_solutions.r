@@ -49,17 +49,6 @@ element2 <- matrix2[2, "B"]
 matrix1 <- rbind(matrix1, c(7, 8, 9))
 matrix2[1, "C"] <- 50
 
-
-#' ## Task 4: Display the Results
-#'
-#' Print the values of all the variables created in Task 1, Task 2, and Task 3.
-#'
-#' Your code here:
-print(matrix1)
-print(matrix2)
-print(element1)
-print(element2)
-
 #' That's it for Exercise 7! Well done!
 #' 
 #+ echo = FALSE

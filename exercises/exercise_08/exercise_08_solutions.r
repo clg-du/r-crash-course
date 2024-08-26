@@ -64,17 +64,6 @@ element2 <- df2[4, "population"]
 df1$gender <- c("female", "male", "male", "female", "female")
 df2[3, "state"] <- "Michigan"
 
-
-#' ## Task 4: Display the Results
-#'
-#' Print the values of all the variables created in Task 1, Task 2, and Task 3.
-#'
-#' Your code here:
-print(df1)
-print(df2)
-print(element1)
-print(element2)
-
 #' That's it for Exercise 8! Well done!
 #' 
 #+ echo = FALSE
