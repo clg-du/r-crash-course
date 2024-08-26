@@ -121,45 +121,6 @@ sum_result <- sum(numbers)
 area_result <- calculate_area(length = 2, width = 3)
 ```
 
-## Task 4: Display the Results
-
-Print the values of all the variables created in Task 2 and Task 3.
-
-Your code here:
-
-
-``` r
-print(area)
-```
-
-```
-## [1] 15
-```
-
-``` r
-print(volume)
-```
-
-```
-## [1] 48
-```
-
-``` r
-print(sum_result)
-```
-
-```
-## [1] 15
-```
-
-``` r
-print(area_result)
-```
-
-```
-## [1] 6
-```
-
 That's it for Exercise 9! Great job!
 
 

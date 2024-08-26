@@ -156,60 +156,6 @@ result_vector5 <- my_vector[my_vector == 3]
 result_vector6 <- my_vector[my_vector <= 3]
 ```
 
-## Task 5: Displaying Results
-
-Display the result vectors using the `print` function.
-
-
-
-``` r
-print(result_vector1)
-```
-
-```
-## [1] 1 2 3
-```
-
-``` r
-print(result_vector2)
-```
-
-```
-## [1] 3
-```
-
-``` r
-print(result_vector3)
-```
-
-```
-## [1] 3 4
-```
-
-``` r
-print(result_vector4)
-```
-
-```
-## [1] 4 5
-```
-
-``` r
-print(result_vector5)
-```
-
-```
-## [1] 3
-```
-
-``` r
-print(result_vector6)
-```
-
-```
-## [1] 1 2 3
-```
-
 That's it for Exercise 10! Well done!
 
 

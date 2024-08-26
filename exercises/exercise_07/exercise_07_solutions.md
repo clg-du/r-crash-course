@@ -119,48 +119,6 @@ matrix2[1, "C"] <- 50
 ## Error: object 'matrix2' not found
 ```
 
-## Task 4: Display the Results
-
-Print the values of all the variables created in Task 1, Task 2, and Task 3.
-
-Your code here:
-
-
-``` r
-print(matrix1)
-```
-
-```
-##      [,1] [,2] [,3]
-## [1,]    1    3    5
-## [2,]    2    4    6
-## [3,]    7    8    9
-```
-
-``` r
-print(matrix2)
-```
-
-```
-## Error in eval(expr, envir, enclos): object 'matrix2' not found
-```
-
-``` r
-print(element1)
-```
-
-```
-## [1] 3
-```
-
-``` r
-print(element2)
-```
-
-```
-## [1] 2296224
-```
-
 That's it for Exercise 7! Well done!
 
 

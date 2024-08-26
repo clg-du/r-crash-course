@@ -122,55 +122,6 @@ df1$gender <- c("female", "male", "male", "female", "female")
 df2[3, "state"] <- "Michigan"
 ```
 
-## Task 4: Display the Results
-
-Print the values of all the variables created in Task 1, Task 2, and Task 3.
-
-Your code here:
-
-
-``` r
-print(df1)
-```
-
-```
-##      name age employed gender
-## 1   Alice  25     TRUE female
-## 2     Bob  30    FALSE   male
-## 3 Charlie  35     TRUE   male
-## 4   David  40    FALSE female
-## 5     Eve  45     TRUE female
-```
-
-``` r
-print(df2)
-```
-
-```
-##          city population      state
-## 1    New York    8537673   New York
-## 2 Los Angeles    3976322 California
-## 3     Chicago    2720546   Michigan
-## 4     Houston    2296224      Texas
-## 5     Phoenix    1660272    Arizona
-```
-
-``` r
-print(element1)
-```
-
-```
-## [1] FALSE
-```
-
-``` r
-print(element2)
-```
-
-```
-## [1] 2296224
-```
-
 That's it for Exercise 8! Well done!
 
 

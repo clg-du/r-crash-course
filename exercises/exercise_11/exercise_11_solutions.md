@@ -144,59 +144,6 @@ level_frequency <- table(size_factor_specified)
 cumulative_frequency <- cumsum(level_frequency)
 ```
 
-## Task 6: Displaying Results
-
-Display the factor `fruit_factor`, the modified factor `modified_factor`, the
-factor levels `factor_levels`, the level frequency `level_frequency`, and the
-cumulative frequency `cumulative_frequency` using the `print` function.
-
-
-
-``` r
-print(fruit_factor)
-```
-
-```
-## [1] apple  banana cherry apple  banana cherry
-## Levels: apple banana cherry
-```
-
-``` r
-print(modified_factor)
-```
-
-```
-## [1] S  M  L  M  S  XL L  S  M 
-## Levels: M S XL L
-```
-
-``` r
-print(factor_levels)
-```
-
-```
-## [1] "S"  "M"  "L"  "XL"
-```
-
-``` r
-print(level_frequency)
-```
-
-```
-## size_factor_specified
-##  S  M  L XL 
-##  3  3  2  1
-```
-
-``` r
-print(cumulative_frequency)
-```
-
-```
-##  S  M  L XL 
-##  3  6  8  9
-```
-
 That's it for Exercise 11! Great job!
 
 
