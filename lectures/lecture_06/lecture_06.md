@@ -69,13 +69,7 @@ Create a list with multiple elements of different types
 
 
 ``` r
-my_list <- list(c(42,78,92), c("Hello, World!", "Hello again, World!", TRUE, 42L, 3 + 4i)
-```
-
-```
-## Error: <text>:2:0: unexpected end of input
-## 1: my_list <- list(c(42,78,92), c("Hello, World!", "Hello again, World!", TRUE, 42L, 3 + 4i)
-##    ^
+my_list <- list(c(42,78,92), c("Hello, World!", "Hello again, World!"), TRUE, 42L, 3 + 4i)
 ```
 
 Note that the elements of the list can be of different types and lengths! The
@@ -92,16 +86,19 @@ print(my_list)
 
 ```
 ## [[1]]
-## [1] 10
+## [1] 42 78 92
 ## 
 ## [[2]]
-## [1] "red"
+## [1] "Hello, World!"       "Hello again, World!"
 ## 
 ## [[3]]
 ## [1] TRUE
 ## 
 ## [[4]]
-## [1] 3.14
+## [1] 42
+## 
+## [[5]]
+## [1] 3+4i
 ```
 
 Notice how the list is displayed with each element on a separate line. The
@@ -129,7 +126,7 @@ print(my_list[[1]])
 ```
 
 ```
-## [1] 10
+## [1] 42 78 92
 ```
 
 Access the second element of the list using the dollar sign `$` Note: The
@@ -144,18 +141,11 @@ names(my_list) <- c("element_1",
                     "element_3",
                     "element_4",
                     "element_5")
-```
-
-```
-## Error in names(my_list) <- c("element_1", "element_2", "element_3", "element_4", : 'names' attribute [5] must be the same length as the vector [4]
-```
-
-``` r
 print(my_list$element_2)
 ```
 
 ```
-## NULL
+## [1] "Hello, World!"       "Hello again, World!"
 ```
 
 Adding elements to a list
@@ -173,20 +163,20 @@ print(my_list)
 ```
 
 ```
-## [[1]]
-## [1] 10
+## $element_1
+## [1] 42 78 92
 ## 
-## [[2]]
-## [1] "red"
+## $element_2
+## [1] "Hello, World!"       "Hello again, World!"
 ## 
-## [[3]]
+## $element_3
 ## [1] TRUE
 ## 
-## [[4]]
-## [1] 3.14
+## $element_4
+## [1] 42
 ## 
-## [[5]]
-## NULL
+## $element_5
+## [1] 3+4i
 ## 
 ## [[6]]
 ## [1] "New Element"
@@ -201,20 +191,20 @@ print(my_list)
 ```
 
 ```
-## [[1]]
-## [1] 10
+## $element_1
+## [1] 42 78 92
 ## 
-## [[2]]
-## [1] "red"
+## $element_2
+## [1] "Hello, World!"       "Hello again, World!"
 ## 
-## [[3]]
+## $element_3
 ## [1] TRUE
 ## 
-## [[4]]
-## [1] 3.14
+## $element_4
+## [1] 42
 ## 
-## [[5]]
-## NULL
+## $element_5
+## [1] 3+4i
 ## 
 ## [[6]]
 ## [1] "New Element"

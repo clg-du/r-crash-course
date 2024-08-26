@@ -18,7 +18,7 @@ htmltools::includeHTML("../../index_exercises.html")
 #' Let's create a list in R!
 #'
 #' Create a list with multiple elements of different types
-my_list <- list(c(42,78,92), c("Hello, World!", "Hello again, World!", TRUE, 42L, 3 + 4i)
+my_list <- list(c(42,78,92), c("Hello, World!", "Hello again, World!"), TRUE, 42L, 3 + 4i)
 
 #' Note that the elements of the list can be of different types and lengths! The
 #' list `my_list` contains a numeric value, a character string, a logical value,
