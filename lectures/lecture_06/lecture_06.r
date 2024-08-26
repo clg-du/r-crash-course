@@ -18,7 +18,7 @@ htmltools::includeHTML("../../index_exercises.html")
 #' Let's create a list in R!
 #'
 #' Create a list with multiple elements of different types
-my_list <- list(c(42,78,92), c("Hello, World!", "Hello again, World!"), TRUE, 42L, 3 + 4i)
+my_list <- list(c(42, 78, 92), c("Hello, World!", "Hello again, World!"), TRUE, 42L, 3 + 4i)
 
 #' Note that the elements of the list can be of different types and lengths! The
 #' list `my_list` contains a numeric value, a character string, a logical value,
@@ -32,7 +32,7 @@ print(my_list)
 #' elements are labeled with their index in the list (starting from 1). The type
 #' of each element is also displayed. This makes it easy to see the contents of
 #' the list and the types of the elements.
-#' 
+#'
 #' Also, notice that some list elements are actually vectors. This is because a
 #' list can contain any R object, including other lists, vectors, matrices, and
 #' data frames. This nested structure allows for complex data structures to be
@@ -48,18 +48,38 @@ print(my_list)
 #' Access the first element of the list using double square brackets `[[]]`
 print(my_list[[1]])
 
-#' Access the second element of the list using the dollar sign `$` Note: The
-#' dollar sign `$` can only be used with named elements. If the elements are not
-#' named, you must use double square brackets `[[]]` to access them. Let's name
-#' the elements of the list to demonstrate this.
-names(my_list) <- c("element_1",
-                    "element_2",
-                    "element_3",
-                    "element_4",
-                    "element_5")
+#' Furthermore, since this list element is a vector, you can access its elements
+#' using single square brackets `[]`.
+#'
+#' Access the second element of the first element of the list using single
+#' square brackets `[]`
+#'
+#' Note: The double square brackets `[[]]` are used to access elements of a
+#' list, while single square brackets `[]` are used to access elements of a
+#' vector.
+print(my_list[[1]][2])
+
+#' Of course it requires a keen eye and a bit of practice to understand the
+#' structure of the list and access the elements correctly.
+#'
+#' Access the second element of the list using the dollar sign `$`
+#'
+#' Note: The dollar sign `$` can only be used with named elements. If the
+#' elements are not named, you must use double square brackets `[[]]` to access
+#' them. Let's name the elements of the list to demonstrate this.
+names(my_list) <- c(
+    "element_1",
+    "element_2",
+    "element_3",
+    "element_4",
+    "element_5"
+)
 print(my_list$element_2)
 
-#' Adding elements to a list
+#' Again, named elements can be accessed using the dollar sign `$`, while unnamed
+#' elements require the double square brackets `[[]]`.
+
+#' ## Adding elements to a list
 #'
 #' Elements can be added to a list using the double square brackets `[[]]` or
 #' the dollar sign `$`. To add an element to a list, you need to assign a value
@@ -82,7 +102,7 @@ print(my_list)
 #'
 #' That's it for this example! In the next lecture, we will learn about matrices
 #' in R.
-#' 
+#'
 #+ echo = FALSE
 htmltools::includeHTML("../../index_lectures.html")
 htmltools::includeHTML("../../index_exercises.html")
