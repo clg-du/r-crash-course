@@ -140,7 +140,23 @@ print(readline("Enter your name: "))
 # Calculate the difference of two numbers
 5 - 2
 
-# We will cover more arithmetic operations in a later lecture.
+#' We will cover more arithmetic operations in a later lecture.
+#'
+#' At this point, you might have noted that the output of the code is displayed
+#' in the console preceeded by `[1]`. This is the index of the output. If you
+#' have multiple outputs, they will be indexed sequentially.
+#' 
+#' The `[1]` is not part of the output itself, but rather an index that R uses to
+#' identify the output. It is useful when you have multiple outputs, as it helps
+#' you identify which output corresponds to which command.
+#' 
+#' Here is a simple counter example:
+#' 
+#' Print all integers from 1 to 100, using colon operator
+print(1:100)
+
+#' Here you can see that the output is indexed from 1 to 100, and each new line
+#' of output is preceded by the corresponding index.
 
 #' ## Packages
 

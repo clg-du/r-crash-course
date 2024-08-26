@@ -1,5 +1,5 @@
 # Exercise 4 Solutions: Comparison and Logical Operators in R
-2024-08-25
+2024-08-26
 
 <!--html_preserve--><details>
   <summary>Lecture index</summary>

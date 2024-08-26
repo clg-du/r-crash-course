@@ -1,5 +1,5 @@
 # Exercise 7 Solutions: Matrices in R
-2024-08-25
+2024-08-26
 
 <!--html_preserve--><details>
   <summary>Lecture index</summary>
@@ -158,7 +158,7 @@ print(element2)
 ```
 
 ```
-## [1] 2296224
+## Error in eval(expr, envir, enclos): object 'element2' not found
 ```
 
 That's it for Exercise 7! Well done!

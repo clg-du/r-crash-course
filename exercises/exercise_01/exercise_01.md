@@ -1,5 +1,5 @@
 # Exercise 1: Introduction to R
-2024-08-25
+2024-08-26
 
 <!--html_preserve--><details>
   <summary>Lecture index</summary>
