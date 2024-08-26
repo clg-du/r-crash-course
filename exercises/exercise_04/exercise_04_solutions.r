@@ -71,25 +71,6 @@ not_result <- !TRUE
 combined_and_result <- (5 > 3) & (4 < 6)
 combined_or_result <- (5 > 3) | (4 < 6)
 
-
-#' ## Task 4: Display the Results
-#'
-#' Print the values of all the variables created in Task 1, Task 2, and Task 3.
-#'
-#' Your code here:
-print(equal_to_result)
-print(not_equal_to_result)
-print(greater_than_result)
-print(greater_than_or_equal_to_result)
-print(less_than_result)
-print(less_than_or_equal_to_result)
-print(and_result)
-print(or_result)
-print(not_result)
-print(combined_and_result)
-print(combined_or_result)
-
-
 #' That's it for Exercise 4! Great job!
 #' 
 #+ echo = FALSE

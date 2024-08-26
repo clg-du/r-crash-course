@@ -88,9 +88,9 @@ Your code here:
 Load the dataset `mtcars` and explore its structure using the `str` function.
 What can be inferred from the structure of the dataset?
 
-Hint: to access a single column of a data frame, you can use the `$` operator.
-For example, to access the `mpg` column of the `mtcars` dataset, you can use
-`mtcars$mpg`.
+Hint: to access a single column of a data frame, you can use the `$`
+operator. For example, to access the `mpg` column of the `mtcars` dataset,
+you can use `mtcars$mpg`.
 
 Your code and/or comments here:
 

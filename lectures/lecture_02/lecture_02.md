@@ -211,9 +211,9 @@ class(my_complex)
 ## [1] "complex"
 ```
 
-Note: The `typeof` function is used to check the internal type of an object in
-R. It returns the internal type of the object. For example, numeric, character,
-logical, integer, etc.
+Note: The `typeof` function is used to check the internal type of an object
+in R. It returns the internal type of the object. For example, numeric,
+character, logical, integer, etc.
 
 
 ``` r
@@ -256,9 +256,9 @@ typeof(my_complex)
 ## [1] "complex"
 ```
 
-Note: The `mode` function is used to check the storage mode of an object in R. It
-returns the storage mode of the object. For example, numeric, character, logical,
-integer, etc.
+Note: The `mode` function is used to check the storage mode of an object in
+R. It returns the storage mode of the object. For example, numeric,
+character, logical, integer, etc.
 
 
 ``` r
@@ -301,10 +301,11 @@ mode(my_complex)
 ## [1] "complex"
 ```
 
-Note: The `is.numeric` function is used to check if an object is of the numeric
-data type. It returns `TRUE` if the object is numeric and `FALSE` otherwise.
-This is useful when you want to check if an object is numeric before performing
-numeric operations on it (e.g., addition, subtraction, multiplication, division).
+Note: The `is.numeric` function is used to check if an object is of the
+numeric data type. It returns `TRUE` if the object is numeric and `FALSE`
+otherwise. This is useful when you want to check if an object is numeric
+before performing numeric operations on it (e.g., addition, subtraction,
+multiplication, division).
 
 
 ``` r
@@ -392,10 +393,10 @@ is.character(my_complex)
 ## [1] FALSE
 ```
 
-Note: The `is.logical` function is used to check if an object is of the logical
-data type. It returns `TRUE` if the object is logical and `FALSE` otherwise.
-This is useful when you want to check if an object is logical before performing
-logical operations on it (e.g., AND, OR, NOT).
+Note: The `is.logical` function is used to check if an object is of the
+logical data type. It returns `TRUE` if the object is logical and `FALSE`
+otherwise. This is useful when you want to check if an object is logical
+before performing logical operations on it (e.g., AND, OR, NOT).
 
 
 ``` r

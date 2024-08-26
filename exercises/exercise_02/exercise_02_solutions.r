@@ -82,7 +82,7 @@ class(mtcars$gear)
 #' categorical variables in R. This would be a better choice for the `gear`
 #' variable, which has a natural ordering but is not a continuous numeric
 #' variable.
-
+#'
 #' That's it for Exercise 2! Well done!
 #'
 #+ echo = FALSE

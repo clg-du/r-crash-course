@@ -113,7 +113,10 @@ print(F)
 
 Extra: If one sets `T <- FALSE`, or vice versa, the logical values will be
        updated for the these variables! Do not do this in practice, as it can
-       lead to confusion... And do not be mean to other programmers! ;)
+       lead to confusion... 
+
+...and do not be mean to other programmers! ;)
+
 Let's perform some comparison operations in R!
 Equal to (`==`)
 
