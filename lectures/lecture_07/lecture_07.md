@@ -98,9 +98,11 @@ print(my_matrix)
 ## [2,]    2    4    6
 ```
 
-Notice how the matrix is displayed with rows and columns. The elements are
-labeled with their row and column indices. This makes it easy to see the
-structure of the matrix and the values of the elements.
+Notice how the indexing is displayed in the output. The selected rows and
+columns are highlighted in the output to make it clear which elements are
+being accessed. [1,] indicates the first row, and [2,] indicates the second
+row, and so on. The columns are labeled with their indices. [,1] indicates
+the first column, and [,2] indicates the second column, and so on.
 
 ## Accessing elements of a matrix
 
@@ -171,11 +173,6 @@ print(my_matrix[1:2, ])
 ## [2,]    2    4    6
 ```
 
-Notice how the indexing is displayed in the output. The selected rows and
-columns are highlighted in the output to make it clear which elements are
-being accessed. [1,] indicates the first row, and [2,] indicates the second
-row, and so on. The columns are labeled with their indices. [,1] indicates
-the first column, and [,2] indicates the second column, and so on.
 
 To select the last two columns of the matrix, we can use the following syntax
 
