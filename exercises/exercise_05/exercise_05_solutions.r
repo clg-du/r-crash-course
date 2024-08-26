@@ -61,22 +61,6 @@ numeric_vector_plus_5 <- numeric_vector + 5
 character_vector_concatenated <- c(character_vector, character_vector)
 logical_vector_negated <- !logical_vector
 
-
-#' ## Task 4: Display the Results
-#'
-#' Print the values of all the variables created in Task 1, Task 2, and Task 3.
-#'
-#' Your code here:
-print(numeric_vector)
-print(character_vector)
-print(logical_vector)
-print(numeric_element)
-print(character_element)
-print(logical_element)
-print(numeric_vector_plus_5)
-print(character_vector_concatenated)
-print(logical_vector_negated)
-
 #' That's it for Exercise 5! Great job!
 #'
 #+ echo = FALSE

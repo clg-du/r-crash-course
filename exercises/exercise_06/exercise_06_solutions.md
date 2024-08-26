@@ -108,81 +108,46 @@ modified_list <- c(my_list, "blue")
 person$city <- "San Francisco"
 ```
 
-## Task 4: Display the Results
+## Task 4: A list of lists... of lists!
 
-Print the values of all the variables created in Task 1, Task 2, and Task 3.
+Consider this ridiculousness of nested lists:
+
+
+``` r
+nested_lists <- list(
+    list(
+        list(c(1, 2, 3), c("a", "b", "c"), c(TRUE, FALSE, TRUE)),
+        list(c(4, 5, 6), c("d", "e", "f"), c(FALSE, TRUE, FALSE)),
+        list(c(7, 8, 9), c("g", "h", "i"), c(TRUE, TRUE, FALSE))
+    ),
+    list(
+        list(c(10, 11, 12), c("j", "k", "l"), c(FALSE, FALSE, TRUE)),
+        list(c(13, 14, 15), c("m", "n", "o"), c(TRUE, FALSE, TRUE)),
+        list(c(16, 17, 18), c("p", "q", "r"), c(FALSE, TRUE, TRUE))
+    ),
+    list(
+        list(c(19, 20, 21), c("s", "t", "u"), c(TRUE, FALSE, FALSE)),
+        list(c(22, 23, 24), c("v", "w", "x"), c(FALSE, TRUE, TRUE)),
+        list(c(25, 26, 27), c("y", "z", "aa"), c(TRUE, TRUE, TRUE))
+    )
+)
+```
+
+Access the following elements from the nested list:
+
+1. The letter "w".
+
+2. The number 14.
+
+3. The vector of logical values c(TRUE, TRUE, TRUE) (i.e., all TRUE).
 
 Your code here:
 
 
 ``` r
-print(my_list)
-```
-
-```
-## [[1]]
-## [1] 10
-## 
-## [[2]]
-## [1] "red"
-## 
-## [[3]]
-## [1] TRUE
-## 
-## [[4]]
-## [1] 3.14
-```
-
-``` r
-print(person)
-```
-
-```
-## $name
-## [1] "John"
-## 
-## $age
-## [1] 25
-## 
-## $city
-## [1] "San Francisco"
-```
-
-``` r
-print(list_element)
-```
-
-```
-## [1] "red"
-```
-
-``` r
-print(age)
-```
-
-```
-## [1] 25
-```
-
-``` r
-print(modified_list)
-```
-
-```
-## [[1]]
-## [1] 10
-## 
-## [[2]]
-## [1] "red"
-## 
-## [[3]]
-## [1] TRUE
-## 
-## [[4]]
-## [1] 3.14
-## 
-## [[5]]
-## [1] "blue"
+letter_w <- nested_lists[[2]][[2]][[2]][2]
+number_14 <- nested_lists[[2]][[2]][[1]][2]
+logical_vector_true <- nested_lists[[3]][[3]][[3]]
 ```
 
 That's it for Exercise 6! Well done!
