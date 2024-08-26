@@ -27,9 +27,11 @@ htmltools::includeHTML("../../index_exercises.html")
 #' the number of rows, and the number of columns as arguments. We will discuss
 #' functions and arguments in more detail in a later lecture. For now, focus on
 #' understanding how to create a matrix in R.
-my_matrix <- matrix(data = c(1, 2, 3, 4, 5, 6),
-                    nrow = 2,
-                    ncol = 3)
+my_matrix <- matrix(
+    data = c(1, 2, 3, 4, 5, 6),
+    nrow = 2,
+    ncol = 3
+)
 
 #' Display the matrix
 print(my_matrix)
@@ -65,6 +67,12 @@ print(my_matrix[, 2])
 #' syntax
 print(my_matrix[1:2, ])
 
+#' Notice how the indexing is displayed in the output. The selected rows and
+#' columns are highlighted in the output to make it clear which elements are
+#' being accessed. [1,] indicates the first row, and [2,] indicates the second
+#' row, and so on. The columns are labeled with their indices. [,1] indicates
+#' the first column, and [,2] indicates the second column, and so on.
+#'
 #' To select the last two columns of the matrix, we can use the following syntax
 print(my_matrix[, 2:3])
 
@@ -81,12 +89,16 @@ print(my_matrix[, -3])
 #' lecture, but it is important to know that this operator exists.
 #'
 #' Example: Create two matrices for multiplication
-matrix_a <- matrix(data = c(1, 2, 3, 4),
-                   nrow = 2,
-                   ncol = 2)
-matrix_b <- matrix(data = c(5, 6, 7, 8),
-                   nrow = 2,
-                   ncol = 2)
+matrix_a <- matrix(
+    data = c(1, 2, 3, 4),
+    nrow = 2,
+    ncol = 2
+)
+matrix_b <- matrix(
+    data = c(5, 6, 7, 8),
+    nrow = 2,
+    ncol = 2
+)
 
 #' Multiply the matrices using the `%*%` operator
 result_matrix_multiplication <- matrix_a %*% matrix_b
@@ -99,7 +111,7 @@ print(result_matrix_multiplication)
 #'
 #' That's it for this example! In the next lecture, we will learn about data
 #' frames in R.
-#' 
+#'
 #+ echo = FALSE
 htmltools::includeHTML("../../index_lectures.html")
 htmltools::includeHTML("../../index_exercises.html")

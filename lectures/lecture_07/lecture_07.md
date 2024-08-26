@@ -78,9 +78,11 @@ understanding how to create a matrix in R.
 
 
 ``` r
-my_matrix <- matrix(data = c(1, 2, 3, 4, 5, 6),
-                    nrow = 2,
-                    ncol = 3)
+my_matrix <- matrix(
+    data = c(1, 2, 3, 4, 5, 6),
+    nrow = 2,
+    ncol = 3
+)
 ```
 
 Display the matrix
@@ -169,6 +171,12 @@ print(my_matrix[1:2, ])
 ## [2,]    2    4    6
 ```
 
+Notice how the indexing is displayed in the output. The selected rows and
+columns are highlighted in the output to make it clear which elements are
+being accessed. [1,] indicates the first row, and [2,] indicates the second
+row, and so on. The columns are labeled with their indices. [,1] indicates
+the first column, and [,2] indicates the second column, and so on.
+
 To select the last two columns of the matrix, we can use the following syntax
 
 
@@ -216,12 +224,16 @@ Example: Create two matrices for multiplication
 
 
 ``` r
-matrix_a <- matrix(data = c(1, 2, 3, 4),
-                   nrow = 2,
-                   ncol = 2)
-matrix_b <- matrix(data = c(5, 6, 7, 8),
-                   nrow = 2,
-                   ncol = 2)
+matrix_a <- matrix(
+    data = c(1, 2, 3, 4),
+    nrow = 2,
+    ncol = 2
+)
+matrix_b <- matrix(
+    data = c(5, 6, 7, 8),
+    nrow = 2,
+    ncol = 2
+)
 ```
 
 Multiply the matrices using the `%*%` operator
