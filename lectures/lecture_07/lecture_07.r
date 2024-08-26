@@ -36,6 +36,24 @@ my_matrix <- matrix(
 #' Display the matrix
 print(my_matrix)
 
+#' The matrix is by default filled column-wise. The `data` argument contains the
+#' values of the matrix, and the `nrow` and `ncol` arguments specify the number
+#' of rows and columns, respectively. The matrix is filled column-wise, meaning
+#' that the first two elements are placed in the first column, the next two
+#' elements are placed in the second column, and so on.
+#' 
+#' To fill the matrix row-wise, we can use the `byrow` argument and set it to
+#' `TRUE`. Let's create a matrix with the `byrow` argument set to `TRUE`.
+my_matrix_byrow <- matrix(
+    data = c(1, 2, 3, 4, 5, 6),
+    nrow = 2,
+    ncol = 3,
+    byrow = TRUE
+)
+
+#' Display the matrix filled row-wise
+print(my_matrix_byrow)
+
 #' Notice how the indexing is displayed in the output. The selected rows and
 #' columns are highlighted in the output to make it clear which elements are
 #' being accessed. [1,] indicates the first row, and [2,] indicates the second
