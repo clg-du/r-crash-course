@@ -90,19 +90,22 @@ Create a logical variable
 my_logical <- TRUE
 ```
 
-Create an integer variable Note: In R, integers are specified by adding an
-`L` to the end of the number (`L` stands for "long integer"). This tells R to
-treat the number as an integer rather than a numeric value.
+Create an integer variable
+
+Note: In R, integers are specified by adding an `L` to the end of the number
+(`L` stands for "long integer"). This tells R to treat the number as an
+integer rather than a numeric value.
 
 
 ``` r
 my_int <- 42L
 ```
 
-Create a complex variable Note: In R, complex numbers are specified using the
-`i` suffix. The real part is separated from the imaginary part by a `+` sign.
-We won't be using complex numbers at all in this course, but it's good to
-know they exist!
+Create a complex variable
+
+Note: In R, complex numbers are specified using the `i` suffix. The real part
+is separated from the imaginary part by a `+` sign. We won't be using complex
+numbers at all in this course, but it's good to know they exist!
 
 
 ``` r
@@ -150,6 +153,289 @@ print(my_complex)
 
 ```
 ## [1] 3+4i
+```
+
+## Data Types
+
+R has several built-in data types, including:
+
+- Numeric: Represents real numbers (e.g., 3.14).
+- Character: Represents text data (e.g., "Hello, World!").
+- Logical: Represents boolean values (`TRUE` or `FALSE`).
+- Integer: Represents whole numbers (e.g., 42L).
+- Complex: Represents complex numbers (e.g., 3 + 4i).
+
+Let's check the data types of the variables we created earlier.
+
+Note: The `class` function is used to check the data type of an object in R.
+It returns the class or data type of the object.
+
+
+``` r
+class(my_num)
+```
+
+```
+## [1] "numeric"
+```
+
+``` r
+class(my_char)
+```
+
+```
+## [1] "character"
+```
+
+``` r
+class(my_logical)
+```
+
+```
+## [1] "logical"
+```
+
+``` r
+class(my_int)
+```
+
+```
+## [1] "integer"
+```
+
+``` r
+class(my_complex)
+```
+
+```
+## [1] "complex"
+```
+
+Note: The `typeof` function is used to check the internal type of an object in
+R. It returns the internal type of the object. For example, numeric, character,
+logical, integer, etc.
+
+
+``` r
+typeof(my_num)
+```
+
+```
+## [1] "double"
+```
+
+``` r
+typeof(my_char)
+```
+
+```
+## [1] "character"
+```
+
+``` r
+typeof(my_logical)
+```
+
+```
+## [1] "logical"
+```
+
+``` r
+typeof(my_int)
+```
+
+```
+## [1] "integer"
+```
+
+``` r
+typeof(my_complex)
+```
+
+```
+## [1] "complex"
+```
+
+Note: The `mode` function is used to check the storage mode of an object in R. It
+returns the storage mode of the object. For example, numeric, character, logical,
+integer, etc.
+
+
+``` r
+mode(my_num)
+```
+
+```
+## [1] "numeric"
+```
+
+``` r
+mode(my_char)
+```
+
+```
+## [1] "character"
+```
+
+``` r
+mode(my_logical)
+```
+
+```
+## [1] "logical"
+```
+
+``` r
+mode(my_int)
+```
+
+```
+## [1] "numeric"
+```
+
+``` r
+mode(my_complex)
+```
+
+```
+## [1] "complex"
+```
+
+Note: The `is.numeric` function is used to check if an object is of the numeric
+data type. It returns `TRUE` if the object is numeric and `FALSE` otherwise.
+This is useful when you want to check if an object is numeric before performing
+numeric operations on it (e.g., addition, subtraction, multiplication, division).
+
+
+``` r
+is.numeric(my_num)
+```
+
+```
+## [1] TRUE
+```
+
+``` r
+is.numeric(my_char)
+```
+
+```
+## [1] FALSE
+```
+
+``` r
+is.numeric(my_logical)
+```
+
+```
+## [1] FALSE
+```
+
+``` r
+is.numeric(my_int)
+```
+
+```
+## [1] TRUE
+```
+
+``` r
+is.numeric(my_complex)
+```
+
+```
+## [1] FALSE
+```
+
+Note: The `is.character` function is used to check if an object is of the
+character data type. It returns `TRUE` if the object is character and `FALSE`
+otherwise.
+
+
+``` r
+is.character(my_num)
+```
+
+```
+## [1] FALSE
+```
+
+``` r
+is.character(my_char)
+```
+
+```
+## [1] TRUE
+```
+
+``` r
+is.character(my_logical)
+```
+
+```
+## [1] FALSE
+```
+
+``` r
+is.character(my_int)
+```
+
+```
+## [1] FALSE
+```
+
+``` r
+is.character(my_complex)
+```
+
+```
+## [1] FALSE
+```
+
+Note: The `is.logical` function is used to check if an object is of the logical
+data type. It returns `TRUE` if the object is logical and `FALSE` otherwise.
+This is useful when you want to check if an object is logical before performing
+logical operations on it (e.g., AND, OR, NOT).
+
+
+``` r
+is.logical(my_num)
+```
+
+```
+## [1] FALSE
+```
+
+``` r
+is.logical(my_char)
+```
+
+```
+## [1] FALSE
+```
+
+``` r
+is.logical(my_logical)
+```
+
+```
+## [1] TRUE
+```
+
+``` r
+is.logical(my_int)
+```
+
+```
+## [1] FALSE
+```
+
+``` r
+is.logical(my_complex)
+```
+
+```
+## [1] FALSE
 ```
 
 That's it for this example! In the next lecture, we will learn about

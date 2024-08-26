@@ -30,15 +30,18 @@ my_char <- "Hello, World!"
 #' Create a logical variable
 my_logical <- TRUE
 
-#' Create an integer variable Note: In R, integers are specified by adding an
-#' `L` to the end of the number (`L` stands for "long integer"). This tells R to
-#' treat the number as an integer rather than a numeric value.
+#' Create an integer variable
+#'
+#' Note: In R, integers are specified by adding an `L` to the end of the number
+#' (`L` stands for "long integer"). This tells R to treat the number as an
+#' integer rather than a numeric value.
 my_int <- 42L
 
-#' Create a complex variable Note: In R, complex numbers are specified using the
-#' `i` suffix. The real part is separated from the imaginary part by a `+` sign.
-#' We won't be using complex numbers at all in this course, but it's good to
-#' know they exist!
+#' Create a complex variable
+#'
+#' Note: In R, complex numbers are specified using the `i` suffix. The real part
+#' is separated from the imaginary part by a `+` sign. We won't be using complex
+#' numbers at all in this course, but it's good to know they exist!
 my_complex <- 3 + 4i
 
 #' Display the values of the variables
@@ -48,9 +51,76 @@ print(my_logical)
 print(my_int)
 print(my_complex)
 
+#' ## Data Types
+#' 
+#' R has several built-in data types, including:
+#' 
+#' - Numeric: Represents real numbers (e.g., 3.14).
+#' - Character: Represents text data (e.g., "Hello, World!").
+#' - Logical: Represents boolean values (`TRUE` or `FALSE`).
+#' - Integer: Represents whole numbers (e.g., 42L).
+#' - Complex: Represents complex numbers (e.g., 3 + 4i).
+#' 
+#' Let's check the data types of the variables we created earlier.
+#' 
+#' Note: The `class` function is used to check the data type of an object in R.
+#' It returns the class or data type of the object.
+class(my_num)
+class(my_char)
+class(my_logical)
+class(my_int)
+class(my_complex)
+
+#' Note: The `typeof` function is used to check the internal type of an object in
+#' R. It returns the internal type of the object. For example, numeric, character,
+#' logical, integer, etc.
+typeof(my_num)
+typeof(my_char)
+typeof(my_logical)
+typeof(my_int)
+typeof(my_complex)
+ 
+#' Note: The `mode` function is used to check the storage mode of an object in R. It
+#' returns the storage mode of the object. For example, numeric, character, logical,
+#' integer, etc.
+mode(my_num)
+mode(my_char)
+mode(my_logical)
+mode(my_int)
+mode(my_complex)
+
+#' Note: The `is.numeric` function is used to check if an object is of the numeric
+#' data type. It returns `TRUE` if the object is numeric and `FALSE` otherwise.
+#' This is useful when you want to check if an object is numeric before performing
+#' numeric operations on it (e.g., addition, subtraction, multiplication, division).
+is.numeric(my_num)
+is.numeric(my_char)
+is.numeric(my_logical)
+is.numeric(my_int)
+is.numeric(my_complex)
+
+#' Note: The `is.character` function is used to check if an object is of the
+#' character data type. It returns `TRUE` if the object is character and `FALSE`
+#' otherwise.
+is.character(my_num)
+is.character(my_char)
+is.character(my_logical)
+is.character(my_int)
+is.character(my_complex)
+ 
+#' Note: The `is.logical` function is used to check if an object is of the logical
+#' data type. It returns `TRUE` if the object is logical and `FALSE` otherwise.
+#' This is useful when you want to check if an object is logical before performing
+#' logical operations on it (e.g., AND, OR, NOT).
+is.logical(my_num)
+is.logical(my_char)
+is.logical(my_logical)
+is.logical(my_int)
+is.logical(my_complex)
+
 #' That's it for this example! In the next lecture, we will learn about
 #' arithmetic operations in R.
-#' 
+#'
 #+ echo = FALSE
 htmltools::includeHTML("../../index_lectures.html")
 htmltools::includeHTML("../../index_exercises.html")

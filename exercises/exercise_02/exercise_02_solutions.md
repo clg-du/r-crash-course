@@ -118,93 +118,58 @@ complex1 <- 2 + 3i
 complex2 <- -1 + 4i
 ```
 
-## Task 6: Display the Values of the Variables
+## Task 6: Explore a dataset.
 
-Print the values of all the variables created above.
+Load the dataset `mtcars` and explore its structure using the `str` function.
+What can be inferred from the structure of the dataset?
 
-Your code here:
+Hint: to access a single column of a data frame, you can use the `$` operator.
+For example, to access the `mpg` column of the `mtcars` dataset, you can use
+`mtcars$mpg`.
+
+Your code and/or comments here:
+Load the mtcars dataset
+
+
+``` r
+data(mtcars)
+str(mtcars)
+```
+
+```
+## 'data.frame':	32 obs. of  11 variables:
+##  $ mpg : num  21 21 22.8 21.4 18.7 18.1 14.3 24.4 22.8 19.2 ...
+##  $ cyl : num  6 6 4 6 8 6 8 4 4 6 ...
+##  $ disp: num  160 160 108 258 360 ...
+##  $ hp  : num  110 110 93 110 175 105 245 62 95 123 ...
+##  $ drat: num  3.9 3.9 3.85 3.08 3.15 2.76 3.21 3.69 3.92 3.92 ...
+##  $ wt  : num  2.62 2.88 2.32 3.21 3.44 ...
+##  $ qsec: num  16.5 17 18.6 19.4 17 ...
+##  $ vs  : num  0 0 1 1 0 1 0 1 1 1 ...
+##  $ am  : num  1 1 1 0 0 0 0 0 0 0 ...
+##  $ gear: num  4 4 4 3 3 3 3 4 4 4 ...
+##  $ carb: num  4 4 1 1 2 1 4 2 2 4 ...
+```
+
+The mtcars dataset has 32 observations and 11 variables. The variables are
+all numeric, representing various attributes of cars such as miles per gallon
+(mpg), number of cylinders (cyl), horsepower (hp), and weight (wt).
 
 
 ``` r
-print(num1)
+class(mtcars$gear)
 ```
 
 ```
-## [1] 10.5
+## [1] "numeric"
 ```
 
-``` r
-print(num2)
-```
-
-```
-## [1] 7.2
-```
-
-``` r
-print(char1)
-```
-
-```
-## [1] "Hello"
-```
-
-``` r
-print(char2)
-```
-
-```
-## [1] "World"
-```
-
-``` r
-print(logical1)
-```
-
-```
-## [1] TRUE
-```
-
-``` r
-print(logical2)
-```
-
-```
-## [1] FALSE
-```
-
-``` r
-print(int1)
-```
-
-```
-## [1] 5
-```
-
-``` r
-print(int2)
-```
-
-```
-## [1] -3
-```
-
-``` r
-print(complex1)
-```
-
-```
-## [1] 2+3i
-```
-
-``` r
-print(complex2)
-```
-
-```
-## [1] -1+4i
-```
-
+The `gear` variable is by default an numeric variable, but it represents the
+number of forward gears in the car. It would make more sense to treat it as a
+an integer variable, as the number of gears is a whole number. In future lectures,
+we will learn about factors, which are used to represent categorical variables
+in R. This would be a better choice for the `gear` variable, which has a natural
+ordering but is not a continuous numeric variable.
 That's it for Exercise 2! Well done!
 
 

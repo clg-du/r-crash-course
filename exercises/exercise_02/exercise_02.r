@@ -45,11 +45,16 @@ htmltools::includeHTML("../../index_exercises.html")
 #' Your code here:
 
 
-#' ## Task 6: Display the Values of the Variables
+#' ## Task 6: Explore a dataset.
 #'
-#' Print the values of all the variables created above.
+#' Load the dataset `mtcars` and explore its structure using the `str` function.
+#' What can be inferred from the structure of the dataset?
+#' 
+#' Hint: to access a single column of a data frame, you can use the `$` operator.
+#' For example, to access the `mpg` column of the `mtcars` dataset, you can use
+#' `mtcars$mpg`.
 #'
-#' Your code here:
+#' Your code and/or comments here:
 
 #'
 #' That's it for Exercise 2! Well done!

@@ -55,22 +55,32 @@ complex1 <- 2 + 3i
 complex2 <- -1 + 4i
 
 
-#' ## Task 6: Display the Values of the Variables
+#' ## Task 6: Explore a dataset.
 #'
-#' Print the values of all the variables created above.
+#' Load the dataset `mtcars` and explore its structure using the `str` function.
+#' What can be inferred from the structure of the dataset?
+#' 
+#' Hint: to access a single column of a data frame, you can use the `$` operator.
+#' For example, to access the `mpg` column of the `mtcars` dataset, you can use
+#' `mtcars$mpg`.
 #'
-#' Your code here:
-print(num1)
-print(num2)
-print(char1)
-print(char2)
-print(logical1)
-print(logical2)
-print(int1)
-print(int2)
-print(complex1)
-print(complex2)
+#' Your code and/or comments here:
 
+#' Load the mtcars dataset
+data(mtcars)
+str(mtcars)
+
+#' The mtcars dataset has 32 observations and 11 variables. The variables are
+#' all numeric, representing various attributes of cars such as miles per gallon
+#' (mpg), number of cylinders (cyl), horsepower (hp), and weight (wt).
+class(mtcars$gear)
+
+#' The `gear` variable is by default an numeric variable, but it represents the
+#' number of forward gears in the car. It would make more sense to treat it as a
+#' an integer variable, as the number of gears is a whole number. In future lectures,
+#' we will learn about factors, which are used to represent categorical variables
+#' in R. This would be a better choice for the `gear` variable, which has a natural
+#' ordering but is not a continuous numeric variable.
 
 #' That's it for Exercise 2! Well done!
 #' 
