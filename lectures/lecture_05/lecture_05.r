@@ -11,7 +11,7 @@ htmltools::includeHTML("../../index_exercises.html")
 #' which are more complex data structures in R. It is important, however, to
 #' understand vectors before moving on to these more advanced topics.
 #'
-#' # Vectors in R
+#' ## Vectors in R
 #'
 #' Vectors...
 #'
@@ -39,7 +39,7 @@ print(my_numeric_vector)
 print(my_character_vector)
 print(my_logical_vector)
 
-#' Indexing vectors in R
+#' ## Indexing vectors in R
 #'
 #' We can access individual elements of a vector using square brackets `[]`. The
 #' index of the element we want to access goes inside the square brackets.
@@ -54,7 +54,8 @@ print(my_numeric_vector[1])
 #' Access the second element of the character vector
 print(my_character_vector[2])
 
-#' Access the last element of the logical vector
+#' Access the last element of the logical vector. We can use the `length()` to
+#' get the length of the vector, and hence the index of the last element.
 print(my_logical_vector[length(my_logical_vector)])
 
 #' Access multiple elements of a vector We can use a vector of indices inside
@@ -71,7 +72,7 @@ print(my_numeric_vector[c(1, 3, 5)])
 print(my_character_vector[-2])
 
 #' That's it for vectors! Next, we will learn about lists in R.
-#' 
+#'
 #+ echo = FALSE
 htmltools::includeHTML("../../index_lectures.html")
 htmltools::includeHTML("../../index_exercises.html")

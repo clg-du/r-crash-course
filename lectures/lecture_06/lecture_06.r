@@ -18,22 +18,27 @@ htmltools::includeHTML("../../index_exercises.html")
 #' Let's create a list in R!
 #'
 #' Create a list with multiple elements of different types
-my_list <- list(42, "Hello, World!", TRUE, 42L, 3 + 4i)
+my_list <- list(c(42,78,92), c("Hello, World!", "Hello again, World!", TRUE, 42L, 3 + 4i)
 
 #' Note that the elements of the list can be of different types and lengths! The
 #' list `my_list` contains a numeric value, a character string, a logical value,
 #' an integer value, and a complex number. This is something that vectors cannot
 #' do, as they require all elements to be of the same type.
 #'
-#' Display the list
+# Display the list `my_list`
 print(my_list)
 
 #' Notice how the list is displayed with each element on a separate line. The
 #' elements are labeled with their index in the list (starting from 1). The type
 #' of each element is also displayed. This makes it easy to see the contents of
 #' the list and the types of the elements.
+#' 
+#' Also, notice that some list elements are actually vectors. This is because a
+#' list can contain any R object, including other lists, vectors, matrices, and
+#' data frames. This nested structure allows for complex data structures to be
+#' created and manipulated in R.
 #'
-#' Accessing elements of a list
+#' ## Accessing elements of a list
 #'
 #' Elements of a list can be accessed using double square brackets `[[]]` or the
 #' dollar sign `$`. The double square brackets `[[]]` are used to extract a

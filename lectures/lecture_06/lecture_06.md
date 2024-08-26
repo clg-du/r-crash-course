@@ -69,7 +69,13 @@ Create a list with multiple elements of different types
 
 
 ``` r
-my_list <- list(42, "Hello, World!", TRUE, 42L, 3 + 4i)
+my_list <- list(c(42,78,92), c("Hello, World!", "Hello again, World!", TRUE, 42L, 3 + 4i)
+```
+
+```
+## Error: <text>:2:0: unexpected end of input
+## 1: my_list <- list(c(42,78,92), c("Hello, World!", "Hello again, World!", TRUE, 42L, 3 + 4i)
+##    ^
 ```
 
 Note that the elements of the list can be of different types and lengths! The
@@ -77,28 +83,25 @@ list `my_list` contains a numeric value, a character string, a logical value,
 an integer value, and a complex number. This is something that vectors cannot
 do, as they require all elements to be of the same type.
 
-Display the list
 
 
 ``` r
+# Display the list `my_list`
 print(my_list)
 ```
 
 ```
 ## [[1]]
-## [1] 42
+## [1] 10
 ## 
 ## [[2]]
-## [1] "Hello, World!"
+## [1] "red"
 ## 
 ## [[3]]
 ## [1] TRUE
 ## 
 ## [[4]]
-## [1] 42
-## 
-## [[5]]
-## [1] 3+4i
+## [1] 3.14
 ```
 
 Notice how the list is displayed with each element on a separate line. The
@@ -106,7 +109,12 @@ elements are labeled with their index in the list (starting from 1). The type
 of each element is also displayed. This makes it easy to see the contents of
 the list and the types of the elements.
 
-Accessing elements of a list
+Also, notice that some list elements are actually vectors. This is because a
+list can contain any R object, including other lists, vectors, matrices, and
+data frames. This nested structure allows for complex data structures to be
+created and manipulated in R.
+
+## Accessing elements of a list
 
 Elements of a list can be accessed using double square brackets `[[]]` or the
 dollar sign `$`. The double square brackets `[[]]` are used to extract a
@@ -121,7 +129,7 @@ print(my_list[[1]])
 ```
 
 ```
-## [1] 42
+## [1] 10
 ```
 
 Access the second element of the list using the dollar sign `$` Note: The
@@ -136,11 +144,18 @@ names(my_list) <- c("element_1",
                     "element_3",
                     "element_4",
                     "element_5")
+```
+
+```
+## Error in names(my_list) <- c("element_1", "element_2", "element_3", "element_4", : 'names' attribute [5] must be the same length as the vector [4]
+```
+
+``` r
 print(my_list$element_2)
 ```
 
 ```
-## [1] "Hello, World!"
+## NULL
 ```
 
 Adding elements to a list
@@ -158,20 +173,20 @@ print(my_list)
 ```
 
 ```
-## $element_1
-## [1] 42
+## [[1]]
+## [1] 10
 ## 
-## $element_2
-## [1] "Hello, World!"
+## [[2]]
+## [1] "red"
 ## 
-## $element_3
+## [[3]]
 ## [1] TRUE
 ## 
-## $element_4
-## [1] 42
+## [[4]]
+## [1] 3.14
 ## 
-## $element_5
-## [1] 3+4i
+## [[5]]
+## NULL
 ## 
 ## [[6]]
 ## [1] "New Element"
@@ -186,20 +201,20 @@ print(my_list)
 ```
 
 ```
-## $element_1
-## [1] 42
+## [[1]]
+## [1] 10
 ## 
-## $element_2
-## [1] "Hello, World!"
+## [[2]]
+## [1] "red"
 ## 
-## $element_3
+## [[3]]
 ## [1] TRUE
 ## 
-## $element_4
-## [1] 42
+## [[4]]
+## [1] 3.14
 ## 
-## $element_5
-## [1] 3+4i
+## [[5]]
+## NULL
 ## 
 ## [[6]]
 ## [1] "New Element"

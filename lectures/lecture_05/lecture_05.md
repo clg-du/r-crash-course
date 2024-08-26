@@ -59,7 +59,7 @@ Later in this course, we will also cover list, matrices and data frames,
 which are more complex data structures in R. It is important, however, to
 understand vectors before moving on to these more advanced topics.
 
-# Vectors in R
+## Vectors in R
 
 Vectors...
 
@@ -121,7 +121,7 @@ print(my_logical_vector)
 ## [1]  TRUE FALSE  TRUE FALSE  TRUE
 ```
 
-Indexing vectors in R
+## Indexing vectors in R
 
 We can access individual elements of a vector using square brackets `[]`. The
 index of the element we want to access goes inside the square brackets.
@@ -152,7 +152,8 @@ print(my_character_vector[2])
 ## [1] "banana"
 ```
 
-Access the last element of the logical vector
+Access the last element of the logical vector. We can use the `length()` to
+get the length of the vector, and hence the index of the last element.
 
 
 ``` r
