@@ -43,15 +43,16 @@ htmltools::includeHTML("../../index_exercises.html")
 #' 2. Use the `sum` function to calculate the sum of the numbers and assign the
 #'    result to a variable called `sum_result`.
 #'
-#' 3. Use the `calculate_area` function with `length = 2` and `width = 3` to
-#'    calculate the area of a rectangle and assign the result to a variable
-#'    called `area_result`.
+#' 3. Creating a similar user defined function required conditional statements,
+#'    e.g., a `For` loop or `While` loop, which we have not covered yet. You
+#'    may, however, attempt to create a user defined function that calculates
+#'    the sum of the values in the `numbers` vector.
 #'
 #' Your code here:
 
 #'
 #' That's it for Exercise 9! Great job!
-#' 
+#'
 #+ echo = FALSE
 htmltools::includeHTML("../../index_lectures.html")
 htmltools::includeHTML("../../index_exercises.html")

@@ -54,17 +54,21 @@ volume <- calculate_volume(length = 4, width = 2, height = 6)
 #' 2. Use the `sum` function to calculate the sum of the numbers and assign the
 #'    result to a variable called `sum_result`.
 #'
-#' 3. Use the `calculate_area` function with `length = 2` and `width = 3` to
-#'    calculate the area of a rectangle and assign the result to a variable
-#'    called `area_result`.
+#' 3. Creating a similar user defined function required conditional statements,
+#'    e.g., a `For` loop or `While` loop, which we have not covered yet. You
+#'    may, however, attempt to create a user defined function that calculates
+#'    the sum of the values in the `numbers` vector.
 #'
 #' Your code here:
 numbers <- c(1, 2, 3, 4, 5)
 sum_result <- sum(numbers)
-area_result <- calculate_area(length = 2, width = 3)
+sum_user_defined <- function(x) {
+    return(x[1] + x[2] + x[3] + x[4] + x[5])
+}
+sum_result_user_defined <- sum_user_defined(numbers)
 
 #' That's it for Exercise 9! Great job!
-#' 
+#'
 #+ echo = FALSE
 htmltools::includeHTML("../../index_lectures.html")
 htmltools::includeHTML("../../index_exercises.html")
