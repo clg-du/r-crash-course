@@ -1,29 +1,6 @@
 # R Crash Course
 
-## Description
-
-This repository contains a crash course on R programming. It covers the basics
-of R, data manipulation, data visualization, and more.
-
-## Table of Contents
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Installation
-
-To use this crash course, you need to have R installed on your machine. You can
-download R from the official website [here](https://www.r-project.org/).
-
-## Usage
-
-To get started with the crash course, simply clone this repository to your local
-machine and open the R scripts, R markdown, or regular markdown documents in
-your preferred IDE or text editor.
-
-Check the following dropdown menus for content shortcuts:
+Check the following dropdown menus for quick access to content via links to markdown documents. Description and other details outlined further below in this readme file.
 
 <details>
   <summary>Lecture index</summary>
@@ -76,6 +53,29 @@ Check the following dropdown menus for content shortcuts:
   analysis](/exercises/exercise_13/exercise_13_solutions.md)
 
 </details>
+
+## Description
+
+This repository contains a crash course on R programming. It covers the basics
+of R, data manipulation, data visualization, and more.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Installation
+
+To use this crash course, you need to have R installed on your machine. You can
+download R from the official website [here](https://www.r-project.org/).
+
+## Usage
+
+To get started with the crash course, simply clone this repository to your local
+machine and open the R scripts, R markdown, or regular markdown documents in
+your preferred IDE or text editor.
 
 ## Contributing
 
