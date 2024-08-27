@@ -1,5 +1,5 @@
 # Lecture 1: Introduction to R
-2024-08-26
+2024-08-27
 
 <!--html_preserve--><details>
   <summary>Lecture index</summary>
@@ -268,6 +268,10 @@ Load the `car` package
 
 ``` r
 library(car)
+```
+
+```
+## Loading required package: carData
 ```
 
 The `car` package contains a dataset called `mtcars`. We can access this

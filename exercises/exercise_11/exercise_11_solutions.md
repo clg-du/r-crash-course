@@ -1,5 +1,5 @@
 # Exercise 11 Solutions: Working with Factors in R
-2024-08-26
+2024-08-27
 
 <!--html_preserve--><details>
   <summary>Lecture index</summary>

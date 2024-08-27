@@ -1,5 +1,5 @@
 # Exercise 3 Solutions: Arithmetic Operations in R
-2024-08-26
+2024-08-27
 
 <!--html_preserve--><details>
   <summary>Lecture index</summary>

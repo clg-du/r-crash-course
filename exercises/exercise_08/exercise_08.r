@@ -12,14 +12,16 @@ htmltools::includeHTML("../../index_exercises.html")
 #' 1. Create a data frame with the following columns:
 #'    - name: "Alice", "Bob", "Charlie", "David", "Eve"
 #'    - age: 25, 30, 35, 40, 45
-#'    - employed: TRUE, FALSE, TRUE, FALSE, TRUE Assign the data frame to a
-#'    variable called `df1`.
+#'    - employed: TRUE, FALSE, TRUE, FALSE, TRUE
+#'
+#' Assign the data frame to a variable called `df1`.
 #'
 #' 2. Create a data frame with the following columns:
 #'    - city: "New York", "Los Angeles", "Chicago", "Houston", "Phoenix"
 #'    - population: 8537673, 3976322, 2720546, 2296224, 1660272
-#'    - state: "New York", "California", "Illinois", "Texas", "Arizona" Assign
-#'    the data frame to a variable called `df2`.
+#'    - state: "New York", "California", "Illinois", "Texas", "Arizona"
+#'
+#' Assign the data frame to a variable called `df2`.
 #'
 #' Your code here:
 
@@ -44,14 +46,26 @@ htmltools::includeHTML("../../index_exercises.html")
 #' 1. Add a new column to `df1` called "gender" with the values "female",
 #'    "male", "male", "female", "female".
 #'
-#' 2. Change the value of the "state" column in the third row of `df2` to
+#' 2. Change the value of the `employed` column in the second row of `df1` to
+#'    either `"currently employed"` and `"not employed"`, i.e., a character
+#'    vector rather than a logical vector. Attempt doing this using the logical
+#'    values themselves rather than "hardcoding" it one-by-one.
+#'
+#' 3. Change the value of the "state" column in the third row of `df2` to
 #'    "Michigan".
+#'
+#' 4. Change the values of the population column in `df2` to millions of people
+#'    rather than the full range of numbers.
+#'
+#' Hint: For task 4 it might be useful to incorporate the built-in `round()`
+#' function in R.
 #'
 #' Your code here:
 
+
 #'
 #' That's it for Exercise 8! Well done!
-#' 
+#'
 #+ echo = FALSE
 htmltools::includeHTML("../../index_lectures.html")
 htmltools::includeHTML("../../index_exercises.html")
