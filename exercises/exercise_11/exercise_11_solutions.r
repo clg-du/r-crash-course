@@ -111,9 +111,9 @@ mpg$drv <- factor(mpg$drv) # No order of levels
 mpg$fl <- factor(mpg$fl) # No order of levels
 mpg$class <- factor(mpg$class) # Some order, but skip it...
 
-#' Note that only `displ` and `hwy` could not reasonably be turned
-#' into factors. However, if you do not find a NEED to transform into
-#' a factor variable, then you may just as well skip doing so!
+#' Note that only `displ` and `hwy` could not reasonably be turned into factors.
+#' However, if you do not find a NEED to transform into a factor variable, then
+#' you may just as well skip doing so!
 #'
 #' Finally, given the transformed data set, provide the following.
 #' 
@@ -123,8 +123,14 @@ mpg$class <- factor(mpg$class) # Some order, but skip it...
 # 1. Cars with more than 4 cylinders but less than 8 cylinders.
 filtered_cars <- mpg[mpg$cyl > 4 & mpg$cyl < 8, ]
 
-# 2. A barplot of highway miles per gallon for each manufacturer.
-barplot(mpg$hwy, names.arg = mpg$manufacturer, xlab = "Manufacturer", ylab = "Highway MPG")
+# 2. Cars with 4 or 6 cylinders and a highway mileage of more than 30 miles per
+#    gallon.
+filtered_cars_2 <- mpg[(mpg$cyl == 4 | mpg$cyl == 6) & mpg$hwy > 30, ]
+
+# 3. The average city mileage for cars with 4, 6, or 8 cylinders.
+average_city_mileage <- mean(mpg$cty[mpg$cyl == 4 | mpg$cyl == 6 | mpg$cyl == 8])
+
+
 
 #'
 #' That's it for Exercise 11! Great job!

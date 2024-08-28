@@ -95,7 +95,13 @@ unique(mpg$cyl))
 #' 
 #' 1. Cars with more than 4 cylinders but less than 8 cylinders.
 #' 
-#' 2. A barplot of highway miles per gallon for each manufacturer.
+#' 2. Cars with 4 or 6 cylinders and a highway mileage of more than 30 miles per
+#'   gallon.
+#' 
+#' 3. The average city mileage for cars with 4, 6, or 8 cylinders.
+#' 
+#' Your code here:
+
 
 
 #' That's it for Exercise 11! Great job!
