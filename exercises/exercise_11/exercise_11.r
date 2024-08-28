@@ -67,17 +67,40 @@ size_vector <- c("S", "M", "L", "M", "S", "XL", "L", "S", "M")
 #' Your code here:
 
 
-#' ## Task 6: Displaying Results
+#' ## Task 6: Using factors with real data
 #'
-#' Display the factor `fruit_factor`, the modified factor `modified_factor`, the
-#' factor levels `factor_levels`, the level frequency `level_frequency`, and the
-#' cumulative frequency `cumulative_frequency` using the `print` function.
-#'
-#' Your code here:
+#' Consider the `mpg` data set from the ggplot2 package (install the package and
+#' load it, if not already installed)
+library(ggplot2)
+data(mpg)
+
+#' You may read up on what each column is describing by using
+#+ eval=FALSE
+?mpg
+
+#' There is a function in R called `unique()`. It tells us how many unique
+#' values a certain vector contains. For instance, the following code gives us
+#' information about all unique values of the cylinders, which is only 4 in
+#' total.
+unique(mpg$cyl))
+
+#' The normal case for when loading data into R, such as a .csv (comma seperated
+#' value) file, is that factors are not included.
+#' 
+#' For this task, give suggestions on which variables can reasonably be turned
+#' into factors, and, where applicable provide factor levels or even ordered
+#' factors. Transform the columns accordingly!
+#' 
+#' Finally, given the transformed data set, provide the following.
+#' 
+#' 1. Cars with more than 4 cylinders but less than 8 cylinders.
+#' 
+#' 2. A barplot of highway miles per gallon for each manufacturer.
 
 
 #' That's it for Exercise 11! Great job!
-#' 
+#'
 #+ echo = FALSE
 htmltools::includeHTML("../../index_lectures.html")
+
 htmltools::includeHTML("../../index_exercises.html")

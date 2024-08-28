@@ -59,13 +59,6 @@ my_vector <- c(1, 2, 3, 4, 5)
 #' Your code here:
 
 
-#' ## Task 5: Displaying Results
-#'
-#' Display the result vectors using the `print` function.
-#'
-#' Your code here:
-
-
 #' That's it for Exercise 10! Well done!
 #' 
 #+ echo = FALSE

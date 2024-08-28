@@ -105,11 +105,6 @@ Index `my_vector` directly using the following conditions without creating
    result
 
 Your code here:
-## Task 5: Displaying Results
-
-Display the result vectors using the `print` function.
-
-Your code here:
 That's it for Exercise 10! Well done!
 
 
