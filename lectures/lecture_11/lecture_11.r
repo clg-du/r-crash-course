@@ -80,8 +80,9 @@ print(size_factor_specified)
 #'
 #' Let's create an ordered factor for the size of T-shirts.
 size_factor_ordered <- factor(size_vector,
-                              levels = c("S", "M", "L", "XL"),
-                              ordered = TRUE)
+  levels = c("S", "M", "L", "XL"),
+  ordered = TRUE
+)
 
 #' Display the ordered factor
 print(size_factor_ordered)
@@ -115,7 +116,7 @@ print(sorted_size_factor)
 #' Index the ordered factor using logical vectors This will return the T-shirt
 #' sizes that are greater than "S" and less than "XL".
 subset_size_factor <- size_factor_ordered[size_factor_ordered > "S" &
-                                            size_factor_ordered < "XL"]
+  size_factor_ordered < "XL"]
 
 #' Display the subset of the ordered factor
 print(subset_size_factor)
@@ -141,9 +142,10 @@ barplot(
 #' Create a bar plot of the factor without specifying the order
 #+ barplot_without_order
 barplot(table(size_factor),
-        main = "T-Shirt Sizes",
-        xlab = "Size",
-        ylab = "Frequency")
+  main = "T-Shirt Sizes",
+  xlab = "Size",
+  ylab = "Frequency"
+)
 
 #' The bar plot without the order specified does not reflect the natural order
 #' of the sizes. This can lead to misleading visualizations and
@@ -155,7 +157,7 @@ barplot(table(size_factor),
 #'
 #' That's it for this lecture! In the next lecture, we will learn about control
 #' structures in R.
-#' 
+#'
 #+ echo = FALSE
 htmltools::includeHTML("../../index_lectures.html")
 htmltools::includeHTML("../../index_exercises.html")
