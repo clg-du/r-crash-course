@@ -66,7 +66,8 @@ Your code here:
 ``` r
 # Task 1: Conditional Statements
 
-# Write the if-else statement to check if a value is even or odd and print the appropriate message.
+# Write the if-else statement to check if a value is even or odd and print the
+# appropriate message.
 
 # Your code here:
 value <- 7
@@ -87,18 +88,60 @@ if (value %% 2 == 0) {
 Write a for loop to print the numbers from 1 to 5.
 
 Your code here:
+
+
+``` r
+for (i in 1:5) {
+    print(i)
+}
+```
+
+```
+## [1] 1
+## [1] 2
+## [1] 3
+## [1] 4
+## [1] 5
+```
+
 ## Task 3: Functions
 
 Write a function called "square" that takes a number as input and returns its
 square.
 
 Your code here:
+
+
+``` r
+squared_number <- function(x) {
+    return(x^2)
+}
+```
+
 ## Task 4: Putting It All Together
 
-Write a for loop to print the squares of the numbers from 1 to a number `n` using the
-"square" function.
+Write a for loop to print the squares of the numbers from 1 to a number `n`
+using the "square" function.
 
 Your code here:
+
+
+``` r
+n <- 5
+
+for (i in 1:n) {
+    print(squared_number(i))
+}
+```
+
+```
+## [1] 1
+## [1] 4
+## [1] 9
+## [1] 16
+## [1] 25
+```
+
 ## Task 5: Advanced Control Structures
 
 Write an if-else statement that evalutes grades from an exam and prints the
@@ -119,6 +162,28 @@ The grading scale is as follows:
 - F: 0-59
 
 Your code here:
+
+
+``` r
+grade <- 85
+
+if (grade >= 90) {
+    print("Excellent")
+} else if (grade >= 80) {
+    print("Good")
+} else if (grade >= 70) {
+    print("Satisfactory")
+} else if (grade >= 60) {
+    print("Needs Improvement")
+} else {
+    print("Fail")
+}
+```
+
+```
+## [1] "Good"
+```
+
 That's it for Exercise 12! Well done!
 
 
