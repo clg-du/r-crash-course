@@ -54,7 +54,7 @@ for (i in seq_along(r_files)) {
   md_file <- sub("\\.r$", ".md", r_file)
   knitr::spin(r_file, knit = FALSE)
   knitr::opts_chunk$set(fig.path = paste0(
-    "./",
+    "../../",
     dirname(r_file),
     "/figures/"
   ), knit_root_dir = paste0(
