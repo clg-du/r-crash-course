@@ -77,12 +77,6 @@ Let's define a simple function in R!
 Define a function that adds two numbers
 
 
-``` r
-add_numbers <- function(a, b) {
-  result <- a + b
-  return(result)
-}
-```
 
 The function `add_numbers()` takes two arguments, `a` and `b`, and returns
 their sum.
@@ -90,16 +84,9 @@ their sum.
 Call the function with arguments `5` and `3`
 
 
-``` r
-result_addition <- add_numbers(5, 3)
-```
 
 Display the result
 
-
-``` r
-print(result_addition)
-```
 
 ```
 ## [1] 8
@@ -115,17 +102,9 @@ sum of a vector of numbers.
 Calculate the sum of a vector of numbers
 
 
-``` r
-numbers <- c(1, 2, 3, 4, 5)
-result_sum <- sum(numbers)
-```
 
 Display the result
 
-
-``` r
-print(result_sum)
-```
 
 ```
 ## [1] 15
@@ -142,16 +121,10 @@ But it is impossible to know what every function does just by looking at its
 name, right? That's where the `help()` function comes in handy!
 
 
-``` r
-help(sum)
-```
 
 It can also be called with a question mark
 
 
-``` r
-? sum
-```
 
 The `help()` function provides information about a specific function in R. We
 call the `help()` function with the `sum()` function as an argument to get
@@ -172,12 +145,6 @@ flexible and easier to use.
 Define a function with default argument values
 
 
-``` r
-greet_person <- function(name = "friend") {
-  message <- paste("Hello,", name, "!")
-  return(message)
-}
-```
 
 Note here that `paste()` is a function that concatenates strings together. So
 we have nested functions here, which is a common practice in R.
@@ -185,16 +152,9 @@ we have nested functions here, which is a common practice in R.
 Call the function without an argument
 
 
-``` r
-result_greeting <- greet_person()
-```
 
 Display the result
 
-
-``` r
-print(result_greeting)
-```
 
 ```
 ## [1] "Hello, friend !"
@@ -203,16 +163,9 @@ print(result_greeting)
 Call the function with an argument
 
 
-``` r
-result_greeting <- greet_person("Alice")
-```
 
 Display the result
 
-
-``` r
-print(result_greeting)
-```
 
 ```
 ## [1] "Hello, Alice !"
@@ -234,26 +187,13 @@ passed in any order by specifying the argument name.
 Define a function with named arguments
 
 
-``` r
-calculate_area <- function(length = 1, width = 1) {
-  area <- length * width
-  return(area)
-}
-```
 
 Call the function with named arguments
 
 
-``` r
-result_area <- calculate_area(width = 5, length = 3)
-```
 
 Display the result
 
-
-``` r
-print(result_area)
-```
 
 ```
 ## [1] 15
@@ -270,16 +210,9 @@ without specifying the argument names.
 Call the function without specifying argument names
 
 
-``` r
-result_area <- calculate_area(3, 5)
-```
 
 Display the result
 
-
-``` r
-print(result_area)
-```
 
 ```
 ## [1] 15
@@ -299,27 +232,13 @@ a function.
 Define a function that returns multiple values
 
 
-``` r
-calculate_circle <- function(radius) {
-  area <- pi * radius^2
-  circumference <- 2 * pi * radius
-  return(list(area = area, circumference = circumference))
-}
-```
 
 Call the function with a radius of `5`
 
 
-``` r
-result_circle <- calculate_circle(5)
-```
 
 Display the result
 
-
-``` r
-print(result_circle)
-```
 
 ```
 ## $area
@@ -341,20 +260,12 @@ square brackets `[[]]` or the dollar sign `$`.
 Access the area of the circle
 
 
-``` r
-print(result_circle$area)
-```
-
 ```
 ## [1] 78.53982
 ```
 
 Access the circumference of the circle
 
-
-``` r
-print(result_circle$circumference)
-```
 
 ```
 ## [1] 31.41593

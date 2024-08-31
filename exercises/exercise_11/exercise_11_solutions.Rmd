@@ -113,7 +113,7 @@ information about all unique values of the cylinders, which is only 4 in
 total.
 
 ```{r}
-unique(mpg$cyl))
+unique(mpg$cyl)
 ```
 
 The normal case for when loading data into R, such as a .csv (comma seperated

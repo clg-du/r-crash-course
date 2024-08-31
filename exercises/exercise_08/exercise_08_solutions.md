@@ -74,19 +74,6 @@ Assign the data frame to a variable called `df2`.
 Your code here:
 
 
-``` r
-df1 <- data.frame(
-    name = c("Alice", "Bob", "Charlie", "David", "Eve"),
-    age = c(25, 30, 35, 40, 45),
-    employed = c(TRUE, FALSE, TRUE, FALSE, TRUE)
-)
-
-df2 <- data.frame(
-    city = c("New York", "Los Angeles", "Chicago", "Houston", "Phoenix"),
-    population = c(8537673, 3976322, 2720546, 2296224, 1660272),
-    state = c("New York", "California", "Illinois", "Texas", "Arizona")
-)
-```
 
 ## Task 2: Accessing Data Frame Elements
 
@@ -101,10 +88,6 @@ Use indexing to perform the following operations:
 Your code here:
 
 
-``` r
-element1 <- df1[2, 3]
-element2 <- df2[4, "population"]
-```
 
 ## Task 3: Manipulating Data Frames
 
@@ -133,30 +116,6 @@ function in R.
 Your code here:
 
 
-``` r
-df1$gender <- c("female", "male", "male", "female", "female")
-# Please note that the values here are "hardcoded". We will cover "if-else"
-# statements, i.e., conditionals, later in the course.
-df1$employed <- c(
-    "currently employed",
-    "not employed",
-    "currently employed",
-    "not employed",
-    "currently employed"
-)
-# Here is the solution to Task 3 number 2 but instead using conditionals. It
-# takes an logical vector and assigns values based on whether it evaluates as
-# TRUE or FALSE.
-df1$employed <- ifelse(df1$employed, "currently employed", "not employed")
-
-# 3. Change the value of the "state" column in the third row of `df2` to
-#    "Michigan".
-df2$state[3] <- "Michigan"
-
-# 4. Change the values of the population column in `df2` to millions of people
-#    rather than the full range of numbers.
-df2$population <- round(df2$population / 1000000, 2)
-```
 
 That's it for Exercise 8! Well done!
 

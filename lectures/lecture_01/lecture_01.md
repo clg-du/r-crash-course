@@ -77,9 +77,6 @@ Here is a simple example of a comment in R:
 
 
 
-``` r
-# This is a comment in R
-```
 
 
 Comments are not executed by the R interpreter and are used to provide
@@ -103,9 +100,6 @@ Functions will be covered in more detail in a later lecture.
 Here is an example of running an R script using the `source()` function:
 
 
-``` r
-source("path/to/your/script.R")
-```
 
 The source function can be used to run other R scripts from within you
 current script. The path to the script should be specified in quotes.
@@ -118,9 +112,6 @@ Here is an example of running an R script using the `source()` function with
 a absolute path:
 
 
-``` r
-source("C:/Downloads/script.R")
-```
 
 Please note that the path separator for Mac in R is `/` and not `\` as in
 Windows
@@ -160,10 +151,6 @@ R is case-sensitive, so `print` is not the same as `Print`.
 Print `"Hello, World!"` to the console
 
 
-``` r
-print("Hello, World!")
-```
-
 ```
 ## [1] "Hello, World!"
 ```
@@ -191,9 +178,6 @@ Here is an example of prompting the user for input:
 Prompt the user for their name
 
 
-``` r
-print(readline("Enter your name: "))
-```
 
 
 In R indentation is not required, but it is recommended for readability. In
@@ -203,18 +187,8 @@ code and automatically indent it.
 Here is an example of R being used as a calculator:
 
 
-``` r
-# Calculate the sum of two numbers
-2 + 3
-```
-
 ```
 ## [1] 5
-```
-
-``` r
-# Calculate the difference of two numbers
-5 - 2
 ```
 
 ```
@@ -236,10 +210,6 @@ Here is a simple counter example:
 Print all integers from 1 to 100, using colon operator
 
 
-``` r
-print(1:100)
-```
-
 ```
 ##   [1]   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18
 ##  [19]  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36
@@ -259,16 +229,10 @@ community. We can install and load packages in R using the
 Install the "car" package
 
 
-``` r
-install.packages("car")
-```
 
 Load the `car` package
 
 
-``` r
-library(car)
-```
 
 The `car` package contains a dataset called `mtcars`. We can access this
 dataset using the `data()` function.
@@ -276,16 +240,9 @@ dataset using the `data()` function.
 Load the `mtcars` dataset
 
 
-``` r
-data(mtcars)
-```
 
 Display the first few rows of the `mtcars` dataset
 
-
-``` r
-head(mtcars)
-```
 
 ```
 ##                    mpg cyl disp  hp drat    wt  qsec vs am gear carb
@@ -301,10 +258,6 @@ We can also use the `summary()` function to get a summary of the dataset.
 
 Get a summary of the `mtcars` dataset
 
-
-``` r
-summary(mtcars)
-```
 
 ```
 ##       mpg             cyl             disp             hp       

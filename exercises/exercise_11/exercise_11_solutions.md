@@ -59,9 +59,6 @@ Consider the following vector of fruit names:
 
 
 
-``` r
-fruit_vector <- c("apple", "banana", "cherry", "apple", "banana", "cherry")
-```
 
 
 Create a factor called `fruit_factor` from the `fruit_vector` using the
@@ -69,9 +66,6 @@ Create a factor called `fruit_factor` from the `fruit_vector` using the
 
 
 
-``` r
-fruit_factor <- factor(fruit_vector)
-```
 
 ## Task 2: Specifying Factor Levels
 
@@ -80,9 +74,6 @@ Consider the following vector of T-shirt sizes:
 
 
 
-``` r
-size_vector <- c("S", "M", "L", "M", "S", "XL", "L", "S", "M")
-```
 
 
 Create a factor called `size_factor_specified` from the `size_vector` using
@@ -91,9 +82,6 @@ and "XL".
 
 
 
-``` r
-size_factor_specified <- factor(size_vector, levels = c("S", "M", "L", "XL"))
-```
 
 ## Task 3: Accessing Factor Levels
 
@@ -103,9 +91,6 @@ function and assign the result to a variable called `factor_levels`.
 
 
 
-``` r
-factor_levels <- levels(size_factor_specified)
-```
 
 ## Task 4: Modifying Factor Levels
 
@@ -116,9 +101,6 @@ to "M", "S", "XL", and "L". Assign the modified factor to a variable called
 
 
 
-``` r
-modified_factor <- factor(size_vector, levels = c("M", "S", "XL", "L"))
-```
 
 ## Task 5: Factor Operations
 
@@ -131,18 +113,12 @@ assign the results to new variables:
 
 
 
-``` r
-level_frequency <- table(size_factor_specified)
-```
 
 2. Compute the cumulative frequency of each level in the factor and assign
    the result to a variable called `cumulative_frequency`.
 
 
 
-``` r
-cumulative_frequency <- cumsum(level_frequency)
-```
 
 ## Task 6: Using factors with real data
 
@@ -150,17 +126,10 @@ Consider the `mpg` data set from the ggplot2 package (install, if not already
 installed)
 
 
-``` r
-library(ggplot2)
-data(mpg)
-```
 
 You may read up on what each column is describing by using
 
 
-``` r
-?mpg
-```
 
 There is a function in R called `unique()`. It tells us how many unique
 values a certain vector contains. For instance, the following code gives us
@@ -168,14 +137,8 @@ information about all unique values of the cylinders, which is only 4 in
 total.
 
 
-``` r
-unique(mpg$cyl))
 ```
-
-```
-## Error: <text>:1:16: unexpected ')'
-## 1: unique(mpg$cyl))
-##                    ^
+## [1] 4 6 8 5
 ```
 
 The normal case for when loading data into R, such as a .csv (comma seperated
@@ -186,31 +149,6 @@ into factors, and, where applicable provide factor levels or even ordered
 factors. Transform the columns accordingly!
 
 
-``` r
-# Identify variables that can be turned into factors
-factor_vars <- c("manufacturer", 
-"model", 
-"year", 
-"cylinders", 
-"transmission",
-"drive", 
-"fuel", 
-"class")
-
-# Provide reasonable factor levels and order
-mpg$manufacturer <- factor(mpg$manufacturer) # No order of levels
-mpg$model <- factor(mpg$model) # No order of levels
-mpg$year <- factor(mpg$year, 
-levels = sort(unique(mpg$year)), 
-ordered = TRUE) # Usually treated as date variable, but factor is also possible
-mpg$cyl <- factor(mpg$cyl, 
-levels = sort(unique(mpg$cyl)), 
-ordered = TRUE)
-mpg$trans <- factor(mpg$trans) # Some order, but skip it...
-mpg$drv <- factor(mpg$drv) # No order of levels
-mpg$fl <- factor(mpg$fl) # No order of levels
-mpg$class <- factor(mpg$class) # Some order, but skip it...
-```
 
 Note that only `displ` and `hwy` could not reasonably be turned into factors.
 However, if you do not find a NEED to transform into a factor variable, then
@@ -223,17 +161,6 @@ Finally, given the transformed data set, provide the following.
 2. A barplot of highway miles per gallon for each manufacturer.
 
 
-``` r
-# 1. Cars with more than 4 cylinders but less than 8 cylinders.
-filtered_cars <- mpg[mpg$cyl > 4 & mpg$cyl < 8, ]
-
-# 2. Cars with 4 or 6 cylinders and a highway mileage of more than 30 miles per
-#    gallon.
-filtered_cars_2 <- mpg[(mpg$cyl == 4 | mpg$cyl == 6) & mpg$hwy > 30, ]
-
-# 3. The average city mileage for cars with 4, 6, or 8 cylinders.
-average_city_mileage <- mean(mpg$cty[mpg$cyl == 4 | mpg$cyl == 6 | mpg$cyl == 8])
-```
 
 
 That's it for Exercise 11! Great job!

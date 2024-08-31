@@ -79,7 +79,7 @@ data(mpg)
 #' values a certain vector contains. For instance, the following code gives us
 #' information about all unique values of the cylinders, which is only 4 in
 #' total.
-unique(mpg$cyl))
+unique(mpg$cyl)
 
 #' The normal case for when loading data into R, such as a .csv (comma seperated
 #' value) file, is that factors are not included.

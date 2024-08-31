@@ -92,25 +92,6 @@ Your code here:
 Consider this ridiculousness of nested lists:
 
 
-``` r
-nested_lists <- list(
-    list(
-        list(c(1, 2, 3), c("a", "b", "c"), c(TRUE, FALSE, TRUE)),
-        list(c(4, 5, 6), c("d", "e", "f"), c(FALSE, TRUE, FALSE)),
-        list(c(7, 8, 9), c("g", "h", "i"), c(TRUE, TRUE, FALSE))
-    ),
-    list(
-        list(c(10, 11, 12), c("j", "k", "l"), c(FALSE, FALSE, TRUE)),
-        list(c(13, 14, 15), c("m", "n", "o"), c(TRUE, FALSE, TRUE)),
-        list(c(16, 17, 18), c("p", "q", "r"), c(FALSE, TRUE, TRUE))
-    ),
-    list(
-        list(c(19, 20, 21), c("s", "t", "u"), c(TRUE, FALSE, FALSE)),
-        list(c(22, 23, 24), c("v", "w", "x"), c(FALSE, TRUE, TRUE)),
-        list(c(25, 26, 27), c("y", "z", "aa"), c(TRUE, TRUE, TRUE))
-    )
-)
-```
 
 Access the following elements from the nested list:
 

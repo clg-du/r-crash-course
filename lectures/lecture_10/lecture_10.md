@@ -60,9 +60,6 @@ They are commonly used to filter and subset data in R.
 Let's create a vector of numeric values.
 
 
-``` r
-my_vector <- c(1, 2, 3, 4, 5)
-```
 
 Create a logical vector based on a condition We can use comparison operators
 to create logical vectors based on conditions. For example, to create a
@@ -70,16 +67,9 @@ logical vector that indicates whether each element of `my_vector` is greater
 than `3`, we can use the following syntax:
 
 
-``` r
-logical_vector <- my_vector > 3
-```
 
 Display the logical vector
 
-
-``` r
-print(logical_vector)
-```
 
 ```
 ## [1] FALSE FALSE FALSE  TRUE  TRUE
@@ -98,16 +88,9 @@ This will return only the elements of `my_vector` that satisfy the condition
 (greater than `3`).
 
 
-``` r
-result_vector <- my_vector[logical_vector]
-```
 
 Display the result vector
 
-
-``` r
-print(result_vector)
-```
 
 ```
 ## [1] 4 5
@@ -120,16 +103,9 @@ make the code more concise.
 Index the vector directly using the condition
 
 
-``` r
-result_vector <- my_vector[my_vector > 3]
-```
 
 Display the result vector
 
-
-``` r
-print(result_vector)
-```
 
 ```
 ## [1] 4 5
@@ -143,16 +119,9 @@ Let's try again using some other conditions!
 Index the vector using a different condition
 
 
-``` r
-result_vector <- my_vector[my_vector <= 3]
-```
 
 Display the result vector
 
-
-``` r
-print(result_vector)
-```
 
 ```
 ## [1] 1 2 3
@@ -161,16 +130,9 @@ print(result_vector)
 Index the vector using another condition
 
 
-``` r
-result_vector <- my_vector[my_vector == 3]
-```
 
 Display the result vector
 
-
-``` r
-print(result_vector)
-```
 
 ```
 ## [1] 3
@@ -179,16 +141,9 @@ print(result_vector)
 Index the vector using a combination of conditions
 
 
-``` r
-result_vector <- my_vector[(my_vector > 2) & (my_vector < 5)]
-```
 
 Display the result vector
 
-
-``` r
-print(result_vector)
-```
 
 ```
 ## [1] 3 4

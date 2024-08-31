@@ -61,10 +61,6 @@ values.
 Your code here:
 
 
-``` r
-num1 <- 10.5
-num2 <- 7.2
-```
 
 ## Task 2: Create Character Variables
 
@@ -74,10 +70,6 @@ strings.
 Your code here:
 
 
-``` r
-char1 <- "Hello"
-char2 <- "World"
-```
 
 ## Task 3: Create Logical Variables
 
@@ -87,10 +79,6 @@ logical values.
 Your code here:
 
 
-``` r
-logical1 <- TRUE
-logical2 <- FALSE
-```
 
 ## Task 4: Create Integer Variables
 
@@ -100,10 +88,6 @@ values.
 Your code here:
 
 
-``` r
-int1 <- 5
-int2 <- -3
-```
 
 ## Task 5: Create Complex Variables
 
@@ -113,10 +97,6 @@ complex values.
 Your code here:
 
 
-``` r
-complex1 <- 2 + 3i
-complex2 <- -1 + 4i
-```
 
 ## Task 6: Explore a dataset.
 
@@ -130,11 +110,6 @@ you can use `mtcars$mpg`.
 Your code and/or comments here:
 Load the mtcars dataset
 
-
-``` r
-data(mtcars)
-str(mtcars)
-```
 
 ```
 ## 'data.frame':	32 obs. of  11 variables:
@@ -155,10 +130,6 @@ The mtcars dataset has 32 observations and 11 variables. The variables are
 all numeric, representing various attributes of cars such as miles per gallon
 (mpg), number of cylinders (cyl), horsepower (hp), and weight (wt).
 
-
-``` r
-class(mtcars$gear)
-```
 
 ```
 ## [1] "numeric"

@@ -1,5 +1,11 @@
 #' # Lecture 11: Factors in R
 #' `r Sys.Date()`
+#' ---
+#' title: "Amazing document"
+#' output:
+#'   html_document:
+#'     keep_md: yes
+#' ---
 #+ echo = FALSE
 htmltools::includeHTML("../../index_lectures.html")
 htmltools::includeHTML("../../index_exercises.html")

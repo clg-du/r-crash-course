@@ -77,20 +77,9 @@ functions and arguments in more detail in a later lecture. For now, focus on
 understanding how to create a matrix in R.
 
 
-``` r
-my_matrix <- matrix(
-    data = c(1, 2, 3, 4, 5, 6),
-    nrow = 2,
-    ncol = 3
-)
-```
 
 Display the matrix
 
-
-``` r
-print(my_matrix)
-```
 
 ```
 ##      [,1] [,2] [,3]
@@ -108,21 +97,9 @@ To fill the matrix row-wise, we can use the `byrow` argument and set it to
 `TRUE`. Let's create a matrix with the `byrow` argument set to `TRUE`.
 
 
-``` r
-my_matrix_byrow <- matrix(
-    data = c(1, 2, 3, 4, 5, 6),
-    nrow = 2,
-    ncol = 3,
-    byrow = TRUE
-)
-```
 
 Display the matrix filled row-wise
 
-
-``` r
-print(my_matrix_byrow)
-```
 
 ```
 ##      [,1] [,2] [,3]
@@ -145,20 +122,12 @@ can also use the square brackets `[]` to access elements of a matrix.
 Access the element in the first row and second column
 
 
-``` r
-print(my_matrix[1, 2])
-```
-
 ```
 ## [1] 3
 ```
 
 Access the element in the second row and third column
 
-
-``` r
-print(my_matrix[2, 3])
-```
 
 ```
 ## [1] 6
@@ -169,10 +138,6 @@ row of the matrix, we can use the following syntax since we want all columns,
 we use a comma and an empty space after the row index.
 
 
-``` r
-print(my_matrix[1, ])
-```
-
 ```
 ## [1] 1 3 5
 ```
@@ -181,10 +146,6 @@ To access the second column of the matrix, we can use the following syntax
 since we want all rows, we use an empty space and a comma before the column
 index.
 
-
-``` r
-print(my_matrix[, 2])
-```
 
 ```
 ## [1] 3 4
@@ -195,10 +156,6 @@ example, to select the first two rows of the matrix, we can use the following
 syntax
 
 
-``` r
-print(my_matrix[1:2, ])
-```
-
 ```
 ##      [,1] [,2] [,3]
 ## [1,]    1    3    5
@@ -208,10 +165,6 @@ print(my_matrix[1:2, ])
 
 To select the last two columns of the matrix, we can use the following syntax
 
-
-``` r
-print(my_matrix[, 2:3])
-```
 
 ```
 ##      [,1] [,2]
@@ -224,20 +177,12 @@ For example, to exclude the first row of the matrix, we can use the following
 syntax
 
 
-``` r
-print(my_matrix[-1, ])
-```
-
 ```
 ## [1] 2 4 6
 ```
 
 To exclude the last column of the matrix, we can use the following syntax
 
-
-``` r
-print(my_matrix[, -3])
-```
 
 ```
 ##      [,1] [,2]
@@ -252,32 +197,13 @@ lecture, but it is important to know that this operator exists.
 Example: Create two matrices for multiplication
 
 
-``` r
-matrix_a <- matrix(
-    data = c(1, 2, 3, 4),
-    nrow = 2,
-    ncol = 2
-)
-matrix_b <- matrix(
-    data = c(5, 6, 7, 8),
-    nrow = 2,
-    ncol = 2
-)
-```
 
 Multiply the matrices using the `%*%` operator
 
 
-``` r
-result_matrix_multiplication <- matrix_a %*% matrix_b
-```
 
 Display the result of the matrix multiplication
 
-
-``` r
-print(result_matrix_multiplication)
-```
 
 ```
 ##      [,1] [,2]

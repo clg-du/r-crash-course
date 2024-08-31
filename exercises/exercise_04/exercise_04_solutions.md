@@ -79,14 +79,6 @@ variables:
 Your code here:
 
 
-``` r
-equal_to_result <- 5 == 3
-not_equal_to_result <- 5 != 3
-greater_than_result <- 5 > 3
-greater_than_or_equal_to_result <- 5 >= 3
-less_than_result <- 5 < 3
-less_than_or_equal_to_result <- 5 <= 3
-```
 
 ## Task 2: Logical Operators
 
@@ -104,11 +96,6 @@ Perform the following logical operations and assign the results to variables:
 Your code here:
 
 
-``` r
-and_result <- TRUE & FALSE
-or_result <- TRUE | FALSE
-not_result <- !TRUE
-```
 
 ## Task 3: Combining Comparison and Logical Operators
 
@@ -124,10 +111,6 @@ and assign the results to variables:
 Your code here:
 
 
-``` r
-combined_and_result <- (5 > 3) & (4 < 6)
-combined_or_result <- (5 > 3) | (4 < 6)
-```
 
 That's it for Exercise 4! Great job!
 

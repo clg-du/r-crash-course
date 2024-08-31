@@ -79,32 +79,16 @@ constants that are used to represent logical values. We can also use `T` and
 `F` as shorthand for `TRUE` and `FALSE`.
 
 
-``` r
-print(TRUE)
-```
-
 ```
 ## [1] TRUE
-```
-
-``` r
-print(FALSE)
 ```
 
 ```
 ## [1] FALSE
 ```
 
-``` r
-print(T)
-```
-
 ```
 ## [1] TRUE
-```
-
-``` r
-print(F)
 ```
 
 ```
@@ -121,22 +105,12 @@ Let's perform some comparison operations in R!
 Equal to (`==`)
 
 
-``` r
-result_equal_to <- 5 == 3
-print(result_equal_to)
-```
-
 ```
 ## [1] FALSE
 ```
 
 Not equal to (`!=`)
 
-
-``` r
-result_not_equal_to <- 5 != 3
-print(result_not_equal_to)
-```
 
 ```
 ## [1] TRUE
@@ -145,22 +119,12 @@ print(result_not_equal_to)
 Greater than (`>`)
 
 
-``` r
-result_greater_than <- 5 > 3
-print(result_greater_than)
-```
-
 ```
 ## [1] TRUE
 ```
 
 Greater than or equal to (`>=`)
 
-
-``` r
-result_greater_than_or_equal_to <- 5 >= 3
-print(result_greater_than_or_equal_to)
-```
 
 ```
 ## [1] TRUE
@@ -169,22 +133,12 @@ print(result_greater_than_or_equal_to)
 Less than (`<`)
 
 
-``` r
-result_less_than <- 5 < 3
-print(result_less_than)
-```
-
 ```
 ## [1] FALSE
 ```
 
 Less than or equal to (`<=`)
 
-
-``` r
-result_less_than_or_equal_to <- 5 <= 3
-print(result_less_than_or_equal_to)
-```
 
 ```
 ## [1] FALSE
@@ -203,11 +157,6 @@ Let's perform some logical operations in R!
 AND (`&`)
 
 
-``` r
-result_and <- TRUE & FALSE
-print(result_and)
-```
-
 ```
 ## [1] FALSE
 ```
@@ -215,22 +164,12 @@ print(result_and)
 OR (`|`)
 
 
-``` r
-result_or <- TRUE | FALSE
-print(result_or)
-```
-
 ```
 ## [1] TRUE
 ```
 
 NOT (`!`)
 
-
-``` r
-result_not <- !TRUE
-print(result_not)
-```
 
 ```
 ## [1] FALSE

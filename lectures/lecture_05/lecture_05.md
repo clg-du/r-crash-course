@@ -76,45 +76,24 @@ Let's create some vectors in R!
 Create a numeric vector
 
 
-``` r
-my_numeric_vector <- c(1, 2, 3, 4, 5)
-```
 
 Create a character vector
 
 
-``` r
-my_character_vector <- c("apple", "banana", "cherry", "date", "elderberry")
-```
 
 Create a logical vector
 
 
-``` r
-my_logical_vector <- c(TRUE, FALSE, TRUE, FALSE, TRUE)
-```
 
 Display the values of the vectors
 
-
-``` r
-print(my_numeric_vector)
-```
 
 ```
 ## [1] 1 2 3 4 5
 ```
 
-``` r
-print(my_character_vector)
-```
-
 ```
 ## [1] "apple"      "banana"     "cherry"     "date"       "elderberry"
-```
-
-``` r
-print(my_logical_vector)
 ```
 
 ```
@@ -133,20 +112,12 @@ vector.
 Access the first element of the numeric vector
 
 
-``` r
-print(my_numeric_vector[1])
-```
-
 ```
 ## [1] 1
 ```
 
 Access the second element of the character vector
 
-
-``` r
-print(my_character_vector[2])
-```
 
 ```
 ## [1] "banana"
@@ -155,10 +126,6 @@ print(my_character_vector[2])
 Access the last element of the logical vector. We can use the `length()` to
 get the length of the vector, and hence the index of the last element.
 
-
-``` r
-print(my_logical_vector[length(my_logical_vector)])
-```
 
 ```
 ## [1] TRUE
@@ -170,10 +137,6 @@ access the first, third, and fifth elements of a vector, we can use the
 following syntax:
 
 
-``` r
-print(my_numeric_vector[c(1, 3, 5)])
-```
-
 ```
 ## [1] 1 3 5
 ```
@@ -184,10 +147,6 @@ Exclude elements from a vector We can use negative indices to exclude
 elements from a vector. For example, to exclude the second element of a
 vector, we can use the following syntax:
 
-
-``` r
-print(my_character_vector[-2])
-```
 
 ```
 ## [1] "apple"      "cherry"     "date"       "elderberry"

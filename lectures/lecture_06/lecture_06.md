@@ -68,9 +68,6 @@ Let's create a list in R!
 Create a list with multiple elements of different types
 
 
-``` r
-my_list <- list(c(42, 78, 92), c("Hello, World!", "Hello again, World!"), TRUE, 42L, 3 + 4i)
-```
 
 Note that the elements of the list can be of different types and lengths! The
 list `my_list` contains a numeric value, a character string, a logical value,
@@ -78,11 +75,6 @@ an integer value, and a complex number. This is something that vectors cannot
 do, as they require all elements to be of the same type.
 
 
-
-``` r
-# Display the list `my_list`
-print(my_list)
-```
 
 ```
 ## [[1]]
@@ -121,10 +113,6 @@ element by its name.
 Access the first element of the list using double square brackets `[[]]`
 
 
-``` r
-print(my_list[[1]])
-```
-
 ```
 ## [1] 42 78 92
 ```
@@ -140,10 +128,6 @@ list, while single square brackets `[]` are used to access elements of a
 vector.
 
 
-``` r
-print(my_list[[1]][2])
-```
-
 ```
 ## [1] 78
 ```
@@ -157,17 +141,6 @@ Note: The dollar sign `$` can only be used with named elements. If the
 elements are not named, you must use double square brackets `[[]]` to access
 them. Let's name the elements of the list to demonstrate this.
 
-
-``` r
-names(my_list) <- c(
-    "element_1",
-    "element_2",
-    "element_3",
-    "element_4",
-    "element_5"
-)
-print(my_list$element_2)
-```
 
 ```
 ## [1] "Hello, World!"       "Hello again, World!"
@@ -183,11 +156,6 @@ to a new index or name.
 
 Add a new element to the list using double square brackets `[[]]`
 
-
-``` r
-my_list[[6]] <- "New Element"
-print(my_list)
-```
 
 ```
 ## $element_1
@@ -211,11 +179,6 @@ print(my_list)
 
 Add a new element to the list using the dollar sign `$`
 
-
-``` r
-my_list$new_element <- "Another New Element"
-print(my_list)
-```
 
 ```
 ## $element_1

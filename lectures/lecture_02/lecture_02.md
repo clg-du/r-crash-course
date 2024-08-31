@@ -72,23 +72,14 @@ Let's create some variables in R!
 Create a numeric variable
 
 
-``` r
-my_num <- 42
-```
 
 Create a character variable
 
 
-``` r
-my_char <- "Hello, World!"
-```
 
 Create a logical variable
 
 
-``` r
-my_logical <- TRUE
-```
 
 Create an integer variable
 
@@ -97,9 +88,6 @@ Note: In R, integers are specified by adding an `L` to the end of the number
 integer rather than a numeric value.
 
 
-``` r
-my_int <- 42L
-```
 
 Create a complex variable
 
@@ -108,47 +96,24 @@ is separated from the imaginary part by a `+` sign. We won't be using complex
 numbers at all in this course, but it's good to know they exist!
 
 
-``` r
-my_complex <- 3 + 4i
-```
 
 Display the values of the variables
 
 
-``` r
-print(my_num)
-```
-
 ```
 ## [1] 42
-```
-
-``` r
-print(my_char)
 ```
 
 ```
 ## [1] "Hello, World!"
 ```
 
-``` r
-print(my_logical)
-```
-
 ```
 ## [1] TRUE
 ```
 
-``` r
-print(my_int)
-```
-
 ```
 ## [1] 42
-```
-
-``` r
-print(my_complex)
 ```
 
 ```
@@ -171,40 +136,20 @@ Note: The `class` function is used to check the data type of an object in R.
 It returns the class or data type of the object.
 
 
-``` r
-class(my_num)
-```
-
 ```
 ## [1] "numeric"
-```
-
-``` r
-class(my_char)
 ```
 
 ```
 ## [1] "character"
 ```
 
-``` r
-class(my_logical)
-```
-
 ```
 ## [1] "logical"
 ```
 
-``` r
-class(my_int)
-```
-
 ```
 ## [1] "integer"
-```
-
-``` r
-class(my_complex)
 ```
 
 ```
@@ -216,40 +161,20 @@ in R. It returns the internal type of the object. For example, numeric,
 character, logical, integer, etc.
 
 
-``` r
-typeof(my_num)
-```
-
 ```
 ## [1] "double"
-```
-
-``` r
-typeof(my_char)
 ```
 
 ```
 ## [1] "character"
 ```
 
-``` r
-typeof(my_logical)
-```
-
 ```
 ## [1] "logical"
 ```
 
-``` r
-typeof(my_int)
-```
-
 ```
 ## [1] "integer"
-```
-
-``` r
-typeof(my_complex)
 ```
 
 ```
@@ -261,40 +186,20 @@ R. It returns the storage mode of the object. For example, numeric,
 character, logical, integer, etc.
 
 
-``` r
-mode(my_num)
-```
-
 ```
 ## [1] "numeric"
-```
-
-``` r
-mode(my_char)
 ```
 
 ```
 ## [1] "character"
 ```
 
-``` r
-mode(my_logical)
-```
-
 ```
 ## [1] "logical"
 ```
 
-``` r
-mode(my_int)
-```
-
 ```
 ## [1] "numeric"
-```
-
-``` r
-mode(my_complex)
 ```
 
 ```
@@ -308,40 +213,20 @@ before performing numeric operations on it (e.g., addition, subtraction,
 multiplication, division).
 
 
-``` r
-is.numeric(my_num)
-```
-
 ```
 ## [1] TRUE
-```
-
-``` r
-is.numeric(my_char)
 ```
 
 ```
 ## [1] FALSE
 ```
 
-``` r
-is.numeric(my_logical)
-```
-
 ```
 ## [1] FALSE
 ```
 
-``` r
-is.numeric(my_int)
-```
-
 ```
 ## [1] TRUE
-```
-
-``` r
-is.numeric(my_complex)
 ```
 
 ```
@@ -353,40 +238,20 @@ character data type. It returns `TRUE` if the object is character and `FALSE`
 otherwise.
 
 
-``` r
-is.character(my_num)
-```
-
 ```
 ## [1] FALSE
-```
-
-``` r
-is.character(my_char)
 ```
 
 ```
 ## [1] TRUE
 ```
 
-``` r
-is.character(my_logical)
-```
-
 ```
 ## [1] FALSE
 ```
 
-``` r
-is.character(my_int)
-```
-
 ```
 ## [1] FALSE
-```
-
-``` r
-is.character(my_complex)
 ```
 
 ```
@@ -399,40 +264,20 @@ otherwise. This is useful when you want to check if an object is logical
 before performing logical operations on it (e.g., AND, OR, NOT).
 
 
-``` r
-is.logical(my_num)
-```
-
 ```
 ## [1] FALSE
 ```
 
-``` r
-is.logical(my_char)
-```
-
 ```
 ## [1] FALSE
-```
-
-``` r
-is.logical(my_logical)
 ```
 
 ```
 ## [1] TRUE
 ```
 
-``` r
-is.logical(my_int)
-```
-
 ```
 ## [1] FALSE
-```
-
-``` r
-is.logical(my_complex)
 ```
 
 ```

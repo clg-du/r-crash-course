@@ -67,16 +67,9 @@ Let's load the data set and take a look at the first few rows.
 Load the mtcars data set
 
 
-``` r
-data(mtcars)
-```
 
 Display the first few rows of the data set
 
-
-``` r
-head(mtcars)
-```
 
 ```
 ##                    mpg cyl disp  hp drat    wt  qsec vs am gear carb
@@ -90,10 +83,6 @@ head(mtcars)
 
 Check the structure of the data set
 
-
-``` r
-str(mtcars)
-```
 
 ```
 ## 'data.frame':	32 obs. of  11 variables:
@@ -112,10 +101,6 @@ str(mtcars)
 
 Summary of the data set
 
-
-``` r
-summary(mtcars)
-```
 
 ```
 ##       mpg             cyl             disp             hp       
@@ -165,9 +150,6 @@ the data set (since it is a built-in data set in R).
 Help on the mtcars data set
 
 
-``` r
-help(mtcars)
-```
 
 This provides additional information about the data set, including the source
 and description of the dataset.
@@ -180,15 +162,6 @@ horsepower to see if there is a relationship between the two variables.
 
 Create a scatter plot of mpg vs. hp
 
-
-``` r
-plot(mtcars$hp,
-     mtcars$mpg,
-     xlab = "Horsepower",
-     ylab = "Miles per Gallon",
-     main = "Scatter Plot of MPG vs. Horsepower")
-```
-
 ![plot of chunk plot_mpg_hp](/lectures/lecture_13/figures/plot_mpg_hp-1.png)
 
 The scatter plot shows the relationship between miles per gallon (mpg) and
@@ -200,9 +173,6 @@ labels and titles. It also informs us what the arguments are and how they can
 be used.
 
 
-``` r
-?plot
-```
 
 We see that `x` and `y` are the variables to be plotted, `xlab` and `ylab` are the
 labels for the `x` and `y` axes, and `main` is the title of the plot. Again, the
@@ -218,16 +188,9 @@ dataset.
 Calculate the correlation matrix
 
 
-``` r
-correlation_matrix <- cor(mtcars)
-```
 
 Display the correlation matrix
 
-
-``` r
-print(correlation_matrix)
-```
 
 ```
 ##             mpg        cyl       disp         hp        drat         wt
@@ -265,16 +228,6 @@ understand the relationships between the variables.
 
 Create a heatmap of the correlation matrix
 
-
-``` r
-heatmap(
-  correlation_matrix,
-  col = heat.colors(10),
-  symm = TRUE,
-  margins = c(10, 10)
-)
-```
-
 ![plot of chunk heatmap](/lectures/lecture_13/figures/heatmap-1.png)
 
 Note that we can organize the code in a more readable way by breaking it into
@@ -292,31 +245,6 @@ Add a legend to the heatmap. Added the heatmap code again since the legend
 needs to be added after the heatmap is created, which is not possible in
 RMarkdown unless evaluated in the same code chunk. This is a workaround,
 and not necessary for regular R scripts since the plot already exists.
-
-
-``` r
-heatmap(
-  correlation_matrix,
-  col = heat.colors(10),
-  symm = TRUE,
-  margins = c(10, 10)
-)
-legend(
-  "right",
-  legend = c(
-    "Strong Negative Correlation",
-    "Weak Negative Correlation",
-    "No Correlation",
-    "Weak Positive Correlation",
-    "Strong Positive Correlation"
-  ),
-  fill = heat.colors(5),
-  bty = "n",
-  ncol = 1,
-  cex = 0.8,
-  title = "Correlation Strength"
-)
-```
 
 ![plot of chunk heatmap_legend](/lectures/lecture_13/figures/heatmap_legend-1.png)
 

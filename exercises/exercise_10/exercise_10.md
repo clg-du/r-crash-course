@@ -59,9 +59,6 @@ Consider the following vector of numeric values:
 
 
 
-``` r
-my_vector <- c(1, 2, 3, 4, 5)
-```
 
 
 Create the following logical vectors:
