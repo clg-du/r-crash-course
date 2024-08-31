@@ -1,9 +1,3 @@
-#' ---
-#' title: "A report generated from a pure R script"
-#' output:
-#'   github_document
-#' ---
-#' 
 #' # Lecture 11: Factors in R
 #' `r Sys.Date()`
 #'

@@ -182,7 +182,7 @@ plot(mtcars$hp,
      main = "Scatter Plot of MPG vs. Horsepower")
 ```
 
-![plot of chunk plot_mpg_hp](/lectures/lecture_13/figures/plot_mpg_hp-1.png)
+![plot of chunk plot_mpg_hp](./lectures/lecture_13/figures/plot_mpg_hp-1.png)
 
 The scatter plot shows the relationship between miles per gallon (mpg) and
 horsepower for the car models in the dataset. We can see that there is a
@@ -268,7 +268,7 @@ heatmap(
 )
 ```
 
-![plot of chunk heatmap](/lectures/lecture_13/figures/heatmap-1.png)
+![plot of chunk heatmap](./lectures/lecture_13/figures/heatmap-1.png)
 
 Note that we can organize the code in a more readable way by breaking it into
 multiple lines. This makes it easier to understand and modify the code. The
@@ -311,7 +311,7 @@ legend(
 )
 ```
 
-![plot of chunk heatmap_legend](/lectures/lecture_13/figures/heatmap_legend-1.png)
+![plot of chunk heatmap_legend](./lectures/lecture_13/figures/heatmap_legend-1.png)
 
 The legend provides a key to the color scale used in the heatmap, indicating
 the strength of the correlation between variables. This additional
