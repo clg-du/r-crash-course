@@ -119,20 +119,27 @@ summary(mtcars)
 ```
 
 ```
-##       mpg             cyl             disp             hp             drat             wt       
-##  Min.   :10.40   Min.   :4.000   Min.   : 71.1   Min.   : 52.0   Min.   :2.760   Min.   :1.513  
-##  1st Qu.:15.43   1st Qu.:4.000   1st Qu.:120.8   1st Qu.: 96.5   1st Qu.:3.080   1st Qu.:2.581  
-##  Median :19.20   Median :6.000   Median :196.3   Median :123.0   Median :3.695   Median :3.325  
-##  Mean   :20.09   Mean   :6.188   Mean   :230.7   Mean   :146.7   Mean   :3.597   Mean   :3.217  
-##  3rd Qu.:22.80   3rd Qu.:8.000   3rd Qu.:326.0   3rd Qu.:180.0   3rd Qu.:3.920   3rd Qu.:3.610  
-##  Max.   :33.90   Max.   :8.000   Max.   :472.0   Max.   :335.0   Max.   :4.930   Max.   :5.424  
-##       qsec             vs               am              gear            carb      
-##  Min.   :14.50   Min.   :0.0000   Min.   :0.0000   Min.   :3.000   Min.   :1.000  
-##  1st Qu.:16.89   1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:3.000   1st Qu.:2.000  
-##  Median :17.71   Median :0.0000   Median :0.0000   Median :4.000   Median :2.000  
-##  Mean   :17.85   Mean   :0.4375   Mean   :0.4062   Mean   :3.688   Mean   :2.812  
-##  3rd Qu.:18.90   3rd Qu.:1.0000   3rd Qu.:1.0000   3rd Qu.:4.000   3rd Qu.:4.000  
-##  Max.   :22.90   Max.   :1.0000   Max.   :1.0000   Max.   :5.000   Max.   :8.000
+##       mpg             cyl             disp             hp       
+##  Min.   :10.40   Min.   :4.000   Min.   : 71.1   Min.   : 52.0  
+##  1st Qu.:15.43   1st Qu.:4.000   1st Qu.:120.8   1st Qu.: 96.5  
+##  Median :19.20   Median :6.000   Median :196.3   Median :123.0  
+##  Mean   :20.09   Mean   :6.188   Mean   :230.7   Mean   :146.7  
+##  3rd Qu.:22.80   3rd Qu.:8.000   3rd Qu.:326.0   3rd Qu.:180.0  
+##  Max.   :33.90   Max.   :8.000   Max.   :472.0   Max.   :335.0  
+##       drat             wt             qsec             vs        
+##  Min.   :2.760   Min.   :1.513   Min.   :14.50   Min.   :0.0000  
+##  1st Qu.:3.080   1st Qu.:2.581   1st Qu.:16.89   1st Qu.:0.0000  
+##  Median :3.695   Median :3.325   Median :17.71   Median :0.0000  
+##  Mean   :3.597   Mean   :3.217   Mean   :17.85   Mean   :0.4375  
+##  3rd Qu.:3.920   3rd Qu.:3.610   3rd Qu.:18.90   3rd Qu.:1.0000  
+##  Max.   :4.930   Max.   :5.424   Max.   :22.90   Max.   :1.0000  
+##        am              gear            carb      
+##  Min.   :0.0000   Min.   :3.000   Min.   :1.000  
+##  1st Qu.:0.0000   1st Qu.:3.000   1st Qu.:2.000  
+##  Median :0.0000   Median :4.000   Median :2.000  
+##  Mean   :0.4062   Mean   :3.688   Mean   :2.812  
+##  3rd Qu.:1.0000   3rd Qu.:4.000   3rd Qu.:4.000  
+##  Max.   :1.0000   Max.   :5.000   Max.   :8.000
 ```
 
 These steps provide us with an overview of the data set, including the column
@@ -183,7 +190,7 @@ plot(mtcars$hp,
      main = "Scatter Plot of MPG vs. Horsepower")
 ```
 
-![plot of chunk plot_mpg_hp](../../lectures/lecture_13/figures/plot_mpg_hp-1.png)
+![plot of chunk plot_mpg_hp](./lectures/lecture_13/figures/plot_mpg_hp-1.png)
 
 The scatter plot shows the relationship between miles per gallon (mpg) and
 horsepower for the car models in the dataset. We can see that there is a
@@ -224,30 +231,30 @@ print(correlation_matrix)
 ```
 
 ```
-##             mpg        cyl       disp         hp        drat         wt        qsec         vs          am
-## mpg   1.0000000 -0.8521620 -0.8475514 -0.7761684  0.68117191 -0.8676594  0.41868403  0.6640389  0.59983243
-## cyl  -0.8521620  1.0000000  0.9020329  0.8324475 -0.69993811  0.7824958 -0.59124207 -0.8108118 -0.52260705
-## disp -0.8475514  0.9020329  1.0000000  0.7909486 -0.71021393  0.8879799 -0.43369788 -0.7104159 -0.59122704
-## hp   -0.7761684  0.8324475  0.7909486  1.0000000 -0.44875912  0.6587479 -0.70822339 -0.7230967 -0.24320426
-## drat  0.6811719 -0.6999381 -0.7102139 -0.4487591  1.00000000 -0.7124406  0.09120476  0.4402785  0.71271113
-## wt   -0.8676594  0.7824958  0.8879799  0.6587479 -0.71244065  1.0000000 -0.17471588 -0.5549157 -0.69249526
-## qsec  0.4186840 -0.5912421 -0.4336979 -0.7082234  0.09120476 -0.1747159  1.00000000  0.7445354 -0.22986086
-## vs    0.6640389 -0.8108118 -0.7104159 -0.7230967  0.44027846 -0.5549157  0.74453544  1.0000000  0.16834512
-## am    0.5998324 -0.5226070 -0.5912270 -0.2432043  0.71271113 -0.6924953 -0.22986086  0.1683451  1.00000000
-## gear  0.4802848 -0.4926866 -0.5555692 -0.1257043  0.69961013 -0.5832870 -0.21268223  0.2060233  0.79405876
-## carb -0.5509251  0.5269883  0.3949769  0.7498125 -0.09078980  0.4276059 -0.65624923 -0.5696071  0.05753435
-##            gear        carb
-## mpg   0.4802848 -0.55092507
-## cyl  -0.4926866  0.52698829
-## disp -0.5555692  0.39497686
-## hp   -0.1257043  0.74981247
-## drat  0.6996101 -0.09078980
-## wt   -0.5832870  0.42760594
-## qsec -0.2126822 -0.65624923
-## vs    0.2060233 -0.56960714
-## am    0.7940588  0.05753435
-## gear  1.0000000  0.27407284
-## carb  0.2740728  1.00000000
+##             mpg        cyl       disp         hp        drat         wt
+## mpg   1.0000000 -0.8521620 -0.8475514 -0.7761684  0.68117191 -0.8676594
+## cyl  -0.8521620  1.0000000  0.9020329  0.8324475 -0.69993811  0.7824958
+## disp -0.8475514  0.9020329  1.0000000  0.7909486 -0.71021393  0.8879799
+## hp   -0.7761684  0.8324475  0.7909486  1.0000000 -0.44875912  0.6587479
+## drat  0.6811719 -0.6999381 -0.7102139 -0.4487591  1.00000000 -0.7124406
+## wt   -0.8676594  0.7824958  0.8879799  0.6587479 -0.71244065  1.0000000
+## qsec  0.4186840 -0.5912421 -0.4336979 -0.7082234  0.09120476 -0.1747159
+## vs    0.6640389 -0.8108118 -0.7104159 -0.7230967  0.44027846 -0.5549157
+## am    0.5998324 -0.5226070 -0.5912270 -0.2432043  0.71271113 -0.6924953
+## gear  0.4802848 -0.4926866 -0.5555692 -0.1257043  0.69961013 -0.5832870
+## carb -0.5509251  0.5269883  0.3949769  0.7498125 -0.09078980  0.4276059
+##             qsec         vs          am       gear        carb
+## mpg   0.41868403  0.6640389  0.59983243  0.4802848 -0.55092507
+## cyl  -0.59124207 -0.8108118 -0.52260705 -0.4926866  0.52698829
+## disp -0.43369788 -0.7104159 -0.59122704 -0.5555692  0.39497686
+## hp   -0.70822339 -0.7230967 -0.24320426 -0.1257043  0.74981247
+## drat  0.09120476  0.4402785  0.71271113  0.6996101 -0.09078980
+## wt   -0.17471588 -0.5549157 -0.69249526 -0.5832870  0.42760594
+## qsec  1.00000000  0.7445354 -0.22986086 -0.2126822 -0.65624923
+## vs    0.74453544  1.0000000  0.16834512  0.2060233 -0.56960714
+## am   -0.22986086  0.1683451  1.00000000  0.7940588  0.05753435
+## gear -0.21268223  0.2060233  0.79405876  1.0000000  0.27407284
+## carb -0.65624923 -0.5696071  0.05753435  0.2740728  1.00000000
 ```
 
 It is clear that the correlation matrix provides information about the
@@ -269,7 +276,7 @@ heatmap(
 )
 ```
 
-![plot of chunk heatmap](../../lectures/lecture_13/figures/heatmap-1.png)
+![plot of chunk heatmap](./lectures/lecture_13/figures/heatmap-1.png)
 
 Note that we can organize the code in a more readable way by breaking it into
 multiple lines. This makes it easier to understand and modify the code. The
@@ -313,7 +320,7 @@ legend(
 )
 ```
 
-![plot of chunk heatmap_legend](../../lectures/lecture_13/figures/heatmap_legend-1.png)
+![plot of chunk heatmap_legend](./lectures/lecture_13/figures/heatmap_legend-1.png)
 
 The legend provides a key to the color scale used in the heatmap, indicating
 the strength of the correlation between variables. This additional
@@ -334,53 +341,22 @@ That's it for this lecture! In the next lecture, we will cover more advanced
 topics in R and explore additional data analysis techniques.
 
 
-<!--html_preserve--><details>
-  <summary>Lecture index</summary>
 
-- [Lecture 1: Introduction to R](/lectures/lecture_01/lecture_01.md)
-- [Lecture 2: Objects, Data Types, and Variables in R](/lectures/lecture_02/lecture_02.md)
-- [Lecture 3: Arithmetic Operations in R](/lectures/lecture_03/lecture_03.md)
-- [Lecture 4: Comparison and Logical Operators in R](/lectures/lecture_04/lecture_04.md)
-- [Lecture 5: Vectors in R](/lectures/lecture_05/lecture_05.md)
-- [Lecture 6: List in R](/lectures/lecture_06/lecture_06.md)
-- [Lecture 7: Matrices in R](/lectures/lecture_07/lecture_07.md)
-- [Lecture 8: Data Frames in R](/lectures/lecture_08/lecture_08.md)
-- [Lecture 9: Functions in R](/lectures/lecture_09/lecture_09.md)
-- [Lecture 10: Indexing using Logical Vectors in R](/lectures/lecture_10/lecture_10.md)
-- [Lecture 11: Factors in R](/lectures/lecture_11/lecture_11.md)
-- [Lecture 12: Control Structures in R](/lectures/lecture_12/lecture_12.md)
-- [Lecture 13: A real-world example of using R for data analysis](/lectures/lecture_13/lecture_13.md)
+```
+## Warning in file(con, "r"): cannot open file '../../index_lectures.html': No
+## such file or directory
+```
 
-</details><!--/html_preserve--><!--html_preserve--><details>
-  <summary>Exercise index</summary>
+```
+## Error in file(con, "r"): cannot open the connection
+```
 
-  - [Exercise 1: Introduction to R](/exercises/exercise_01/exercise_01.md)
-  - [Exercise 1 Solutions: Introduction to R](/exercises/exercise_01/exercise_01_solutions.md)
-  - [Exercise 2: Objects, Data Types, and Variables in R](/exercises/exercise_02/exercise_02.md)
-  - [Exercise 2 Solutions: Objects, Data Types, and Variables in R](/exercises/exercise_02/exercise_02_solutions.md)
-  - [Exercise 3: Arithmetic Operations in R](/exercises/exercise_03/exercise_03.md)
-  - [Exercise 3 Solutions: Arithmetic Operations in R](/exercises/exercise_03/exercise_03_solutions.md)
-  - [Exercise 4: Comparison and Logical Operators in R](/exercises/exercise_04/exercise_04.md)
-  - [Exercise 4 Solutions: Comparison and Logical Operators in R](/exercises/exercise_04/exercise_04_solutions.md)
-  - [Exercise 5: Vectors in R](/exercises/exercise_05/exercise_05.md)
-  - [Exercise 5 Solutions: Vectors in R](/exercises/exercise_05/exercise_05_solutions.md)
-  - [Exercise 6: List in R](/exercises/exercise_06/exercise_06.md)
-  - [Exercise 6 Solutions: List in R](/exercises/exercise_06/exercise_06_solutions.md)
-  - [Exercise 7: Matrices in R](/exercises/exercise_07/exercise_07.md)
-  - [Exercise 7 Solutions: Matrices in R](/exercises/exercise_07/exercise_07_solutions.md)
-  - [Exercise 8: Data Frames in R](/exercises/exercise_08/exercise_08.md)
-  - [Exercise 8 Solutions: Data Frames in R](/exercises/exercise_08/exercise_08_solutions.md)
-  - [Exercise 9: Functions in R](/exercises/exercise_09/exercise_09.md)
-  - [Exercise 9 Solutions: Functions in R](/exercises/exercise_09/exercise_09_solutions.md)
-  - [Exercise 10: Indexing using Logical Vectors in R](/exercises/exercise_10/exercise_10.md)
-  - [Exercise 10 Solutions: Indexing using Logical Vectors in R](/exercises/exercise_10/exercise_10_solutions.md)
-  - [Exercise 11: Factors in R](/exercises/exercise_11/exercise_11.md)
-  - [Exercise 11 Solutions: Factors in R](/exercises/exercise_11/exercise_11_solutions.md)
-  - [Exercise 12: Control Structures in R](/exercises/exercise_12/exercise_12.md)
-  - [Exercise 12 Solutions: Control Structures in R](/exercises/exercise_12/exercise_12_solutions.md)
-  - [Exercise 13: A real-world example of using R for data analysis](/exercises/exercise_13/exercise_13.md)
-  - [Exercise 13 Solutions: A real-world example of using R for data
-  analysis](/exercises/exercise_13/exercise_13_solutions.md)
+```
+## Warning in file(con, "r"): cannot open file '../../index_exercises.html': No
+## such file or directory
+```
 
-</details><!--/html_preserve-->
+```
+## Error in file(con, "r"): cannot open the connection
+```
 

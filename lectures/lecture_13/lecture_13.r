@@ -2,6 +2,8 @@
 #' `r Sys.Date()`
 #' 
 #+ echo = FALSE
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = '../../')
 htmltools::includeHTML("../../index_lectures.html")
 htmltools::includeHTML("../../index_exercises.html")
 #'
