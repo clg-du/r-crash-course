@@ -202,8 +202,7 @@ print(result)
 ```
 
 ```
-## [1] "less than or equal to 3" "less than or equal to 3"
-## [3] "less than or equal to 3" "greater than 3"         
+## [1] "less than or equal to 3" "less than or equal to 3" "less than or equal to 3" "greater than 3"         
 ## [5] "greater than 3"
 ```
 
