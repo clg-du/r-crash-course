@@ -1,5 +1,6 @@
 #' # Lecture 13: A real-world example of using R for data analysis
 #' `r Sys.Date()`
+#' 
 #+ echo = FALSE
 htmltools::includeHTML("../../index_lectures.html")
 htmltools::includeHTML("../../index_exercises.html")
@@ -133,10 +134,10 @@ heatmap(
   correlation_matrix,
   col = heat.colors(10),
   symm = TRUE,
-  margins = c(10, 10)
+  margins = c(0, 0)
 )
 legend(
-  "right",
+  "topright",
   legend = c(
     "Strong Negative Correlation",
     "Weak Negative Correlation",
