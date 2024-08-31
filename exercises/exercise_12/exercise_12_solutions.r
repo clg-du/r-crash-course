@@ -1,4 +1,4 @@
-#' # Exercise 12 Solutions: Control Structures in R
+#' # Exercise 12: Control Structures in R
 #' `r Sys.Date()`
 #+ echo = FALSE
 htmltools::includeHTML("../../index_lectures.html")
@@ -7,114 +7,69 @@ htmltools::includeHTML("../../index_exercises.html")
 #'
 #' ## Task 1: Conditional Statements
 #'
-#' Consider the following code snippet:
-#'
-#' ```r
-#' # Define a variable
-#' x <- 7
-#'
-#' # Write an if-else statement to check if x is even or odd
-#' # If x is even, print "x is even"
-#' # If x is odd, print "x is odd"
-#' ```
-#'
-#' Write the if-else statement to check if `x` is even or odd and print the
+#' Write the if-else statement to check if a value is even or odd and print the
 #' appropriate message.
 #'
-#' #' Hint: Use the modulo operator `%%` to check for evenness.
+#' Hint: Use the modulo operator `%%` to check for evenness.
 #'
 #' Your code here:
-x <- 7
+# Task 1: Conditional Statements
 
-if (x %% 2 == 0) {
-    print("x is even")
+# Write the if-else statement to check if a value is even or odd and print the appropriate message.
+
+# Your code here:
+value <- 7
+
+if (value %% 2 == 0) {
+    print("The value is even.")
 } else {
-    print("x is odd")
+    print("The value is odd.")
 }
 
+
 #' ## Task 2: Loops
-#'
-#' Consider the following code snippet:
-#'
-#' ```r
-#' # Write a for loop to print the numbers from 1 to 5
-#' ```
 #'
 #' Write a for loop to print the numbers from 1 to 5.
 #'
 #' Your code here:
-for (i in 1:5) {
-    print(i)
-}
+
 
 #' ## Task 3: Functions
-#'
-#' Consider the following code snippet:
-#'
-#' ```r
-#' # Write a function called "square" that takes a number as input and returns its square
-#' ```
 #'
 #' Write a function called "square" that takes a number as input and returns its
 #' square.
 #'
 #' Your code here:
-square <- function(x) {
-    return(x^2)
-}
+
 
 #' ## Task 4: Putting It All Together
 #'
-#' Consider the following code snippet:
-#'
-#' ```r
-#' # Define a variable
-#' n <- 10
-#'
-#' # Write a for loop to print the squares of the numbers from 1 to n
-#' # Use the "square" function defined earlier
-#' ```
-#'
-#' Write a for loop to print the squares of the numbers from 1 to `n` using the
+#' Write a for loop to print the squares of the numbers from 1 to a number `n` using the
 #' "square" function.
 #'
 #' Your code here:
-n <- 10
 
-for (i in 1:n) {
-    print(square(i))
-}
 
 #' ## Task 5: Advanced Control Structures
 #'
-#' Consider the following code snippet:
-#'
-#' ```r
-#' # Define a variable
-#' y <- 15
-#'
-#' # Write an if-else-if ladder to check the value of y
-#' # If y is less than 10, print "y is less than 10"
-#' # If y is between 10 and 20, print "y is between 10 and 20"
-#' # If y is greater than 20, print "y is greater than 20"
-#' # If none of the conditions are met, print "y is unknown"
-#' ```
-#'
-#' Write an if-else-if ladder to check the value of `y` and print the
-#' appropriate message.
-#'
+#' Write an if-else statement that evalutes grades from an exam and prints the
+#' corresponding message based on the grade:
+#' 
+#' - A: Excellent
+#' - B: Good
+#' - C: Satisfactory
+#' - D: Needs Improvement
+#' - F: Fail
+#' 
+#' The grading scale is as follows:
+#' 
+#' - A: 90-100
+#' - B: 80-89
+#' - C: 70-79
+#' - D: 60-69
+#' - F: 0-59
+#' 
 #' Your code here:
-y <- 15
-
-if (y < 10) {
-    print("y is less than 10")
-} else if (y >= 10 && y <= 20) {
-    print("y is between 10 and 20")
-} else if (y > 20) {
-    print("y is greater than 20")
-} else {
-    print("y is unknown")
-}
 
 #' That's it for Exercise 12! Well done!
 #' 

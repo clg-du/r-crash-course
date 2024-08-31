@@ -130,8 +130,6 @@ filtered_cars_2 <- mpg[(mpg$cyl == 4 | mpg$cyl == 6) & mpg$hwy > 30, ]
 # 3. The average city mileage for cars with 4, 6, or 8 cylinders.
 average_city_mileage <- mean(mpg$cty[mpg$cyl == 4 | mpg$cyl == 6 | mpg$cyl == 8])
 
-
-
 #'
 #' That's it for Exercise 11! Great job!
 #' 
