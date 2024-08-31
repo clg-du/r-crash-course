@@ -1,5 +1,5 @@
 # Lecture 12: Control Structures in R
-2024-08-27
+2024-08-31
 
 <!--html_preserve--><details>
   <summary>Lecture index</summary>
@@ -230,17 +230,7 @@ Assign a value based on a condition using the ternary operator
 
 
 ``` r
-result <- if (z > 5)
-  "z is greater than 5"
-else
-  "z is not greater than 5"
-```
-
-```
-## Error: <text>:3:1: unexpected 'else'
-## 2:   "z is greater than 5"
-## 3: else
-##    ^
+result <- if (z > 5) "z is greater than 5" else "z is not greater than 5"
 ```
 
 Display the result
@@ -251,9 +241,7 @@ print(result)
 ```
 
 ```
-## [1] "less than or equal to 3" "less than or equal to 3"
-## [3] "less than or equal to 3" "greater than 3"         
-## [5] "greater than 3"
+## [1] "z is greater than 5"
 ```
 
 In this example, we define a variable `z` with the value `7`. We use the

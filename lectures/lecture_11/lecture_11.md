@@ -1,5 +1,5 @@
 # Lecture 11: Factors in R
-2024-08-27
+2024-08-31
 
 <!--html_preserve--><details>
   <summary>Lecture index</summary>
@@ -186,8 +186,9 @@ Let's create an ordered factor for the size of T-shirts.
 
 ``` r
 size_factor_ordered <- factor(size_vector,
-                              levels = c("S", "M", "L", "XL"),
-                              ordered = TRUE)
+  levels = c("S", "M", "L", "XL"),
+  ordered = TRUE
+)
 ```
 
 Display the ordered factor
@@ -259,7 +260,7 @@ sizes that are greater than "S" and less than "XL".
 
 ``` r
 subset_size_factor <- size_factor_ordered[size_factor_ordered > "S" &
-                                            size_factor_ordered < "XL"]
+  size_factor_ordered < "XL"]
 ```
 
 Display the subset of the ordered factor
@@ -302,9 +303,10 @@ Create a bar plot of the factor without specifying the order
 
 ``` r
 barplot(table(size_factor),
-        main = "T-Shirt Sizes",
-        xlab = "Size",
-        ylab = "Frequency")
+  main = "T-Shirt Sizes",
+  xlab = "Size",
+  ylab = "Frequency"
+)
 ```
 
 ![plot of chunk barplot_without_order](/lectures/lecture_11/figures/barplot_without_order-1.png)

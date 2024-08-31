@@ -1,5 +1,5 @@
 # Exercise 11: Working with Factors in R
-2024-08-27
+2024-08-31
 
 <!--html_preserve--><details>
   <summary>Lecture index</summary>
@@ -113,11 +113,55 @@ assign the results to new variables:
    the result to a variable called `cumulative_frequency`.
 
 Your code here:
-## Task 6: Displaying Results
+## Task 6: Using factors with real data
 
-Display the factor `fruit_factor`, the modified factor `modified_factor`, the
-factor levels `factor_levels`, the level frequency `level_frequency`, and the
-cumulative frequency `cumulative_frequency` using the `print` function.
+Consider the `mpg` data set from the ggplot2 package (install the package and
+load it, if not already installed)
+
+
+``` r
+library(ggplot2)
+data(mpg)
+```
+
+You may read up on what each column is describing by using
+
+
+``` r
+?mpg
+```
+
+There is a function in R called `unique()`. It tells us how many unique
+values a certain vector contains. For instance, the following code gives us
+information about all unique values of the cylinders, which is only 4 in
+total.
+
+
+``` r
+unique(mpg$cyl))
+```
+
+```
+## Error: <text>:1:16: unexpected ')'
+## 1: unique(mpg$cyl))
+##                    ^
+```
+
+The normal case for when loading data into R, such as a .csv (comma seperated
+value) file, is that factors are not included.
+
+For this task, give suggestions on which variables can reasonably be turned
+into factors, and, where applicable provide factor levels or even ordered
+factors. Transform the columns accordingly!
+
+Finally, given the transformed data set, provide the following.
+
+1. Cars with more than 4 cylinders but less than 8 cylinders.
+
+2. Cars with 4 or 6 cylinders and a highway mileage of more than 30 miles per
+  gallon.
+
+3. The average city mileage for cars with 4, 6, or 8 cylinders.
 
 Your code here:
 That's it for Exercise 11! Great job!

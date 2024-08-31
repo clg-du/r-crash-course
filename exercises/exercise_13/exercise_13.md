@@ -1,5 +1,5 @@
 # Exercise 13: Data Analysis in R
-2024-08-27
+2024-08-31
 
 <!--html_preserve--><details>
   <summary>Lecture index</summary>
