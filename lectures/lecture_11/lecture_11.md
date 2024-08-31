@@ -1,8 +1,7 @@
 ---
-title: My document in a .R file
+title: "A report generated from a pure R script"
 output:
-  github_document: 
-    keep_md: yes
+  github_document
 ---
 
 # Lecture 11: Factors in R
