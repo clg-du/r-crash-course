@@ -1,4 +1,4 @@
-# Exercise 13 Solutions: Data Analysis in R
+# Exercise 13: Data Analysis in R
 2024-08-31
 
 <!--html_preserve--><details>
@@ -55,126 +55,181 @@
 
 ## Task 1: Loading and Exploring Data
 
-Consider the following code snippet:
-
-```r
-# Load the iris data set
-data(iris)
-
-# Display the first few rows
-head(iris)
-
-# Check the structure
-str(iris)
-
-# Provide a summary
-summary(iris)
-```
-
 Load the `iris` data set, display the first few rows, check the structure,
 and provide a summary of the data set.
 
 Your code here:
-## Task 2: Scatter Plot
 
-Consider the following code snippet:
 
-```r
-# Create a scatter plot of Petal.Length vs. Petal.Width
-plot(iris$Petal.Length, iris$Petal.Width,
-     xlab = "Petal.Length", ylab = "Petal.Width",
-     main = "Scatter Plot of Petal.Length vs. Petal.Width")
+``` r
+# Load the iris dataset
+data(iris)
+
+# Display the first few rows
+head(iris)
 ```
+
+```
+##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+## 1          5.1         3.5          1.4         0.2  setosa
+## 2          4.9         3.0          1.4         0.2  setosa
+## 3          4.7         3.2          1.3         0.2  setosa
+## 4          4.6         3.1          1.5         0.2  setosa
+## 5          5.0         3.6          1.4         0.2  setosa
+## 6          5.4         3.9          1.7         0.4  setosa
+```
+
+``` r
+# Check the structure
+str(iris)
+```
+
+```
+## 'data.frame':	150 obs. of  5 variables:
+##  $ Sepal.Length: num  5.1 4.9 4.7 4.6 5 5.4 4.6 5 4.4 4.9 ...
+##  $ Sepal.Width : num  3.5 3 3.2 3.1 3.6 3.9 3.4 3.4 2.9 3.1 ...
+##  $ Petal.Length: num  1.4 1.4 1.3 1.5 1.4 1.7 1.4 1.5 1.4 1.5 ...
+##  $ Petal.Width : num  0.2 0.2 0.2 0.2 0.2 0.4 0.3 0.2 0.2 0.1 ...
+##  $ Species     : Factor w/ 3 levels "setosa","versicolor",..: 1 1 1 1 1 1 1 1 1 1 ...
+```
+
+``` r
+# Summary of the dataset
+summary(iris)
+```
+
+```
+##   Sepal.Length    Sepal.Width     Petal.Length    Petal.Width   
+##  Min.   :4.300   Min.   :2.000   Min.   :1.000   Min.   :0.100  
+##  1st Qu.:5.100   1st Qu.:2.800   1st Qu.:1.600   1st Qu.:0.300  
+##  Median :5.800   Median :3.000   Median :4.350   Median :1.300  
+##  Mean   :5.843   Mean   :3.057   Mean   :3.758   Mean   :1.199  
+##  3rd Qu.:6.400   3rd Qu.:3.300   3rd Qu.:5.100   3rd Qu.:1.800  
+##  Max.   :7.900   Max.   :4.400   Max.   :6.900   Max.   :2.500  
+##        Species  
+##  setosa    :50  
+##  versicolor:50  
+##  virginica :50  
+##                 
+##                 
+## 
+```
+
+## Task 2: Scatter Plot
 
 Create a scatter plot of `Petal.Length` vs. `Petal.Width` from the `iris`
 data set.
 
+Hint: Use the `plot` function with the appropriate arguments.
+
 Your code here:
-## Task 3: Bar Plot
 
-Consider the following code snippet:
 
-```r
-# Create a bar plot of the species counts
-barplot(table(iris$Species),
-        xlab = "Species",
-        ylab = "Count",
-        main = "Bar Plot of Species Counts")
+``` r
+# Scatter plot of Petal.Length vs. Petal.Width
+plot(iris$Petal.Length,
+    iris$Petal.Width,
+    xlab = "Petal Length",
+    ylab = "Petal Width",
+    main = "Petal Length vs. Petal Width"
+)
 ```
+
+![plot of chunk unnamed-chunk-3](../../exercises/exercise_13/figures/unnamed-chunk-3-1.png)
+
+## Task 3: Bar Plot
 
 Create a bar plot of the species counts from the `iris` data set.
 
 Your code here:
-## Task 4: Box Plot
 
-Consider the following code snippet:
 
-```r
-# Create a box plot of Sepal.Length by species
-boxplot(iris$Sepal.Length ~ iris$Species,
+``` r
+# Bar plot of species counts
+barplot(table(iris$Species),
         xlab = "Species",
-        ylab = "Sepal Length",
-        main = "Box Plot of Sepal Length by Species")
+        ylab = "Count",
+        main = "Species Counts"
+)
 ```
+
+![plot of chunk unnamed-chunk-4](../../exercises/exercise_13/figures/unnamed-chunk-4-1.png)
+
+## Task 4: Box Plot
 
 Create a box plot of `Sepal.Length` by species from the `iris` data set.
 
 Your code here:
-## Task 5: Histogram
 
-Consider the following code snippet:
 
-```r
-# Create a histogram of Sepal.Width
-hist(iris$Sepal.Width,
-     xlab = "Sepal Width",
-     ylab = "Frequency",
-     main = "Histogram of Sepal Width")
+``` r
+# Box plot of Sepal.Length by species
+boxplot(Sepal.Length ~ Species,
+        data = iris,
+        xlab = "Species",
+        ylab = "Sepal Length",
+        main = "Sepal Length by Species"
+)
 ```
+
+![plot of chunk unnamed-chunk-5](../../exercises/exercise_13/figures/unnamed-chunk-5-1.png)
+
+## Task 5: Histogram
 
 Create a histogram of `Sepal.Width` from the `iris` data set.
 
 Your code here:
-## Task 6: Correlation Matrix
 
-Consider the following code snippet:
 
-```r
-# Compute the correlation matrix
-cor_matrix <- cor(iris[, 1:4])
-
-# Display the correlation matrix
-cor_matrix
+``` r
+# Histogram of Sepal.Width
+hist(iris$Sepal.Width,
+     xlab = "Sepal Width",
+     ylab = "Frequency",
+     main = "Histogram of Sepal Width"
+)
 ```
+
+![plot of chunk unnamed-chunk-6](../../exercises/exercise_13/figures/unnamed-chunk-6-1.png)
+
+## Task 6: Correlation Matrix
 
 Compute the correlation matrix for the first four columns of the `iris` data
 set and display it.
 
 Your code here:
-## Task 7: Putting It All Together
 
-Consider the following code snippet:
 
-```r
-# Load the mtcars data set
-data(mtcars)
-
-# Create a scatter plot of mpg vs. hp
-plot(mtcars$hp, mtcars$mpg,
-     xlab = "Horsepower", ylab = "Miles per Gallon",
-     main = "Scatter Plot of MPG vs. Horsepower")
-
-# Create a bar plot of the number of cylinders
-barplot(table(mtcars$cyl),
-        xlab = "Number of Cylinders",
-        ylab = "Count",
-        main = "Bar Plot of Number of Cylinders")
+``` r
+# Correlation matrix for the first four columns
+cor(iris[, 1:4])
 ```
 
-Load the `mtcars` data set, create a scatter plot of `mpg` vs. `hp`, and
-create a bar plot of the number of cylinders.
+```
+##              Sepal.Length Sepal.Width Petal.Length Petal.Width
+## Sepal.Length    1.0000000  -0.1175698    0.8717538   0.8179411
+## Sepal.Width    -0.1175698   1.0000000   -0.4284401  -0.3661259
+## Petal.Length    0.8717538  -0.4284401    1.0000000   0.9628654
+## Petal.Width     0.8179411  -0.3661259    0.9628654   1.0000000
+```
+
+## Task 7: Heatmap of Correlation Matrix
+
+Create a heatmap of the correlation matrix computed in the previous task.
 
 Your code here:
+
+
+``` r
+# Compute the correlation matrix for the first four columns of the iris data set
+cor_matrix <- cor(iris[, 1:4])
+
+# Create a heatmap of the correlation matrix
+heatmap(cor_matrix)
+```
+
+![plot of chunk unnamed-chunk-8](../../exercises/exercise_13/figures/unnamed-chunk-8-1.png)
+
 That's it for Exercise 13! Great job!
 
 
