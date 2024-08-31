@@ -58,6 +58,6 @@ for (i in seq_along(r_files)) {
     dirname(r_file),
     "/figures/"
   ),
-  root.dir = normalizePath("."))
+  root.dir = rprojroot::find_rstudio_root_file())
   knitr::knit(rmd_file, output = md_file)
 }
