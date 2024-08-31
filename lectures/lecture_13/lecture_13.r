@@ -148,7 +148,8 @@ legend(
   bty = "n",
   ncol = 1,
   cex = 0.8,
-  title = "Correlation Strength"
+  title = "Correlation Strength",
+  inset = c(0.05, 0)
 )
 
 #' The legend provides a key to the color scale used in the heatmap, indicating
