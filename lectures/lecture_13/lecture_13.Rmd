@@ -164,7 +164,7 @@ heatmap(
   correlation_matrix,
   col = heat.colors(10),
   symm = TRUE,
-  margins = c(0, 0)
+  margins = c(13, 13)
 )
 legend(
   "topright",
