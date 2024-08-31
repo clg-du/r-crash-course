@@ -63,6 +63,22 @@ Hint: Use the modulo operator `%%` to check for evenness.
 Your code here:
 
 
+``` r
+# Task 1: Conditional Statements
+
+# Write the if-else statement to check if a value is even or odd and print the
+# appropriate message.
+
+# Your code here:
+value <- 7
+
+if (value %% 2 == 0) {
+    print("The value is even.")
+} else {
+    print("The value is odd.")
+}
+```
+
 ```
 ## [1] "The value is odd."
 ```
@@ -73,6 +89,12 @@ Write a for loop to print the numbers from 1 to 5.
 
 Your code here:
 
+
+``` r
+for (i in 1:5) {
+    print(i)
+}
+```
 
 ```
 ## [1] 1
@@ -90,6 +112,11 @@ square.
 Your code here:
 
 
+``` r
+squared_number <- function(x) {
+    return(x^2)
+}
+```
 
 ## Task 4: Putting It All Together
 
@@ -98,6 +125,14 @@ using the "square" function.
 
 Your code here:
 
+
+``` r
+n <- 5
+
+for (i in 1:n) {
+    print(squared_number(i))
+}
+```
 
 ```
 ## [1] 1
@@ -128,6 +163,22 @@ The grading scale is as follows:
 
 Your code here:
 
+
+``` r
+grade <- 85
+
+if (grade >= 90) {
+    print("Excellent")
+} else if (grade >= 80) {
+    print("Good")
+} else if (grade >= 70) {
+    print("Satisfactory")
+} else if (grade >= 60) {
+    print("Needs Improvement")
+} else {
+    print("Fail")
+}
+```
 
 ```
 ## [1] "Good"

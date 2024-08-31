@@ -1,11 +1,13 @@
-# Lecture 11: Factors in R
-2024-08-31
 ---
-title: "Amazing document"
+title: My document in a .R file
 output:
-  html_document:
+  github_document: 
     keep_md: yes
 ---
+
+# Lecture 11: Factors in R
+2024-08-31
+
 
 <!--html_preserve--><details>
   <summary>Lecture index</summary>
@@ -72,9 +74,16 @@ We can use the `c()` function to create a vector of categorical data. For
 example, let's create a vector of fruit names.
 
 
+``` r
+fruit_vector <- c("apple", "banana", "cherry", "apple", "banana", "cherry")
+```
 
 Display the vector
 
+
+``` r
+print(fruit_vector)
+```
 
 ```
 ## [1] "apple"  "banana" "cherry" "apple"  "banana" "cherry"
@@ -85,9 +94,16 @@ a vector of categorical data into a factor. The `factor()` function takes the
 vector of data as an argument.
 
 
+``` r
+fruit_factor <- factor(fruit_vector)
+```
 
 Display the factor
 
+
+``` r
+print(fruit_factor)
+```
 
 ```
 ## [1] apple  banana cherry apple  banana cherry
@@ -108,6 +124,9 @@ define the categories and order of the levels. Let's showcase this with a
 factor representing the size of T-shirts.
 
 
+``` r
+size_vector <- c("S", "M", "L", "M", "S", "XL", "L", "S", "M")
+```
 
 Note that the levels, by default, are given by the order of appearance in the
 data.
@@ -115,9 +134,16 @@ data.
 Create a factor with specified levels
 
 
+``` r
+size_factor <- factor(size_vector)
+```
 
 Display the factor
 
+
+``` r
+print(size_factor)
+```
 
 ```
 ## [1] S  M  L  M  S  XL L  S  M 
@@ -135,9 +161,16 @@ categories and order of the levels. Let's create a factor with specified
 levels for the size of T-shirts.
 
 
+``` r
+size_factor_specified <- factor(size_vector, levels = c("S", "M", "L", "XL"))
+```
 
 Display the factor with specified levels
 
+
+``` r
+print(size_factor_specified)
+```
 
 ```
 ## [1] S  M  L  M  S  XL L  S  M 
@@ -159,9 +192,19 @@ the levels have a natural order.
 Let's create an ordered factor for the size of T-shirts.
 
 
+``` r
+size_factor_ordered <- factor(size_vector,
+  levels = c("S", "M", "L", "XL"),
+  ordered = TRUE
+)
+```
 
 Display the ordered factor
 
+
+``` r
+print(size_factor_ordered)
+```
 
 ```
 ## [1] S  M  L  M  S  XL L  S  M 
@@ -174,9 +217,16 @@ This function allows us to create an ordered factor directly.
 Create an ordered factor using the ordered() function
 
 
+``` r
+size_factor_ordered <- ordered(size_vector, levels = c("S", "M", "L", "XL"))
+```
 
 Display the ordered factor
 
+
+``` r
+print(size_factor_ordered)
+```
 
 ```
 ## [1] S  M  L  M  S  XL L  S  M 
@@ -193,9 +243,16 @@ order.
 Sort the ordered factor
 
 
+``` r
+sorted_size_factor <- sort(size_factor_ordered)
+```
 
 Display the sorted factor
 
+
+``` r
+print(sorted_size_factor)
+```
 
 ```
 ## [1] S  S  S  M  M  M  L  L  XL
@@ -209,9 +266,17 @@ Index the ordered factor using logical vectors This will return the T-shirt
 sizes that are greater than "S" and less than "XL".
 
 
+``` r
+subset_size_factor <- size_factor_ordered[size_factor_ordered > "S" &
+  size_factor_ordered < "XL"]
+```
 
 Display the subset of the ordered factor
 
+
+``` r
+print(subset_size_factor)
+```
 
 ```
 ## [1] M L M L M
@@ -226,12 +291,31 @@ create a bar plot of the T-shirt sizes to illustrate this point.
 Create a bar plot of the ordered factor We can use the `barplot()` function
 to create a bar plot of the ordered factor.
 
+
+``` r
+barplot(
+  table(size_factor_ordered),
+  main = "T-Shirt Sizes",
+  xlab = "Size",
+  ylab = "Frequency"
+)
+```
+
 ![plot of chunk barplot_with_order](/lectures/lecture_11/figures/barplot_with_order-1.png)
 
 Here is an example what the bar plot would look like if the factor was not
 ordered. Let's create a bar plot of the factor without specifying the order.
 
 Create a bar plot of the factor without specifying the order
+
+
+``` r
+barplot(table(size_factor),
+  main = "T-Shirt Sizes",
+  xlab = "Size",
+  ylab = "Frequency"
+)
+```
 
 ![plot of chunk barplot_without_order](/lectures/lecture_11/figures/barplot_without_order-1.png)
 

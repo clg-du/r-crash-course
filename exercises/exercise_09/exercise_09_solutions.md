@@ -68,6 +68,17 @@ Create the following user-defined functions:
 Your code here:
 
 
+``` r
+calculate_area <- function(length, width) {
+    area <- length * width
+    return(area)
+}
+
+calculate_volume <- function(length, width, height) {
+    volume <- length * width * height
+    return(volume)
+}
+```
 
 ## Task 2: Calling User-Defined Functions
 
@@ -82,6 +93,10 @@ Use the user-defined functions to perform the following operations:
 Your code here:
 
 
+``` r
+area <- calculate_area(length = 5, width = 3)
+volume <- calculate_volume(length = 4, width = 2, height = 6)
+```
 
 ## Task 3: Built-in Functions vs User-Defined Functions
 
@@ -101,6 +116,14 @@ Compare the results of the built-in `sum` function and the user-defined
 Your code here:
 
 
+``` r
+numbers <- c(1, 2, 3, 4, 5)
+sum_result <- sum(numbers)
+sum_user_defined <- function(x) {
+    return(x[1] + x[2] + x[3] + x[4] + x[5])
+}
+sum_result_user_defined <- sum_user_defined(numbers)
+```
 
 That's it for Exercise 9! Great job!
 

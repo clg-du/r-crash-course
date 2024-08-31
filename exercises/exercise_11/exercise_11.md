@@ -59,6 +59,9 @@ Consider the following vector of fruit names:
 
 
 
+``` r
+fruit_vector <- c("apple", "banana", "cherry", "apple", "banana", "cherry")
+```
 
 
 Create a factor called `fruit_factor` from the `fruit_vector` using the
@@ -72,6 +75,9 @@ Consider the following vector of T-shirt sizes:
 
 
 
+``` r
+size_vector <- c("S", "M", "L", "M", "S", "XL", "L", "S", "M")
+```
 
 
 Create a factor called `size_factor_specified` from the `size_vector` using
@@ -113,16 +119,27 @@ Consider the `mpg` data set from the ggplot2 package (install the package and
 load it, if not already installed)
 
 
+``` r
+library(ggplot2)
+data(mpg)
+```
 
 You may read up on what each column is describing by using
 
 
+``` r
+?mpg
+```
 
 There is a function in R called `unique()`. It tells us how many unique
 values a certain vector contains. For instance, the following code gives us
 information about all unique values of the cylinders, which is only 4 in
 total.
 
+
+``` r
+unique(mpg$cyl)
+```
 
 ```
 ## [1] 4 6 8 5

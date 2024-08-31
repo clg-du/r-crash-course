@@ -78,6 +78,13 @@ frame. We will discuss functions and arguments in more detail in the next
 lecture. For now, focus on understanding how to create a data frame in R.
 
 
+``` r
+my_data_frame <- data.frame(
+  name = c("Alice", "Bob", "Charlie", "David", "Eve"),
+  age = c(25, 30, 35, 40, 45),
+  employed = c(TRUE, FALSE, TRUE, FALSE, TRUE)
+)
+```
 
 Notice how we have created a data frame with three columns: name, age, and
 employed. The name column contains character values, the age column contains
@@ -89,6 +96,10 @@ the column names.
 Display the data frame The numbers in the leftmost column are row indices,
 which are automatically assigned by R.
 
+
+``` r
+print(my_data_frame)
+```
 
 ```
 ##      name age employed
@@ -102,6 +113,11 @@ which are automatically assigned by R.
 It is possible to assign row names
 
 
+``` r
+rownames(my_data_frame) <- c("row_1", "row_2", "row_3", "row_4", "row_5")
+print(my_data_frame)
+```
+
 ```
 ##          name age employed
 ## row_1   Alice  25     TRUE
@@ -114,6 +130,9 @@ It is possible to assign row names
 Let's reset the row names for now
 
 
+``` r
+rownames(my_data_frame) <- NULL
+```
 
 Accessing elements of a data frame
 
@@ -124,12 +143,20 @@ of a data frame. This is analogous to how we access elements of matrices.
 Access the element in the first row and second column
 
 
+``` r
+print(my_data_frame[1, 2])
+```
+
 ```
 ## [1] 25
 ```
 
 Access the element in the second row and third column
 
+
+``` r
+print(my_data_frame[2, 3])
+```
 
 ```
 ## [1] FALSE
@@ -140,6 +167,11 @@ elements of a matrix. I refer you to the previous lecture for more
 information on this topic, and we will not repeat the examples here.
 We can also change column names
 
+
+``` r
+colnames(my_data_frame) <- c("full_name", "years", "is_employed")
+print(my_data_frame)
+```
 
 ```
 ##   full_name years is_employed
@@ -158,11 +190,18 @@ of the vector must match the number of rows in the data frame. The `$` sign
 is used to access columns in a data frame.
 
 
+``` r
+my_data_frame$height <- c(160, 170, 180, 190, 200)
+```
 
 To see where the `$` sign comes from, let's print the structure of the data
 frame The structure of the data frame shows the names of the columns and
 their types.
 
+
+``` r
+print(str(my_data_frame))
+```
 
 ```
 ## 'data.frame':	5 obs. of  4 variables:
@@ -177,6 +216,10 @@ We can also summarize the data frame The `summary()` function provides a
 summary of the data frame, including the number of observations, the number
 of missing values, and the distribution of values for each column.
 
+
+``` r
+summary(my_data_frame)
+```
 
 ```
 ##   full_name             years    is_employed         height   

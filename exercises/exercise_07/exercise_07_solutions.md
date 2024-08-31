@@ -74,11 +74,23 @@ column names.
 Your code here:
 
 
+``` r
+matrix1 <- matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3)
+matrix2 <- matrix(c(10, 20, 30, 40),
+    nrow = 2,
+    ncol = 2,
+    dimnames = list(c("A", "B"), c("C", "D"))
+)
+```
 
 Alternatively you could have used rownames and colnames functions to set the
 row and column names:
 
 
+``` r
+rownames(matrix2) <- c("A", "B")
+colnames(matrix2) <- c("C", "D")
+```
 
 
 ## Task 2: Accessing Matrix Elements
@@ -93,6 +105,11 @@ Use indexing to perform the following operations:
 
 Your code here:
 
+
+``` r
+element1 <- matrix1[1, 2]
+element2 <- matrix2[2, "B"]
+```
 
 ```
 ## Error in matrix2[2, "B"]: subscript out of bounds
@@ -109,6 +126,10 @@ Perform the following operations on the matrices:
 Your code here:
 
 
+``` r
+matrix1 <- rbind(matrix1, c(7, 8, 9))
+matrix2[1, "C"] <- 50
+```
 
 That's it for Exercise 7! Well done!
 

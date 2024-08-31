@@ -59,6 +59,9 @@ Consider the following vector of numeric values:
 
 
 
+``` r
+my_vector <- c(1, 2, 3, 4, 5)
+```
 
 
 Create the following logical vectors:
@@ -68,18 +71,27 @@ Create the following logical vectors:
 
 
 
+``` r
+logical_vector1 <- my_vector <= 3
+```
 
 2. Create a logical vector called `logical_vector2` that indicates whether
    each element of `my_vector` is equal to `3`.
 
 
 
+``` r
+logical_vector2 <- my_vector == 3
+```
 
 3. Create a logical vector called `logical_vector3` that indicates whether
    each element of `my_vector` is greater than `2` and less than `5`.
 
 
 
+``` r
+logical_vector3 <- my_vector > 2 & my_vector < 5
+```
 
 ## Task 2: Indexing using Logical Vectors
 
@@ -92,18 +104,27 @@ results to new variables.
 
 
 
+``` r
+result_vector1 <- my_vector[logical_vector1]
+```
 
 2. Index `my_vector` using `logical_vector2` and assign the result to a
    variable called `result_vector2`.
 
 
 
+``` r
+result_vector2 <- my_vector[logical_vector2]
+```
 
 3. Index `my_vector` using `logical_vector3` and assign the result to a
    variable called `result_vector3`.
 
 
 
+``` r
+result_vector3 <- my_vector[logical_vector3]
+```
 
 ## Task 4: Logical operators without creating logical vectors
 
@@ -113,18 +134,27 @@ Index `my_vector` directly using the following conditions without creating
 
 
 
+``` r
+result_vector4 <- my_vector[my_vector > 3]
+```
 
 2. Index the vector using the condition `my_vector == 3` and assign the
    result
 
 
 
+``` r
+result_vector5 <- my_vector[my_vector == 3]
+```
 
 3. Index the vector using the condition `my_vector <= 3` and assign the
    result
 
 
 
+``` r
+result_vector6 <- my_vector[my_vector <= 3]
+```
 
 That's it for Exercise 10! Well done!
 

@@ -69,6 +69,11 @@ Create the following vectors and assign them to variables:
 Your code here:
 
 
+``` r
+numeric_vector <- c(10, 20, 30, 40, 50)
+character_vector <- c("red", "green", "blue", "yellow", "orange")
+logical_vector <- c(TRUE, FALSE, TRUE, FALSE, TRUE)
+```
 
 ## Task 2: Accessing Vector Elements
 
@@ -86,6 +91,11 @@ Use indexing to perform the following operations:
 Your code here:
 
 
+``` r
+numeric_element <- numeric_vector[2]
+character_element <- character_vector[3]
+logical_element <- logical_vector[length(logical_vector)]
+```
 
 ## Task 3: Manipulating Vectors
 
@@ -103,6 +113,11 @@ Perform the following operations on the vectors:
 Your code here:
 
 
+``` r
+numeric_vector_plus_5 <- numeric_vector + 5
+character_vector_concatenated <- c(character_vector, character_vector)
+logical_vector_negated <- !logical_vector
+```
 
 That's it for Exercise 5! Great job!
 

@@ -76,6 +76,13 @@ The basic syntax of an if-else statement in R is as follows:
 
 
 
+``` r
+if (condition) {
+  # code block to be executed if the condition is TRUE
+} else {
+  # code block to be executed if the condition is FALSE
+}
+```
 
 The condition is a logical expression that evaluates to `TRUE` or `FALSE`.
 
@@ -84,9 +91,20 @@ Let's look at an example of an if-else statement in R:
 Define a variable
 
 
+``` r
+x <- 5
+```
 
 Check if x is greater than 3
 
+
+``` r
+if (x > 3) {
+  print("x is greater than 3")
+} else {
+  print("x is not greater than 3")
+}
+```
 
 ```
 ## [1] "x is greater than 3"
@@ -106,15 +124,37 @@ The syntax of an if-else-if ladder in R is as follows:
 
 
 
+``` r
+if (condition1) {
+  # code block to be executed if condition1 is TRUE
+} else if (condition2) {
+  # code block to be executed if condition1 is FALSE and condition2 is TRUE
+} else {
+  # code block to be executed if all conditions are FALSE
+}
+```
 
 Let's look at an example of an if-else-if ladder in R:
 
 Define a variable
 
 
+``` r
+y <- 10
+```
 
 Check if `y` is less than `5`, between `5` and `10`, or greater than `10`
 
+
+``` r
+if (y < 5) {
+  print("y is less than 5")
+} else if (y >= 5 & y <= 10) {
+  print("y is between 5 and 10")
+} else {
+  print("y is greater than 10")
+}
+```
 
 ```
 ## [1] "y is between 5 and 10"
@@ -135,22 +175,34 @@ The syntax of the `ifelse()` function in R is as follows:
 
 
 
+``` r
+result <- ifelse(condition, value_if_true, value_if_false)
+```
 
 Let's look at an example of the `ifelse()` function in R:
 Define a vector
 
 
+``` r
+numbers <- c(1, 2, 3, 4, 5)
+```
 
 Apply a condition to the vector using `ifelse()`
 
 
+``` r
+result <- ifelse(numbers > 3, "greater than 3", "less than or equal to 3")
+```
 
 Display the result
 
 
+``` r
+print(result)
 ```
-## [1] "less than or equal to 3" "less than or equal to 3"
-## [3] "less than or equal to 3" "greater than 3"         
+
+```
+## [1] "less than or equal to 3" "less than or equal to 3" "less than or equal to 3" "greater than 3"         
 ## [5] "greater than 3"
 ```
 
@@ -160,19 +212,32 @@ ternary operator, which is useful for simple conditional assignments.
 The syntax of the ternary operator in R is as follows:
 
 
+``` r
+result <- if (condition) value_if_true else value_if_false
+```
 
 Let's look at an example of the ternary operator in R:
 
 Define a variable
 
 
+``` r
+z <- 7
+```
 
 Assign a value based on a condition using the ternary operator
 
 
+``` r
+result <- if (z > 5) "z is greater than 5" else "z is not greater than 5"
+```
 
 Display the result
 
+
+``` r
+print(result)
+```
 
 ```
 ## [1] "z is greater than 5"
@@ -198,6 +263,11 @@ The basic syntax of a `for` loop in R is as follows:
 
 
 
+``` r
+for (variable in sequence) {
+  # code block to be executed for each value of the variable
+}
+```
 
 The variable takes on each value in the sequence, and the code block is
 executed for each value.
@@ -206,6 +276,12 @@ Let's look at an example of a `for` loop in R:
 
 Iterate over a sequence of numbers
 
+
+``` r
+for (i in 1:5) {
+  print(i)
+}
+```
 
 ```
 ## [1] 1
@@ -227,6 +303,11 @@ condition is `TRUE`.
 The basic syntax of a `while` loop in R is as follows:
 
 
+``` r
+while (condition) {
+  #' code block to be executed as long as the condition is TRUE
+}
+```
 
 The code block is executed repeatedly as long as the condition is `TRUE`.
 
@@ -235,9 +316,19 @@ Let's look at an example of a `while` loop in R:
 Define a variable
 
 
+``` r
+j <- 1
+```
 
 Repeat a block of code until `j` is greater than `5`
 
+
+``` r
+while (j <= 5) {
+  print(j)
+  j <- j + 1
+}
+```
 
 ```
 ## [1] 1
@@ -255,11 +346,19 @@ arithmetic operation and update a variable in a single step. Instead we need
 to use the following syntax in R to iterate a variable and update it:
 
 
+``` r
+x <- 5 
+x <- x + 1
+```
 
 while in Python, one could write:
 
 
 
+``` r
+x = 5 
+x += 1
+```
 
 This is a simple example of a `while` loop in R.
 
