@@ -57,9 +57,6 @@ for (i in seq_along(r_files)) {
     "./",
     dirname(r_file),
     "/figures/"
-  ), knit_root_dir = paste0(
-    "./",
-    dirname(r_file))
-  )
+  ))
   knitr::knit(rmd_file, output = md_file)
 }
