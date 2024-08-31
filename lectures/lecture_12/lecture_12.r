@@ -122,10 +122,7 @@ result <- if (condition) value_if_true else value_if_false
 z <- 7
 
 #' Assign a value based on a condition using the ternary operator
-result <- if (z > 5)
-  "z is greater than 5"
-else
-  "z is not greater than 5"
+result <- if (z > 5) "z is greater than 5" else "z is not greater than 5"
 
 #' Display the result
 print(result)
