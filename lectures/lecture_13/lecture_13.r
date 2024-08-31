@@ -2,10 +2,10 @@
 #' `r Sys.Date()`
 #' 
 #+ echo = FALSE
-knitr::opts_chunk$set(echo = TRUE)
-knitr::opts_knit$set(root.dir = '../../')
 htmltools::includeHTML("../../index_lectures.html")
 htmltools::includeHTML("../../index_exercises.html")
+#'
+#'
 #'
 #' In this lecture, we will work on a real-world example of using R for data
 #' analysis. We will load a data set and perform some basic data exploration and
@@ -139,7 +139,7 @@ heatmap(
   margins = c(13, 13)
 )
 legend(
-  "topright",
+  "right",
   legend = c(
     "Strong Negative Correlation",
     "Weak Negative Correlation",
