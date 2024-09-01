@@ -64,7 +64,6 @@ of R, data manipulation, data visualization, and more.
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
